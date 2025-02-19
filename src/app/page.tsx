@@ -103,6 +103,8 @@
 import HomePage from "@/app/components/homepage";
 
 export default function Page() {
-  return <HomePage />;
+  return (
+    <HomePage />
+  )
 }
 

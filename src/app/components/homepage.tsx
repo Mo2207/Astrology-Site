@@ -6,18 +6,18 @@ import { Button } from '@/app/components/ui/button/button';
 import Image from 'next/image';
 
 const zodiacSigns = [
-  { name: 'Aries', dates: 'Mar 21 - Apr 19', icon: '/images/aries.png' },
-  { name: 'Taurus', dates: 'Apr 20 - May 20', icon: '/images/taurus.png' },
-  { name: 'Gemini', dates: 'May 21 - Jun 20', icon: '/images/gemini.png' },
-  { name: 'Cancer', dates: 'Jun 21 - Jul 22', icon: '/images/cancer.png' },
-  { name: 'Leo', dates: 'Jul 23 - Aug 22', icon: '/images/leo.png' },
-  { name: 'Virgo', dates: 'Aug 23 - Sep 22', icon: '/images/virgo.png' },
-  { name: 'Libra', dates: 'Sep 23 - Oct 22', icon: '/images/libra.png' },
-  { name: 'Scorpio', dates: 'Oct 23 - Nov 21', icon: '/images/scorpio.png' },
-  { name: 'Sagittarius', dates: 'Nov 22 - Dec 21', icon: '/images/sagittarius.png' },
-  { name: 'Capricorn', dates: 'Dec 22 - Jan 19', icon: '/images/capricorn.png' },
-  { name: 'Aquarius', dates: 'Jan 20 - Feb 18', icon: '/images/aquarius.png' },
-  { name: 'Pisces', dates: 'Feb 19 - Mar 20', icon: '/images/pisces.png' },
+  { name: 'Aries', dates: 'Mar 21 - Apr 19', icon: '/assets/img/aries.webp', description: '' },
+  { name: 'Taurus', dates: 'Apr 20 - May 20', icon: '/assets/img/taurus.webp', description: '' },
+  { name: 'Gemini', dates: 'May 21 - Jun 20', icon: '/assets/img/gemini.webp', description: '' },
+  { name: 'Cancer', dates: 'Jun 21 - Jul 22', icon: '/assets/img/cancer.webp', description: '' },
+  { name: 'Leo', dates: 'Jul 23 - Aug 22', icon: '/assets/img/leo.webp', description: '' },
+  { name: 'Virgo', dates: 'Aug 23 - Sep 22', icon: '/assets/img/virgo.webp', description: '' },
+  { name: 'Libra', dates: 'Sep 23 - Oct 22', icon: '/assets/img/libra.webp', description: '' },
+  { name: 'Scorpio', dates: 'Oct 23 - Nov 21', icon: '/assets/img/scorpio.webp', description: '' },
+  { name: 'Sagittarius', dates: 'Nov 22 - Dec 21', icon: '/assets/img/sagattarius.webp', description: '' },
+  { name: 'Capricorn', dates: 'Dec 22 - Jan 19', icon: '/assets/img/capricorn.webp', description: '' },
+  { name: 'Aquarius', dates: 'Jan 20 - Feb 18', icon: '/assets/img/aquarius.webp', description: '' },
+  { name: 'Pisces', dates: 'Feb 19 - Mar 20', icon: '/assets/img/pisces.webp', description: '' },
 ];
 
 export default function HomePage() {
@@ -39,11 +39,16 @@ export default function HomePage() {
           {zodiacSigns.map((sign) => (
             <motion.div
               key={sign.name}
-              className="bg-gray-800 p-4 rounded-lg shadow-md hover:bg-gray-700 cursor-pointer text-center"
+              className="bg-gray-800 p-4 rounded-lg shadow-md hover:bg-gray-700 cursor-pointer text-center min-h-[8rem]"
+              style={{
+                backgroundImage: `url(${sign.icon})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
               whileHover={{ scale: 1.1 }}
               onClick={() => setSelectedSign(sign.name)}
             >
-              <Image src={sign.icon} alt={sign.name} width={60} height={60} className="mx-auto mb-3" />
               <h3 className="text-xl font-medium">{sign.name}</h3>
               <p className="text-sm text-gray-400">{sign.dates}</p>
             </motion.div>
@@ -59,7 +64,7 @@ export default function HomePage() {
           animate={{ opacity: 1 }}
         >
           <h2 className="text-2xl font-semibold">Today's Horoscope for {selectedSign}</h2>
-          <p className="text-lg text-gray-300 mt-4">✨ Your stars are aligning for a positive shift in your life. Stay open to new opportunities! ✨</p>
+          <p className="text-lg text-gray-300 mt-4">{selectedSign.description}</p>
         </motion.section>
       )}
 
