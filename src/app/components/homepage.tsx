@@ -5,23 +5,31 @@ import { motion } from 'framer-motion';
 import { Button } from '@/app/components/ui/button/button';
 import Image from 'next/image';
 
-const zodiacSigns = [
-  { name: 'Aries', dates: 'Mar 21 - Apr 19', icon: '/assets/img/aries.webp', description: '' },
-  { name: 'Taurus', dates: 'Apr 20 - May 20', icon: '/assets/img/taurus.webp', description: '' },
-  { name: 'Gemini', dates: 'May 21 - Jun 20', icon: '/assets/img/gemini.webp', description: '' },
-  { name: 'Cancer', dates: 'Jun 21 - Jul 22', icon: '/assets/img/cancer.webp', description: '' },
-  { name: 'Leo', dates: 'Jul 23 - Aug 22', icon: '/assets/img/leo.webp', description: '' },
-  { name: 'Virgo', dates: 'Aug 23 - Sep 22', icon: '/assets/img/virgo.webp', description: '' },
-  { name: 'Libra', dates: 'Sep 23 - Oct 22', icon: '/assets/img/libra.webp', description: '' },
-  { name: 'Scorpio', dates: 'Oct 23 - Nov 21', icon: '/assets/img/scorpio.webp', description: '' },
-  { name: 'Sagittarius', dates: 'Nov 22 - Dec 21', icon: '/assets/img/sagattarius.webp', description: '' },
-  { name: 'Capricorn', dates: 'Dec 22 - Jan 19', icon: '/assets/img/capricorn.webp', description: '' },
-  { name: 'Aquarius', dates: 'Jan 20 - Feb 18', icon: '/assets/img/aquarius.webp', description: '' },
-  { name: 'Pisces', dates: 'Feb 19 - Mar 20', icon: '/assets/img/pisces.webp', description: '' },
+
+type ZodiacSign = {
+  name: string;
+  dates: string;
+  icon: string;
+  description: string;
+};
+
+const zodiacSigns: ZodiacSign[] = [
+  { name: 'Aries', dates: 'Mar 21 - Apr 19', icon: '/assets/img/aries.webp', description: '🔥 The Bold Trailblazer Aries is a dynamic and passionate leader, always ready to take on new challenges. Ruled by Mars, they are full of energy, ambition, and confidence. They thrive on competition and love taking initiative. Their fiery spirit makes them courageous, but sometimes impulsive.' },
+  { name: 'Taurus', dates: 'Apr 20 - May 20', icon: '/assets/img/taurus.webp', description: '🌿 The Grounded Protector Taurus is known for its stability, patience, and love for life’s comforts. Ruled by Venus, they appreciate beauty, luxury, and nature. They are fiercely loyal and dependable but can be stubborn when pushed. Their determination ensures they always see things through.' },
+  { name: 'Gemini', dates: 'May 21 - Jun 20', icon: '/assets/img/gemini.webp', description: '🌬️ The Curious Communicator Gemini is quick-witted, adaptable, and endlessly curious. Ruled by Mercury, they love learning, socializing, and engaging in deep conversations. Their dual nature makes them versatile and energetic, but they can sometimes be indecisive or restless.' },
+  { name: 'Cancer', dates: 'Jun 21 - Jul 22', icon: '/assets/img/cancer.webp', description: '🌊 The Nurturing Soul Cancer is deeply intuitive, sensitive, and protective of loved ones. Ruled by the Moon, they are emotionally deep and value family and close relationships. They are empathetic and compassionate but can retreat into their shell when feeling overwhelmed.' },
+  { name: 'Leo', dates: 'Jul 23 - Aug 22', icon: '/assets/img/leo.webp', description: '🌞 The Charismatic Leader Leo is bold, creative, and full of life. Ruled by the Sun, they naturally draw attention and love to inspire others. Their warm heart and generous nature make them natural-born leaders. However, they may sometimes crave admiration and validation.' },
+  { name: 'Virgo', dates: 'Aug 23 - Sep 22', icon: '/assets/img/virgo.webp', description: '🌾 The Perfectionist Healer Virgo is detail-oriented, analytical, and dedicated to self-improvement. Ruled by Mercury, they thrive on organization and logic. They have a strong desire to help others but can be overly critical of themselves and those around them.' },
+  { name: 'Libra', dates: 'Sep 23 - Oct 22', icon: '/assets/img/libra.webp', description: '⚖️ The Harmonious Diplomat Libra is charming, fair-minded, and deeply values balance. Ruled by Venus, they have a strong sense of beauty, art, and relationships. They seek peace and harmony but can sometimes struggle with indecisiveness.' },
+  { name: 'Scorpio', dates: 'Oct 23 - Nov 21', icon: '/assets/img/scorpio.webp', description: '🦂 The Mysterious Transformer Scorpio is intense, passionate, and deeply emotional. Ruled by Pluto and Mars, they crave depth and transformation in life. They are fiercely loyal but can be secretive and sometimes possessive. Their intuition and strength make them powerful individuals.' },
+  { name: 'Sagittarius', dates: 'Nov 22 - Dec 21', icon: '/assets/img/sagattarius.webp', description: '🏹 The Adventurous Philosopher Sagittarius is free-spirited, optimistic, and always seeking new experiences. Ruled by Jupiter, they have a deep love for travel, knowledge, and philosophy. Their adventurous spirit makes them exciting, but they can sometimes be blunt or restless.' },
+  { name: 'Capricorn', dates: 'Dec 22 - Jan 19', icon: '/assets/img/capricorn.webp', description: '⛰️ The Ambitious Achiever Capricorn is disciplined, hardworking, and focused on success. Ruled by Saturn, they are determined to reach their goals and build a solid foundation in life. Their perseverance is unmatched, though they may sometimes struggle with work-life balance.' },
+  { name: 'Aquarius', dates: 'Jan 20 - Feb 18', icon: '/assets/img/aquarius.webp', description: '🌊 The Visionary Rebel Aquarius is innovative, independent, and forward-thinking. Ruled by Uranus and Saturn, they challenge norms and embrace new ideas. They are deeply humanitarian and value freedom, but their unconventional ways can make them seem detached.' },
+  { name: 'Pisces', dates: 'Feb 19 - Mar 20', icon: '/assets/img/pisces.webp', description: '🌌 The Dreamy Mystic Pisces is compassionate, artistic, and deeply intuitive. Ruled by Neptune, they live in a world of imagination and emotions. Their empathy makes them excellent healers, but they can sometimes be escapist or overly idealistic. put these 12 descriptions into string form for me, dont bother with the dates' },
 ];
 
 export default function HomePage() {
-  const [selectedSign, setSelectedSign] = useState(null);
+  const [selectedSign, setSelectedSign] = useState<ZodiacSign | null>(null);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-indigo-900 to-black text-white">
@@ -47,7 +55,7 @@ export default function HomePage() {
                 backgroundRepeat: "no-repeat",
               }}
               whileHover={{ scale: 1.1 }}
-              onClick={() => setSelectedSign(sign.name)}
+              onClick={() => setSelectedSign(sign)}
             >
               <h3 className="text-xl font-medium">{sign.name}</h3>
               <p className="text-sm text-gray-400">{sign.dates}</p>
@@ -63,15 +71,10 @@ export default function HomePage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >
-          <h2 className="text-2xl font-semibold">Today's Horoscope for {selectedSign}</h2>
+          <h2 className="text-2xl font-semibold">Today's Horoscope for {selectedSign.name}</h2>
           <p className="text-lg text-gray-300 mt-4">{selectedSign.description}</p>
         </motion.section>
       )}
-
-      {/* Footer */}
-      <footer className="text-center py-6 mt-12 bg-gray-900">
-        <p className="text-gray-400">&copy; 2025 Astrology Insights. All Rights Reserved.</p>
-      </footer>
     </div>
   );
 }

@@ -100,11 +100,16 @@
 //   );
 // }
 
-import HomePage from "@/app/components/homepage";
+import HomePage from "./components/homepage";
+import Footer from "./components/footer";
+import { div } from "framer-motion/client";
 
 export default function Page() {
   return (
-    <HomePage />
+    <div>
+      <HomePage />
+      <Footer />
+    </div>
   )
 }
 
