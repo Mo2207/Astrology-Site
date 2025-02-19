@@ -3,8 +3,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/app/components/ui/button/button';
-import Image from 'next/image';
-
 
 type ZodiacSign = {
   name: string;
@@ -47,7 +45,7 @@ export default function HomePage() {
           {zodiacSigns.map((sign) => (
             <motion.div
               key={sign.name}
-              className="bg-gray-800 p-4 rounded-lg shadow-md hover:bg-gray-700 cursor-pointer text-center min-h-[8rem]"
+              className="bg-gray-800 p-4 rounded-lg shadow-md hover:bg-gray-700 cursor-pointer text-center min-h-[10rem] flex flex-col justify-center items-center"
               style={{
                 backgroundImage: `url(${sign.icon})`,
                 backgroundSize: "cover",
@@ -56,9 +54,11 @@ export default function HomePage() {
               }}
               whileHover={{ scale: 1.1 }}
               onClick={() => setSelectedSign(sign)}
-            >
-              <h3 className="text-xl font-medium">{sign.name}</h3>
-              <p className="text-sm text-gray-400">{sign.dates}</p>
+            > 
+            <div className='bg-black bg-opacity-60 border rounded-lg p-4'>
+              <h3 className="text-2xl font-bold">{sign.name}</h3>
+              <p className="text-xl text-gray-300 font-medium">{sign.dates}</p>
+            </div>
             </motion.div>
           ))}
         </div>
@@ -71,8 +71,8 @@ export default function HomePage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >
-          <h2 className="text-2xl font-semibold">Today's Horoscope for {selectedSign.name}</h2>
-          <p className="text-lg text-gray-300 mt-4">{selectedSign.description}</p>
+        <h2 className="text-2xl font-semibold">Today's Horoscope for {selectedSign.name}</h2>
+        <p className="text-lg text-gray-300 mt-4">{selectedSign.description}</p>
         </motion.section>
       )}
     </div>
