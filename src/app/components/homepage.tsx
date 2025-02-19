@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/app/components/ui/button/button';
+import Image from 'next/image';
 
 type ZodiacSign = {
   name: string;
@@ -41,11 +42,11 @@ export default function HomePage() {
       {/* Zodiac Signs Grid */}
       <section className="py-12 px-6">
         <h2 className="text-3xl font-semibold text-center mb-8">Choose Your Zodiac Sign</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center">
+        <div className="relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center">
           {zodiacSigns.map((sign) => (
             <motion.div
               key={sign.name}
-              className="bg-gray-800 p-4 rounded-lg shadow-md hover:bg-gray-700 cursor-pointer text-center min-h-[10rem] flex flex-col justify-center items-center"
+              className="rounded-lg shadow-md cursor-pointer text-center min-h-[10rem] flex flex-col justify-center items-center"
               style={{
                 backgroundImage: `url(${sign.icon})`,
                 backgroundSize: "cover",
@@ -55,9 +56,11 @@ export default function HomePage() {
               whileHover={{ scale: 1.1 }}
               onClick={() => setSelectedSign(sign)}
             > 
-            <div className='bg-black bg-opacity-60 border rounded-lg p-4'>
-              <h3 className="text-2xl font-bold">{sign.name}</h3>
-              <p className="text-xl text-gray-300 font-medium">{sign.dates}</p>
+            <div className="relative w-full h-[10rem]">
+              <div className="absolute inset-0 w-full h-full bg-black bg-opacity-50 hover:bg-opacity-0 border-0 rounded-lg flex justify-center items-center flex-col justify-center items-center">
+                <h3 className="text-2xl font-bold">{sign.name}</h3>
+                <p className="text-xl text-gray-300 font-medium">{sign.dates}</p>
+              </div>
             </div>
             </motion.div>
           ))}
@@ -67,12 +70,29 @@ export default function HomePage() {
       {/* Horoscope Section */}
       {selectedSign && (
         <motion.section 
-          className="text-center py-10 px-4 bg-gray-900 rounded-lg mx-auto w-3/4"
+          className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-md p-4 z-50"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >
-        <h2 className="text-2xl font-semibold">Today's Horoscope for {selectedSign.name}</h2>
-        <p className="text-lg text-gray-300 mt-4">{selectedSign.description}</p>
+          <div className="bg-gray-900 rounded-lg p-6 w-3/4 max-w-lg text-center relative">
+            <button
+              className="absolute top-2 right-2 text-gray-400 hover:text-white"
+              onClick={() => setSelectedSign(null)}
+            >
+              ✖
+            </button>
+            <div className='flex items-center justify-center pb-3'>
+              <Image 
+              src={selectedSign.icon} 
+              alt="Astrology Image" 
+              width={200} 
+              height={200} 
+              className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <h2 className="text-2xl font-semibold">Today's Horoscope for {selectedSign.name}</h2>
+            <p className="text-lg text-gray-300 mt-4">{selectedSign.description}</p>
+          </div>
         </motion.section>
       )}
     </div>
