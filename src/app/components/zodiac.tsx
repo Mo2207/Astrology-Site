@@ -37,7 +37,12 @@ export default function Zodiac() {
       <section className="text-center py-20">
         <h1 className="text-5xl font-bold mb-4">Unlock Your Cosmic Path</h1>
         <p className="text-lg text-gray-300">Discover insights from the stars and navigate your destiny.</p>
-        <Button className="mt-6 bg-purple-600 hover:bg-purple-700">Get Your Horoscope</Button>
+        <Button
+          className="mt-6 bg-purple-600 hover:bg-purple-700"
+          onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+        >
+            Get Your Horoscope
+        </Button>
       </section>
 
       {/* Zodiac Signs Grid */}

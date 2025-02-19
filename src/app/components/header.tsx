@@ -1,9 +1,20 @@
 
+'use client' 
+
 const navs = [
-  { id: 1, name: "Home", href: "#about" },
-  { id: 2, name: "Signs", href: "#zodiac" },
-  { id: 3, name: "Contact", href: "#contact" },
+  { id: 1, name: "Home", href: "about" },
+  { id: 2, name: "Signs", href: "zodiac" },
+  { id: 3, name: "Contact", href: "contact" },
 ];
+
+const handleScroll = (id: string) => {
+  const element = document.getElementById(id);
+  if (element) {
+    const offset = 80;
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top: elementPosition, behavior: "smooth" });
+  }
+};
 
 export default function Header() {
   return (
@@ -18,7 +29,7 @@ export default function Header() {
         {/* Navigation */}
         <nav className="hidden md:flex gap-6">
           {navs.map((nav) => (
-            <a key={nav.id} href={nav.href} className="hover:text-yellow-400 transition">
+            <a key={nav.id} onClick={() => handleScroll(nav.href)} className="hover:text-gray-400 hover:cursor-pointer transition">
               {nav.name}
             </a>
           ))}
