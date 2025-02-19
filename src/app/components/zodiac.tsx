@@ -27,10 +27,11 @@ const zodiacSigns: ZodiacSign[] = [
   { name: 'Pisces', dates: 'Feb 19 - Mar 20', icon: '/assets/img/pisces.webp', description: '🌌 The Dreamy Mystic Pisces is compassionate, artistic, and deeply intuitive. Ruled by Neptune, they live in a world of imagination and emotions. Their empathy makes them excellent healers, but they can sometimes be escapist or overly idealistic. put these 12 descriptions into string form for me, dont bother with the dates' },
 ];
 
-export default function HomePage() {
+export default function Zodiac() {
   const [selectedSign, setSelectedSign] = useState<ZodiacSign | null>(null);
 
   return (
+    <section id='zodiac'>
     <div className="min-h-screen bg-gradient-to-b from-indigo-900 to-black text-white">
       {/* Hero Section */}
       <section className="text-center py-20">
@@ -96,5 +97,6 @@ export default function HomePage() {
         </motion.section>
       )}
     </div>
+    </section>
   );
 }

@@ -1,13 +1,13 @@
 
 const navs = [
-  { id: 1, name: "Home", href: "Homepage" },
-  { id: 2, name: "About", href: "about" },
-  { id: 3, name: "Contact", href: "contact" },
+  { id: 1, name: "Home", href: "#about" },
+  { id: 2, name: "Signs", href: "#zodiac" },
+  { id: 3, name: "Contact", href: "#contact" },
 ];
 
 export default function Header() {
   return (
-    <header className="bg-[#302E80] text-white py-6 shadow-md">
+    <header className="fixed top-0 left-0 w-full bg-[#302E80] text-white py-4 shadow-md z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6">
         {/* Logo */}
         <div className="flex items-center gap-2">
