@@ -1,20 +1,20 @@
 
 import Image from "next/image";
 
-export default function Product() {
+export default function Course() {
   return (
-    <section id="product" className="pt-[10rem] bg-[#DDDDDD]">
+    <section id="course" className="pt-[10rem] bg-[#DDDDDD]">
       <div className="text-gray-900 w-[90vw] h-[50vh] mx-auto flex flex-col md:flex-row items-center justify-center gap-4">
         
         {/* left side */}
         <div className="flex flex-row justify-center w-[50%] h-full border border-gray-900 rounded-lg p-4">
           <div className="flex flex-col">
             <Image 
-              src={'/assets/img/about/horoscope-readings.webp'} 
+              src={'/assets/img/course/who-is-this-course-for.jpeg'} 
               alt="Product Image" 
               width={400} 
               height={400} 
-              className="w-full h-full object-cover p-2 rounded-md"
+              className="h-full object-cover p-2 rounded-md"
               style={{
                 borderRadius: '5%'
               }}
@@ -35,11 +35,11 @@ export default function Product() {
         <div className="flex flex-row justify-center w-[50%] h-full border border-gray-900 rounded-lg p-4">
           <div className="flex flex-col">
           <Image 
-            src={'/assets/img/about/horoscope-readings.webp'} 
+            src={'/assets/img/course/person-using-laptop.jpg'} 
             alt="Product Image" 
             width={400} 
             height={400} 
-            className="w-full h-full object-cover p-2"
+            className="h-full object-cover p-2"
             style={{
               borderRadius: '5%'
             }}

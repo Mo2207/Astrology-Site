@@ -3,11 +3,11 @@ import { Button } from "./ui/button/button";
 
 export default function Contact() {
   return (
-    <section id="contact" className="pt-[2rem] bg-[#DDDDDD]">
+    <section id="contact" className="pt-[6rem] bg-[#DDDDDD]">
       <div className="max-w-4xl mx-auto text-center px-6">
-        <h2 className="text-4xl font-bold mb-6 text-gray-900">Contact Us</h2>
+        <h2 className="text-4xl font-bold mb-6 text-gray-900">Contact</h2>
         <p className="text-lg text-gray-900 mb-8">
-          Have questions about your horoscope or astrology readings? Get in touch with us!
+          Have questions about the course? Get in touch!
         </p>
 
         {/* Contact Form */}
@@ -20,11 +20,6 @@ export default function Contact() {
           <div className="mb-4">
             <label className="block text-left text-gray-900">Email</label>
             <input type="email" className="w-full p-3 rounded-lg bg-gray-200 text-gray-900 border border-gray-600 focus:border-yellow-400 focus:outline-none" placeholder="Enter your email" required />
-          </div>
-
-          <div className="mb-4">
-            <label className="block text-left text-gray-900">Date of Birth</label>
-            <input type="date" className="w-full p-3 rounded-lg bg-gray-200 text-gray-900 border border-gray-600 focus:border-yellow-400 focus:outline-none" required />
           </div>
 
           <div className="mb-4">

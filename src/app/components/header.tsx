@@ -1,14 +1,12 @@
 
 'use client'
-import { Button } from "./ui/button/button";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 const navs = [
   { id: 1, name: "About Maria", href: "about" },
-  { id: 2, name: "Course", href: "product" },
-  { id: 3, name: "Signs", href: "zodiac" },
-  { id: 4, name: "Contact", href: "contact" },
+  { id: 2, name: "Course", href: "course" },
+  { id: 3, name: "Contact", href: "contact" },
 ];
 
 const languages = [
@@ -36,7 +34,7 @@ export default function Header() {
         
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src="/assets/img/header/logo.webp" alt="Logo" className="w-12 h-12" />
+          <img src="/assets/img/header/logo.svg" alt="Logo" className="w-12 h-12" />
         </div>
 
         {/* Navigation */}

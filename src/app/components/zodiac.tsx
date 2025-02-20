@@ -2,7 +2,6 @@
 "use client";
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Button } from '@/app/components/ui/button/button';
 import Image from 'next/image';
 
 type ZodiacSign = {
