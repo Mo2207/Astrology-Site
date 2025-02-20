@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="py-10 pb-10 bg-[#dddddd] text-gray-900">
-      <div className="w-[80vw] mx-auto flex flex-col md:flex-row items-center gap-12 px-6">
+    <section id="about" className="pt-[7rem] pb-10 bg-[#dddddd] text-gray-900">
+      <div className="w-[85vw] mx-auto flex flex-col md:flex-row items-center gap-12">
 
         {/* Left Side - Image */}
         <div className="w-full md:w-1/2 flex justify-center">

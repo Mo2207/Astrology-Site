@@ -11,7 +11,7 @@ export default function Page() {
     <div>
       <Header />
       <Product />
-      <Zodiac />
+      {/* <Zodiac /> */}
       <About />
       <Contact />
       <Footer />
