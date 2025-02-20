@@ -32,7 +32,7 @@ export default function Zodiac() {
 
   return (
     <section id='zodiac'>
-    <div className="min-h-screen bg-[#DDDDDD]">
+    <div className="bg-[#DDDDDD]">
       {/* Zodiac Signs Grid */}
       <section className="py-12 px-6">
         <h2 className="text-3xl font-semibold text-center mb-8 text-gray-900">Choose Your Zodiac Sign</h2>

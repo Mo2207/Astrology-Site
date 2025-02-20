@@ -10,9 +10,9 @@ export default function Page() {
   return (
     <div>
       <Header />
-      <About />
       <Product />
       <Zodiac />
+      <About />
       <Contact />
       <Footer />
     </div>
