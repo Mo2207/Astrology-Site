@@ -14,11 +14,14 @@ export default function Product() {
               alt="Product Image" 
               width={400} 
               height={400} 
-              className="w-full h-full object-cover rounded-lg p-2 rounded-md"
+              className="w-full h-full object-cover p-2 rounded-md"
+              style={{
+                borderRadius: '5%'
+              }}
             />
           </div>
           <div className="flex flex-col pt-4 w-[55%]">
-            <h2 className="flex justify-center font-semibold pb-4">Who is this course for?</h2>
+            <h2 className="flex justify-center font-semibold pb-4 text-center">Who is this course for?</h2>
             <div className="flex flex-col items-center text-left space-y-2">
               <p className="w-3/4">For people who would like to improve their life</p>
               <p className="w-3/4">Those who are ready to start a new chapter in life</p>
@@ -36,11 +39,14 @@ export default function Product() {
             alt="Product Image" 
             width={400} 
             height={400} 
-            className="w-full h-full object-cover rounded-lg p-2 rounded-md"
+            className="w-full h-full object-cover p-2"
+            style={{
+              borderRadius: '5%'
+            }}
           />
           </div>
           <div className="flex flex-col pt-4 w-[55%]">
-            <h2 className="flex font-semibold pb-4 text-center">What does the course include?</h2>
+            <h2 className="flex justify-center font-semibold pb-4 text-center">What does the course include?</h2>
             <div className="flex flex-col items-center text-left space-y-2">
               <p className="w-3/4">10 video lessons</p>
               <p className="w-3/4">2 video calls a week</p>
