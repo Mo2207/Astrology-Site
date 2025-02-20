@@ -4,12 +4,14 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import About from "./components/about";
 import Contact from "./components/contact";
+import Product from "./components/product";
 
 export default function Page() {
   return (
     <div>
       <Header />
       <About />
+      <Product />
       <Zodiac />
       <Contact />
       <Footer />

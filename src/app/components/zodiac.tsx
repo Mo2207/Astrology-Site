@@ -77,11 +77,11 @@ export default function Zodiac() {
             </button>
             <div className='flex items-center justify-center pb-3'>
               <Image 
-              src={selectedSign.icon} 
-              alt="Astrology Image" 
-              width={200} 
-              height={200} 
-              className="w-full h-full object-cover rounded-lg"
+                src={selectedSign.icon} 
+                alt="Astrology Image" 
+                width={200} 
+                height={200} 
+                className="w-full h-full object-cover rounded-lg"
               />
             </div>
             <h2 className="text-2xl font-semibold">Today's Horoscope for {selectedSign.name}</h2>
