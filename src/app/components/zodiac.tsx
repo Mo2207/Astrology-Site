@@ -95,7 +95,7 @@ export default function Zodiac() {
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
-            <h2 className="text-2xl font-semibold">Today's Horoscope for {selectedSign.name}</h2>
+            <h2 className="text-2xl font-semibold">Today&apos;s Horoscope for {selectedSign.name}</h2>
             <p className="text-lg text-gray-300 mt-4">{selectedSign.description}</p>
           </div>
         </motion.section>
