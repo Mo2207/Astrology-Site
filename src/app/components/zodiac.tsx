@@ -32,22 +32,10 @@ export default function Zodiac() {
 
   return (
     <section id='zodiac'>
-    <div className="min-h-screen bg-gradient-to-b from-indigo-900 to-black text-white">
-      {/* Hero Section */}
-      <section className="text-center py-20">
-        <h1 className="text-5xl font-bold mb-4">Unlock Your Cosmic Path</h1>
-        <p className="text-lg text-gray-300">Discover insights from the stars and navigate your destiny.</p>
-        <Button
-          className="mt-6 bg-purple-600 hover:bg-purple-700"
-          onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-        >
-            Get Your Horoscope
-        </Button>
-      </section>
-
+    <div className="min-h-screen bg-[#DDDDDD]">
       {/* Zodiac Signs Grid */}
       <section className="py-12 px-6">
-        <h2 className="text-3xl font-semibold text-center mb-8">Choose Your Zodiac Sign</h2>
+        <h2 className="text-3xl font-semibold text-center mb-8 text-gray-900">Choose Your Zodiac Sign</h2>
         <div className="relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center">
           {zodiacSigns.map((sign) => (
             <motion.div

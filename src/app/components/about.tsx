@@ -3,16 +3,16 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="py-16 pt-[8rem] bg-[#dddddd] text-black">
+    <section id="about" className="py-16 pt-[8rem] bg-[#dddddd] text-gray-900">
       <div className="max-w-4xl mx-auto text-center px-6">
         <h2 className="text-4xl font-bold mb-4">About Us</h2>
-        <p className="text-lg text-black mb-6">
+        <p className="text-lg mb-6">
           Welcome to Astrology Insights, your guide to the celestial universe. Our mission is to help you
           discover the deeper meaning of the stars and how they influence your daily life. Whether you’re
           looking for daily horoscopes, zodiac sign compatibility, or astrological insights, we are here to illuminate your path.
         </p>
 
-        <div className="flex justify-center gap-6 mt-6">
+        <div className="flex justify-center gap-6 mt-6 text-gray-900">
 
           {/* Astrology Readings */}
           <div className="w-64">
@@ -24,7 +24,7 @@ export default function About() {
                 objectFit="cover"
               />
             </div>
-            <p className="text-black text-center pt-[1.5rem]">Astrology Readings</p>
+            <p className="text-center pt-[1.5rem]">Astrology Readings</p>
           </div>
 
           {/* Zodiac Insights */}
@@ -37,7 +37,7 @@ export default function About() {
                 objectFit="cover"
               />
             </div>
-            <p className="text-black text-center pt-[1.5rem]">Zodiac Insights</p>
+            <p className="text-center pt-[1.5rem]">Zodiac Insights</p>
           </div>
 
           {/* Horoscope Predictions */}
@@ -50,7 +50,7 @@ export default function About() {
                 objectFit="cover"
               />
             </div>
-            <p className="text-black text-center pt-[1.5rem]">Horoscope Predictions</p>
+            <p className="text-center pt-[1.5rem]">Horoscope Predictions</p>
           </div>
 
         </div>

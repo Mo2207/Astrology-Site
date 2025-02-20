@@ -18,7 +18,7 @@ const handleScroll = (id: string) => {
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 w-full bg-[#302E80] text-white py-4 shadow-md z-50">
+    <header className="fixed top-0 left-0 w-full bg-gray-800 text-white py-4 shadow-md z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6">
         {/* Logo */}
         <div className="flex items-center gap-2">
