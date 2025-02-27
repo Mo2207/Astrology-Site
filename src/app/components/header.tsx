@@ -4,7 +4,7 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 const navs = [
-  { id: 1, name: "About Maria", href: "about" },
+  { id: 1, name: "About", href: "about" },
   { id: 2, name: "Course", href: "course" },
   { id: 3, name: "Contact", href: "contact" },
 ];
@@ -68,7 +68,7 @@ export default function Header() {
                   setSelectedLanguage(lang.code);
                   setDropdownOpen(false);
                 }}
-                className="block w-full px-4 py-2 text-left hover:bg-gray-600"
+                className="block w-full px-4 py-2 text-left hover:bg-gray-600 hover:rounded-lg"
               >
                 {lang.label}
               </button>
