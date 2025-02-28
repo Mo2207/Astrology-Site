@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <section id="about" className="pt-[7rem] pb-10 bg-[#dddddd] text-gray-900">
-      <div className="w-[85vw] mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div className="w-[80%] mx-auto flex flex-col md:flex-row items-center gap-12">
 
         {/* Left Side - Description */}
         <div className="w-full md:w-1/2 flex flex-col text-center md:text-left">
