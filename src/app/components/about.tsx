@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="flex items-center h-[100vh] pt-[7rem] pb-10 bg-[#dddddd] text-gray-900">
+    <section id="about" className="flex items-center h-[100vh] pt-[7rem] pb-10 bg-white text-gray-900">
       <div className="w-[80%] mx-auto flex flex-col md:flex-row items-center gap-12">
 
         {/* Left Side - Description */}

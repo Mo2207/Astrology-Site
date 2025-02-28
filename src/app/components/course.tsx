@@ -4,7 +4,7 @@ import CourseCard from "@/app/components/courseCard";
 
 export default function Course() {
   return (
-    <section id="course" className="py-[8rem] bg-[#070707]">
+    <section id="course" className="py-[8rem] bg-[#1F2937]">
       <div className="h-full w-[80%] mx-auto flex md:flex-col items-center justify-center gap-[4rem]">
 
         <CourseCard 
@@ -15,6 +15,11 @@ export default function Course() {
             "Those who have a problem with a partner",
             "For a busy mother",
           ]} 
+          extraItems={[
+            "febje srfi ueufnf eeafh ebnaogh aedujie.",
+            "febje srfi ebnaogh aedujie.",
+            "febje srfi ueufnf eeafh fgjeim."
+          ]}
         />
 
         <CourseCard 
@@ -24,7 +29,12 @@ export default function Course() {
             "2 video calls a week",
             "Community chat",
             "All materials",
-          ]} 
+          ]}
+          extraItems={[
+            "febje srfi ueufnf eeafh ebnaogh aedujie.",
+            "febje srfi ebnaogh aedujie.",
+            "febje srfi ueufnf eeafh fgjeim."
+          ]}
         />
 
         <CourseCard 
@@ -34,7 +44,12 @@ export default function Course() {
             "How to read and interpret birth charts",
             "Understanding planetary transits and their effects",
             "Using astrology for personal growth and relationships",
-          ]} 
+          ]}
+          extraItems={[
+            "febje srfi ueufnf eeafh ebnaogh aedujie.",
+            "febje srfi ebnaogh aedujie.",
+            "febje srfi ueufnf eeafh fgjeim."
+          ]}
         />
 
         <CourseCard 
@@ -44,7 +59,12 @@ export default function Course() {
             "Easy-to-follow lessons for beginners",
             "Practical exercises to apply astrology in daily life",
             "Exclusive access to a supportive community",
-          ]} 
+          ]}
+          extraItems={[
+            "febje srfi ueufnf eeafh ebnaogh aedujie.",
+            "febje srfi ebnaogh aedujie.",
+            "febje srfi ueufnf eeafh fgjeim."
+          ]}
         />
 
       </div>
