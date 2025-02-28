@@ -2,6 +2,7 @@
 'use client'
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { Button } from "./ui/button/button";
 
 const navs = [
   { id: 1, name: "About", href: "about" },
@@ -38,25 +39,29 @@ export default function Header() {
         </div>
 
         {/* Navigation */}
-        <nav className="absolute left-1/2 transform -translate-x-1/2 hidden md:flex gap-6">
+        {/* <nav className="absolute left-1/2 transform -translate-x-1/2 hidden md:flex gap-6">
           {navs.map((nav) => (
             <a key={nav.id} onClick={() => handleScroll(nav.href)} className="hover:text-gray-400 hover:cursor-pointer transition">
               {nav.name}
             </a>
           ))}
-        </nav>
+        </nav> */}
+
+        <Button className="absolute left-1/2 transform -translate-x-1/2 hidden md:flex gap-6">
+          Buy Course
+        </Button>
 
         {/* Langauge Selection */}
         <div className="relative">
 
         {/* Language Button */}
-        <button
-          className="flex items-center gap-2 px-4 py-2 bg-gray-700 rounded-lg hover:bg-gray-600 transition"
+        <Button
+          className="flex items-center"
           onClick={() => setDropdownOpen(!dropdownOpen)}
         >
           {languages.find((lang) => lang.code === selectedLanguage)?.label}
           <ChevronDown className="w-5 h-5" />
-        </button>
+        </Button>
 
         {/* Dropdown Menu */}
         {dropdownOpen && (

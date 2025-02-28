@@ -10,7 +10,7 @@ import Hero from "./components/hero";
 export default function Page() {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <About />
 
       {/* <Hero /> */}
