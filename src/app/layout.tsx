@@ -1,6 +1,8 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Raleway } from "next/font/google";
 import "./globals.css";
+import I18nProvider from "../app/components/I18nProvider";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -33,7 +35,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <I18nProvider>{children}</I18nProvider>
       </body>
     </html>
   );

@@ -1,18 +1,20 @@
 
 'use client'
-import { useState } from "react";
+
+import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { ChevronDown } from "lucide-react";
 import { Button } from "./ui/button/button";
 
-const navs = [
-  { id: 1, name: "About", href: "about" },
-  { id: 2, name: "Course", href: "course" },
-  { id: 3, name: "Contact", href: "contact" },
-];
+// const navs = [
+//   { id: 1, name: "About", href: "about" },
+//   { id: 2, name: "Course", href: "course" },
+//   { id: 3, name: "Contact", href: "contact" },
+// ];
 
 const languages = [
   { code: 'en', label: 'English'},
-  { code: 'rs', label: 'Russian'}
+  { code: 'ru', label: 'Russian'}
 ]
 
 const handleScroll = (id: string) => {
@@ -25,9 +27,19 @@ const handleScroll = (id: string) => {
 };
 
 export default function Header() {
-
-  const [selectedLanguage, setSelectedLanguage] = useState('en');
+  const { t, i18n } = useTranslation();
   const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const changeLanguage = (language: string) => {
+    i18n.changeLanguage(language);
+    localStorage.setItem("language", language);
+    setDropdownOpen(false);
+  }
+
+  useEffect(() => {
+    const savedLang = localStorage.getItem("language") || "en";
+    i18n.changeLanguage(savedLang);
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 w-full bg-gray-800 text-white py-4 shadow-md z-50">
@@ -48,7 +60,7 @@ export default function Header() {
         </nav> */}
 
         <Button className="absolute left-1/2 transform -translate-x-1/2 hidden md:flex gap-6">
-          Buy Course
+          {t("buttons.buy_course")}
         </Button>
 
         {/* Langauge Selection */}
@@ -59,7 +71,7 @@ export default function Header() {
           className="flex items-center"
           onClick={() => setDropdownOpen(!dropdownOpen)}
         >
-          {languages.find((lang) => lang.code === selectedLanguage)?.label}
+          {languages.find((lang) => lang.code === i18n.language)?.label}
           <ChevronDown className="w-5 h-5" />
         </Button>
 
@@ -70,7 +82,7 @@ export default function Header() {
               <button
                 key={lang.code}
                 onClick={() => {
-                  setSelectedLanguage(lang.code);
+                  changeLanguage(lang.code);
                   setDropdownOpen(false);
                 }}
                 className="block w-full px-4 py-2 text-left hover:bg-gray-600 hover:rounded-lg"
