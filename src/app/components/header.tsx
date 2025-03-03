@@ -17,14 +17,14 @@ const languages = [
   { code: 'ru', label: 'Russian'}
 ]
 
-const handleScroll = (id: string) => {
-  const element = document.getElementById(id);
-  if (element) {
-    const offset = 80;
-    const elementPosition = element.getBoundingClientRect().top + window.scrollY - offset;
-    window.scrollTo({ top: elementPosition, behavior: "smooth" });
-  }
-};
+// const handleScroll = (id: string) => {
+//   const element = document.getElementById(id);
+//   if (element) {
+//     const offset = 80;
+//     const elementPosition = element.getBoundingClientRect().top + window.scrollY - offset;
+//     window.scrollTo({ top: elementPosition, behavior: "smooth" });
+//   }
+// };
 
 export default function Header() {
   const { t, i18n } = useTranslation();
