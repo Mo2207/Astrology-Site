@@ -1,17 +1,18 @@
 
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="flex items-center h-[100vh] pt-[7rem] pb-10 bg-white text-gray-900">
       <div className="w-[80%] mx-auto flex flex-col md:flex-row items-center gap-12">
 
         {/* Left Side - Description */}
         <div className="w-full md:w-1/2 flex flex-col text-center md:text-left">
-          <h2 className="text-3xl font-semibold mb-4 flex justify-center">About</h2>
-          <p className="text-lg mb-6">
-            Maria is a passionate and experienced astrologer dedicated to helping people unlock their potential and navigate life’s challenges through the wisdom of the cosmos. With years of experience in astrology, she specializes in natal charts, predictive astrology, relationship compatibility, and career guidance. Blending ancient knowledge with modern insights, Maria empowers clients to understand their strengths, overcome obstacles, and align with their true path. Whether you’re seeking clarity, transformation, or deeper self-awareness, she offers personalized guidance to illuminate your journey.
-          </p>
+          <h2 className="text-3xl font-semibold mb-4 flex justify-center">{t("about.h2")}</h2>
+          <p className="text-lg mb-6">{t("about.p")}</p>
         </div>
 
         {/* Right Side - Image */}
