@@ -7,8 +7,8 @@ import Image from "next/image";
 
 interface CardProps {
   title: string;
-  items: string[];
-  extraItems: string[] 
+  items: {};
+  extraItems:{} 
 }
 
 export default function CourseCard({ title, items, extraItems }: CardProps) {
