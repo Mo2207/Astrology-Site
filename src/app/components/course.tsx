@@ -16,9 +16,9 @@ export default function Course() {
             "For a busy mother",
           ]} 
           extraItems={[
-            "febje srfi ueufnf eeafh ebnaogh aedujie.",
-            "febje srfi ebnaogh aedujie.",
-            "febje srfi ueufnf eeafh fgjeim."
+            "If you're feeling stuck or unsure about your future, this course provides guidance and clarity.",
+            "Designed for individuals who are looking for personal growth and self-awareness.",
+            "Perfect for those who want to improve relationships and create deeper connections in life."
           ]}
         />
 
@@ -31,10 +31,11 @@ export default function Course() {
             "All materials",
           ]}
           extraItems={[
-            "febje srfi ueufnf eeafh ebnaogh aedujie.",
-            "febje srfi ebnaogh aedujie.",
-            "febje srfi ueufnf eeafh fgjeim."
+            "Each lesson is structured to provide both theoretical knowledge and practical applications.",
+            "Weekly video calls allow for personalized guidance and Q&A sessions with the instructor.",
+            "The community chat lets you connect with like-minded individuals and get additional support."
           ]}
+
         />
 
         <CourseCard 
@@ -46,9 +47,9 @@ export default function Course() {
             "Using astrology for personal growth and relationships",
           ]}
           extraItems={[
-            "febje srfi ueufnf eeafh ebnaogh aedujie.",
-            "febje srfi ebnaogh aedujie.",
-            "febje srfi ueufnf eeafh fgjeim."
+            "You'll gain a deep understanding of astrology and how it impacts your life.",
+            "Learn to analyze your birth chart to uncover personal strengths and challenges.",
+            "Discover how planetary movements influence emotions, decisions, and life events."
           ]}
         />
 
@@ -61,9 +62,9 @@ export default function Course() {
             "Exclusive access to a supportive community",
           ]}
           extraItems={[
-            "febje srfi ueufnf eeafh ebnaogh aedujie.",
-            "febje srfi ebnaogh aedujie.",
-            "febje srfi ueufnf eeafh fgjeim."
+            "Led by an expert with years of experience in astrology and life coaching.",
+            "The course is structured to be beginner-friendly, ensuring you grasp every concept with ease.",
+            "Includes real-life case studies and exercises to help you apply astrology in daily decision-making."
           ]}
         />
 
