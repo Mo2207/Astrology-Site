@@ -64,5 +64,25 @@
         "Includes real-life case studies and exercises to help you apply astrology in daily decision-making."
       ]
     }
+  },
+  "contact": {
+    "header": {
+      "h2": "Contact",
+      "p": "Have questions about the course? Get in touch!"
+    },
+    "form": {
+      "name_label": "Name",
+      "name_placeholder": "Enter your name",
+      "email_label": "Email",
+      "email_placeholder": "Enter your email",
+      "message_label": "Message",
+      "message_placeholder": "Enter your message"
+    },
+    "submit": "Send Message",
+    "links": {
+      "facebook": "Facebook",
+      "x": "X",
+      "instagram": "Instagram"
+    }
   }
 }
