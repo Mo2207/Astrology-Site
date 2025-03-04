@@ -2,23 +2,26 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+// import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 
 interface CardProps {
+  id: string;
   title: string;
   items: string[];
-  extraItems:string[] 
+  extraItems: string[];
+  expandedCardId: string | null;
+  setExpandedCardId: (id: string | null) => void;
 }
 
-export default function CourseCard({ title, items, extraItems }: CardProps) {
-
-  const [isExpanded, setIsExpanded] = useState(false);
+export default function CourseCard({ id, title, items, extraItems, expandedCardId, setExpandedCardId }: CardProps) {
+  const isExpanded = expandedCardId === id; // Check if this card is expanded
 
   return (
       <motion.div 
-        className="relative flex flex-col w-full p-6 rounded-lg bg-gray-100 text-gray-900 overflow-hidden cursor-pointer gap-12"
-        onClick={() => setIsExpanded(!isExpanded)}
+        id={id}
+        className="course-card relative flex flex-col w-full p-6 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-900 overflow-hidden cursor-pointer gap-12"
+        onClick={() => setExpandedCardId(isExpanded ? null : id)} // Toggle expansion
         animate={{ minHeight: isExpanded ? "auto" : "35vh" }}
       >
 
@@ -49,7 +52,7 @@ export default function CourseCard({ title, items, extraItems }: CardProps) {
                 width={400}
                 height={300}
                 alt="random image"
-                className="border rounded-lg object-cover h-full w-full"
+                className="border-0 rounded-lg object-cover h-full w-full"
               />
             </div>
 
@@ -62,6 +65,6 @@ export default function CourseCard({ title, items, extraItems }: CardProps) {
           </motion.div>
         )}
 
-    </motion.div>
+      </motion.div>
   )
 }
