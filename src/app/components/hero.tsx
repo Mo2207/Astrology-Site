@@ -1,13 +1,16 @@
-import { Button } from "./ui/button/button";
+
+// import { Button } from "./ui/button/button";
+import { useTranslation } from "react-i18next";
+
 
 export default function Hero() {
+  const { t } = useTranslation();
+
   return (
-    <section id="hero" className="pt-[15rem] bg-[#dddddd] text-gray-900 flex justify-center">
+    <section id="hero" className="pt-[15rem] pb-[10rem] bg-[#FFFFFF] text-gray-900 flex justify-center">
 
       <div className="flex flex-col items-center w-[60%]">
-        <h1 className="font-light text-6xl">Intensive Course <br /><span className="block text-center">{"Resource"}</span></h1>
-        <p className="pt-8">Gain insights, overcome challenges, and create the life you desire with our intensive course.</p>
-        <Button>Buy Course</Button>
+        <p className="font-light text-3xl text-center">{t("hero.p")}</p>
       </div>
 
     </section>

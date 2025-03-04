@@ -7,17 +7,15 @@ import Header from "./components/header";
 import About from "./components/about";
 import Contact from "./components/contact";
 import Course from "./components/course";
-// import Hero from "./components/hero";
+import Hero from "./components/hero";
 
 export default function Page() {
   return (
     <div>
       <Header />
-      <About />
-
-      {/* <Hero /> */}
+      <Hero />
       <Course />
-      {/* <Zodiac /> */}
+      <About />
       <Contact />
       <Footer />
     </div>
