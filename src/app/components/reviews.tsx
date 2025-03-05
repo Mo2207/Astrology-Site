@@ -9,7 +9,7 @@ export default function Reviews() {
   const reviews = t("reviews.list", { returnObjects: true }) as Record<string, { name: string; review: string }>;
 
   return (
-    <section className="py-12 bg-[#FFFFFF] text-gray-900 h-[32rem]">
+    <section id="reviews" className="py-12 bg-[#FFFFFF] text-gray-900 h-[32rem]">
       <h2 className="text-3xl font-bold text-center mb-6">{t("reviews.title")}</h2>
 
       <div className="relative w-full overflow-x-auto h-[20rem]">

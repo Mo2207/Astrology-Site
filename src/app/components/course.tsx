@@ -16,7 +16,7 @@ export default function Course() {
   const card3ItemsCheckList = t("course_cards.card3.bonus.checklist", { returnObjects: true }) as string[];
   
   return (
-    <section className="flex flex-col items-center gap-12 bg-[#FFFFFF] text-gray-900 py-12">
+    <section id="course" className="flex flex-col items-center gap-12 bg-[#FFFFFF] text-gray-900 py-12">
       
       {/* Card 1 */}
       <div className="h-[32rem] max-w-5xl flex flex-row p-6 rounded-lg border border-black bg-gray-100 hover:bg-gray-200 text-gray-900 overflow-hidden cursor-pointer gap-6">
