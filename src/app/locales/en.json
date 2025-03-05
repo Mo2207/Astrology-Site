@@ -31,7 +31,7 @@
       "old_price": "$75"
     },
     "card2": {
-      "title": "This course is for you if:",
+      "title": "This course is for you if",
       "items": [
         "You feel fatigue, apathy and lack of energy",
         "You're burnt out at work and don't know how to recover",
@@ -54,6 +54,43 @@
           "Checklist : What Gives and What Drains Your Resource",
           "Checklist: Monthly Resource Replenishment Strategy"
         ]
+      }
+    }
+  },
+  "reviews": {
+    "title": "What my students say",
+    "list": {
+      "1": {
+        "name": "Miranda",
+        "review": "This course deepened my understanding of astrology like never before! So insightful."
+      },
+      "2": {
+        "name": "Ava",
+        "review": "I finally understand my birth chart and how it influences my life. Highly recommend!"
+      },
+      "3": {
+        "name": "Alice",
+        "review": "Incredible course! I can now interpret planetary transits with confidence."
+      },
+      "4": {
+        "name": "Allison",
+        "review": "I've always been curious about astrology, and this course made it so easy to learn."
+      },
+      "5": {
+        "name": "Samantha",
+        "review": "The lessons on moon phases and their impact on emotions were truly eye-opening!"
+      },
+      "6": {
+        "name": "Sophia",
+        "review": "This course helped me see astrology as a tool for self-discovery. So empowering!"
+      },
+      "7": {
+        "name": "Chelsea",
+        "review": "I can now read birth charts for my friends! This course exceeded my expectations."
+      },
+      "8": {
+        "name": "Liam",
+        "review": "I never realized how much astrology could reveal about relationships. Fascinating!"
       }
     }
   },

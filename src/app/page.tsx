@@ -8,6 +8,7 @@ import About from "./components/about";
 import Contact from "./components/contact";
 import Course from "./components/course";
 import Hero from "./components/hero";
+import Reviews from "./components/reviews";
 
 export default function Page() {
   return (
@@ -15,6 +16,7 @@ export default function Page() {
       <Header />
       <Hero />
       <Course />
+      <Reviews />
       <About />
       <Contact />
       <Footer />
