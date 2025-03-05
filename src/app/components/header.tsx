@@ -6,25 +6,25 @@ import { useTranslation } from "react-i18next";
 import { ChevronDown } from "lucide-react";
 import { Button } from "./ui/button/button";
 
-// const navs = [
-//   { id: 1, name: "About", href: "about" },
-//   { id: 2, name: "Course", href: "course" },
-//   { id: 3, name: "Contact", href: "contact" },
-// ];
+const navs = [
+  { id: 1, name: "About Maria", href: "about" },
+  { id: 2, name: "Course", href: "course" },
+  { id: 3, name: "Contact", href: "contact" },
+];
 
 const languages = [
   { code: 'en', label: 'English'},
   { code: 'ru', label: 'Russian'}
 ]
 
-// const handleScroll = (id: string) => {
-//   const element = document.getElementById(id);
-//   if (element) {
-//     const offset = 80;
-//     const elementPosition = element.getBoundingClientRect().top + window.scrollY - offset;
-//     window.scrollTo({ top: elementPosition, behavior: "smooth" });
-//   }
-// };
+const handleScroll = (id: string) => {
+  const element = document.getElementById(id);
+  if (element) {
+    const offset = 80;
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top: elementPosition, behavior: "smooth" });
+  }
+};
 
 export default function Header() {
   const { t, i18n } = useTranslation();
@@ -51,17 +51,17 @@ export default function Header() {
         </div>
 
         {/* Navigation */}
-        {/* <nav className="absolute left-1/2 transform -translate-x-1/2 hidden md:flex gap-6">
+        <nav className="absolute left-1/2 transform -translate-x-1/2 hidden md:flex gap-6">
           {navs.map((nav) => (
             <a key={nav.id} onClick={() => handleScroll(nav.href)} className="hover:text-gray-400 hover:cursor-pointer transition">
               {nav.name}
             </a>
           ))}
-        </nav> */}
+        </nav>
 
-        <Button className="absolute left-1/2 transform -translate-x-1/2 hidden md:flex gap-6">
+        {/* <Button className="absolute left-1/2 transform -translate-x-1/2 hidden md:flex gap-6">
           {t("buttons.buy_course")}
-        </Button>
+        </Button> */}
 
         {/* Langauge Selection */}
         <div className="relative">
