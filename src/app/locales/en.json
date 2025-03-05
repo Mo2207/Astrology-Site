@@ -4,7 +4,9 @@
     "buy_course": "Buy Course"
   },
   "hero": {
-    "p": "Online intensive course by numerologist and women's mentor Maria Kovalenko"
+    "h1": "Online intensive course by numerologist and women's mentor Maria Kovalenko",
+    "Button": "Start Course",
+    "p": "Access for\n2 months"
   },
   "about": {
     "h2": "About",
