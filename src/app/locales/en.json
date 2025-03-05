@@ -1,7 +1,8 @@
 
 {
   "buttons": {
-    "buy_course": "Buy Course"
+    "buy_course": "Buy Course",
+    "gain_access": "Gain Access"
   },
   "navs": {
     "1": {"name": "About Maria"},
@@ -19,18 +20,15 @@
   },
   "course_cards": {
     "card1": {
-      "title": "Who is this course for?",
+      "title": "Out of love for yourself",
       "items": [
-        "For people who would like to improve their life",
-        "Those who are ready to start a new chapter in life",
-        "Those who have a problem with a partner",
-        "For a busy mother"
+        "5 video lessons for creating your own life strategy in the resource",
+        "Eliminate weakness and apathy with a unique, action-based strategy for lasting energy and resilience.",
+        "Community chat & all materials",
+        "After registration you will get a bonus mood-meditation for the day"
       ],
-      "extraItems": [
-        "If you're feeling stuck or unsure about your future, this course provides guidance and clarity.",
-        "Designed for individuals who are looking for personal growth and self-awareness.",
-        "Perfect for those who want to improve relationships and create deeper connections in life."
-      ]
+      "sale_price": "Only $15",
+      "old_price": "$75"
     },
     "card2": {
       "title": "What does the course include?",

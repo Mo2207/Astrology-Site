@@ -7,7 +7,7 @@ export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section id="hero" className="pt-[15rem] pb-[15rem] bg-[#FFFFFF] text-gray-900 flex justify-center">
+    <section id="hero" className="pt-[15rem] pb-[20rem] bg-[#FFFFFF] text-gray-900 flex justify-center">
 
       <div className="relative flex flex-col items-center w-[50%]">
         <h1 className="font-light text-3xl text-center whitespace-pre-line">{t("hero.h1")}</h1>
