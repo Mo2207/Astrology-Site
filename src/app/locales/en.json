@@ -31,46 +31,31 @@
       "old_price": "$75"
     },
     "card2": {
-      "title": "What does the course include?",
+      "title": "This course is for you if:",
       "items": [
-        "10 video lessons",
-        "2 video calls a week",
-        "Community chat",
-        "All materials"
-      ],
-      "extraItems": [
-        "Each lesson is structured to provide both theoretical knowledge and practical applications.",
-        "Weekly video calls allow for personalized guidance and Q&A sessions with the instructor.",
-        "The community chat lets you connect with like-minded individuals and get additional support."
+        "You feel fatigue, apathy and lack of energy",
+        "You're burnt out at work and don't know how to recover",
+        "You are confused and do not understand what you want",
+        "You are confused and do not understand what you want",
+        "You want to regain drive, joy and interest in life",
+        "You're ready to stop procrastinating and start acting"
       ]
     },
     "card3": {
-      "title": "What will you learn?",
+      "title": "Intensive Program",
       "items": [
-        "The basics of astrology and zodiac signs",
-        "How to read and interpret birth charts",
-        "Understanding planetary transits and their effects",
-        "Using astrology for personal growth and relationships"
+        "Access to all materials for 2 months",
+        "Private chat for communication and support",
+        "Mastermind with live breakdowns in real time.",
+        "5 video lessons for creating your own life strategy in the resource"
       ],
-      "extraItems": [
-        "You'll gain a deep understanding of astrology and how it impacts your life.",
-        "Learn to analyze your birth chart to uncover personal strengths and challenges.",
-        "Discover how planetary movements influence emotions, decisions, and life events."
-      ]
-    },
-    "card4": {
-      "title": "Why choose this course?",
-      "items": [
-        "Taught by an experienced astrologer",
-        "Easy-to-follow lessons for beginners",
-        "Practical exercises to apply astrology in daily life",
-        "Exclusive access to a supportive community"
-      ],
-      "extraItems": [
-        "Led by an expert with years of experience in astrology and life coaching.",
-        "The course is structured to be beginner-friendly, ensuring you grasp every concept with ease.",
-        "Includes real-life case studies and exercises to help you apply astrology in daily decision-making."
-      ]
+      "bonus": {
+        "title": "Bonus",
+        "checklist": [
+          "Checklist : What Gives and What Drains Your Resource",
+          "Checklist: Monthly Resource Replenishment Strategy"
+        ]
+      }
     }
   },
   "contact": {
