@@ -3,6 +3,11 @@
   "buttons": {
     "buy_course": "Buy Course"
   },
+  "navs": {
+    "1": {"name": "About Maria"},
+    "2": {"name": "Course"},
+    "3": {"name": "Contact"}
+  },
   "hero": {
     "h1": "Online intensive course by numerologist and\nwomen's mentor Maria Kovalenko",
     "Button": "Start Course",
