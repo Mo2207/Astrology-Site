@@ -60,10 +60,6 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* <Button className="absolute left-1/2 transform -translate-x-1/2 hidden md:flex gap-6">
-          {t("buttons.buy_course")}
-        </Button> */}
-
         {/* Langauge Selection */}
         <div className="relative">
 

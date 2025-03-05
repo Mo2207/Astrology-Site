@@ -6,7 +6,7 @@ export default function Contact() {
   const { t } = useTranslation();
 
   return (
-    <section id="contact" className="pt-[6rem] bg-white text-gray-900">
+    <section id="contact" className="pt-[3rem] bg-white text-gray-900">
       <div className="max-w-4xl mx-auto text-center px-6">
         <h2 className="text-4xl font-bold mb-6">{t("contact.header.h2")}</h2>
         <p className="text-lg font-semibold mb-12">{t("contact.header.p")}</p>
