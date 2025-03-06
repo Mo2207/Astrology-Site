@@ -95,6 +95,36 @@
       }
     }
   },
+  "curriculum": {
+    "title": "Course Curriculum",
+    "list": [
+      {
+        "title": "Day 1",
+        "step1": "The difference between masculine and feminine resources.",
+        "step2": "Understanding that resource is a tangible asset, not something amorphous."
+      },
+      {
+        "title": "Day 2",
+        "step1": "5 steps to harness your resource.",
+        "step2": "Identifying actions that drain versus replenish your resource."
+      },
+      {
+        "title": "Day 3",
+        "step1": "5 steps to harness your resource.",
+        "step2": "Discovering where to find time to replenish your resource."
+      },
+      {
+        "title": "Day 4",
+        "step1": "Exploring the resources of the body and mind.",
+        "step2": "Recognizing resource leaks and how to fix them."
+      },
+      {
+        "title": "Day 5",
+        "step1": "Online mastermind with me, where I will answer all your questions.",
+        "step2": "Action plan, strategy building."
+      }
+    ]
+  },
   "contact": {
     "header": {
       "h2": "Contact",

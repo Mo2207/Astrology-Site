@@ -6,7 +6,8 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import About from "./components/about";
 import Contact from "./components/contact";
-import Course from "./components/course";
+import CourseCards from "./components/courseCards";
+import CourseCurriculum from "./components/courseCurriculum";
 import Hero from "./components/hero";
 import Reviews from "./components/reviews";
 
@@ -15,7 +16,8 @@ export default function Page() {
     <div>
       <Header />
       <Hero />
-      <Course />
+      <CourseCards />
+      <CourseCurriculum />
       <Reviews />
       <About />
       <Contact />

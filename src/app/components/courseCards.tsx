@@ -6,7 +6,7 @@ import { Button } from "./ui/button/button";
 import { useTranslation } from "react-i18next";
 import flowerIcon from "../../../public/assets/img/course/icons/flower.svg";
 
-export default function Course() {
+export default function CourseCards() {
   const { t } = useTranslation();
 
   // translations for all card items

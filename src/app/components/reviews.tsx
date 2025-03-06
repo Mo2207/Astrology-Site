@@ -13,7 +13,7 @@ export default function Reviews() {
       <h2 className="text-3xl font-bold text-center mb-6">{t("reviews.title")}</h2>
 
       <div className="relative w-full overflow-x-auto h-[20rem]">
-        <div className="flex justify-center items-center space-x-6 px-6 snap-x snap-mandatory overflow-x-scroll scrollbar-hide h-full">
+        <div className="flex items-center space-x-6 px-6 snap-x snap-mandatory overflow-x-scroll scrollbar-hide h-full">
           {Object.keys(reviews).map((key) => (
             <div
               key={key}
