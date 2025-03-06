@@ -17,8 +17,35 @@
   },
   "about": {
     "h2": "About",
-    "p": "Maria is a passionate and experienced astrologer dedicated to helping people unlock their potential and navigate life’s challenges through the wisdom of the cosmos. With years of experience in astrology, she specializes in natal charts, predictive astrology, relationship compatibility, and career guidance. Blending ancient knowledge with modern insights, Maria empowers clients to understand their strengths, overcome obstacles, and align with their true path. Whether you’re seeking clarity, transformation, or deeper self-awareness, she offers personalized guidance to illuminate your journey."
+    "description": [
+      "Maria Kovalenko is Practicing Vedic numerologist, astrologer, psychologist, and women's mentor.",
+      "Mother of three, happily married for 16 years",
+      "Received a blessing from a spiritual mentor to provide counseling and share knowledge",
+      "Conducted over 500 consultations",
+      "Author and organizer of women's circles and gatherings",
+      "Guest speaker at international festivals and women's events",
+      "Over 10 years of experience in supporting women's well-being"
+    ]
   },
+  "results": {
+    "title": "Your results after the \"Resource\" Intensive",
+    "list": [
+      "You will stop snapping at your husband and children.",
+      "You will be able to dedicate time to yourself without sacrificing your family.",
+      "You will realize that your energy is directly linked to your income level.",
+      "You will begin attracting more opportunities and increasing your income without burnout.",
+      "You will stop earning at the cost of your health and nerves",
+      "You will learn to set personal boundaries effectively—without guilt.",
+      "You will stop giving all your energy to others and neglecting yourself.",
+      "You will learn to set personal boundaries effectively—without guilt.",
+      "You will understand where your energy goes and stop draining your strength.",
+      "You will stop putting off your dreams and start taking action.",
+      "You will reduce stress and anxiety using simple techniques.",
+      "You will eliminate accumulated fatigue and regain a sense of ease.",
+      "You will boost your overall energy levels and overcome chronic fatigue."
+    ]
+  },
+
   "price": {
     "sale_price": "Only $15",
     "old_price": "$75"

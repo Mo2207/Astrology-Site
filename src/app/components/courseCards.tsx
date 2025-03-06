@@ -18,7 +18,7 @@ export default function CourseCards() {
     <section id="course" className="flex flex-col items-center gap-12 bg-[#FFFFFF] text-gray-900 py-12">
       
       {/* Card 1 */}
-      <div className="h-[32rem] max-w-5xl flex flex-row p-6 rounded-lg border border-black bg-gray-100 hover:bg-gray-200 text-gray-900 overflow-hidden cursor-pointer gap-6">
+      <div className="h-[32rem] max-w-5xl flex flex-row p-6 rounded-lg bg-gray-100 text-gray-900 overflow-hidden gap-6">
         {/* LEFT SIDE */}
         {/* image */}
         <div className="w-1/2">
@@ -58,7 +58,7 @@ export default function CourseCards() {
       </div>
 
       {/* Card 2 */}
-      <div className="h-[32rem] max-w-5xl flex flex-row p-6 rounded-lg border border-black bg-gray-100 hover:bg-gray-200 text-gray-900 overflow-hidden cursor-pointer gap-6">
+      <div className="h-[32rem] max-w-5xl flex flex-row p-6 rounded-lg bg-gray-100 text-gray-900 overflow-hidden gap-6">
         {/* LEFT SIDE */}
         {/* main text */}
         <div className="w-1/2 flex flex-col justify-center">
@@ -90,7 +90,7 @@ export default function CourseCards() {
       </div>
 
       {/* card 3 */}
-      <div className="h-[32rem] max-w-5xl flex flex-row p-6 rounded-lg border border-black bg-gray-100 hover:bg-gray-200 text-gray-900 overflow-hidden cursor-pointer gap-6">
+      <div className="h-[32rem] max-w-5xl flex flex-row p-6 rounded-lg bg-gray-100 text-gray-900 overflow-hidden gap-6">
         {/* LEFT SIDE */}
         {/* image */}
         <div className="w-1/2">

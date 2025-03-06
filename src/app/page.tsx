@@ -11,6 +11,7 @@ import CourseCurriculum from "./components/courseCurriculum";
 import Bonus from "./components/bonus";
 import Hero from "./components/hero";
 import Reviews from "./components/reviews";
+import Results from "./components/results";
 
 export default function Page() {
   return (
@@ -22,6 +23,7 @@ export default function Page() {
       <Bonus />
       <Reviews />
       <About />
+      <Results />
       <Contact />
       <Footer />
     </div>
