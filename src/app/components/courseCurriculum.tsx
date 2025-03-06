@@ -11,8 +11,8 @@ export default function CourseCurriculum() {
   const curriculum = t("curriculum.list", { returnObjects: true }) as Record<string, { title: string; step1: string; step2: string }>;
 
   return (
-    <section id="reviews" className="py-12 bg-[#FFFFFF] text-gray-900 h-[32rem]">
-      <h2 className="text-3xl font-bold text-center mb-6">{t("curriculum.title")}</h2>
+    <section id="reviews" className="pt-12 bg-[#FFFFFF] text-gray-900 h-[25rem]">
+      <h2 className="text-3xl font-bold text-center">{t("curriculum.title")}</h2>
 
       <div className="relative w-full overflow-x-auto snap-start h-[20rem]">
         <div className="flex items-center space-x-6 px-6 snap-x snap-mandatory overflow-x-scroll scrollbar-hide h-full">

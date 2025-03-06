@@ -13,7 +13,6 @@ export default function CourseCards() {
   const card1Items= t("course_cards.card1.items", { returnObjects: true }) as string[];
   const card2Items= t("course_cards.card2.items", { returnObjects: true }) as string[];
   const card3Items= t("course_cards.card3.items", { returnObjects: true }) as string[];
-  const card3ItemsCheckList = t("course_cards.card3.bonus.checklist", { returnObjects: true }) as string[];
   
   return (
     <section id="course" className="flex flex-col items-center gap-12 bg-[#FFFFFF] text-gray-900 py-12">
@@ -50,8 +49,8 @@ export default function CourseCards() {
           {/* pricing section */}
           <div className="flex flex-col items-start">
           <p className="mt-4">
-            <span className="font-bold">{t("course_cards.card1.sale_price")}</span> 
-            <del className="text-gray-500 ml-2">{t("course_cards.card1.old_price")}</del>
+            <span className="font-bold">{t("price.sale_price")}</span> 
+            <del className="text-gray-500 ml-2">{t("price.old_price")}</del>
           </p>
             <Button className="mt-3">{t("buttons.gain_access")}</Button>
           </div>
@@ -119,20 +118,11 @@ export default function CourseCards() {
               </p>
             ))}
           </div>
-          {/* bonus section */}
-          <div className="flex flex-col items-start mt-4">
-            <h2 className="font-bold">{t("course_cards.card3.bonus.title")}</h2>
-            <div className="text-left font-medium text-md text-gray-600">
-              {card3ItemsCheckList.map((item, index) => (
-                <p key={index}>{item}</p>
-              ))}
-            </div>
-          </div>
           {/* pricing section */}
           <div className="flex flex-col items-start">
           <p className="mt-4">
-            <span className="font-bold">{t("course_cards.card1.sale_price")}</span> 
-            <del className="text-gray-500 ml-2">{t("course_cards.card1.old_price")}</del>
+            <span className="font-bold">{t("price.sale_price")}</span> 
+            <del className="text-gray-500 ml-2">{t("price.old_price")}</del>
           </p>
             <Button className="mt-3">{t("buttons.gain_access")}</Button>
           </div>

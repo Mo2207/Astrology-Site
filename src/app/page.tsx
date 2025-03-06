@@ -8,6 +8,7 @@ import About from "./components/about";
 import Contact from "./components/contact";
 import CourseCards from "./components/courseCards";
 import CourseCurriculum from "./components/courseCurriculum";
+import Bonus from "./components/bonus";
 import Hero from "./components/hero";
 import Reviews from "./components/reviews";
 
@@ -18,6 +19,7 @@ export default function Page() {
       <Hero />
       <CourseCards />
       <CourseCurriculum />
+      <Bonus />
       <Reviews />
       <About />
       <Contact />

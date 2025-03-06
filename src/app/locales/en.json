@@ -19,6 +19,10 @@
     "h2": "About",
     "p": "Maria is a passionate and experienced astrologer dedicated to helping people unlock their potential and navigate life’s challenges through the wisdom of the cosmos. With years of experience in astrology, she specializes in natal charts, predictive astrology, relationship compatibility, and career guidance. Blending ancient knowledge with modern insights, Maria empowers clients to understand their strengths, overcome obstacles, and align with their true path. Whether you’re seeking clarity, transformation, or deeper self-awareness, she offers personalized guidance to illuminate your journey."
   },
+  "price": {
+    "sale_price": "Only $15",
+    "old_price": "$75"
+  },
   "course_cards": {
     "card1": {
       "title": "Out of love for yourself",
@@ -27,9 +31,7 @@
         "Eliminate weakness and apathy with a unique, action-based strategy for lasting energy and resilience.",
         "Community chat & all materials",
         "After registration you will get a bonus mood-meditation for the day"
-      ],
-      "sale_price": "Only $15",
-      "old_price": "$75"
+      ]
     },
     "card2": {
       "title": "This course is for you if",
@@ -48,15 +50,45 @@
         "Private chat for communication and support",
         "Mastermind with live breakdowns in real time.",
         "5 video lessons for creating your own life strategy in the resource"
-      ],
-      "bonus": {
-        "title": "Bonus",
-        "checklist": [
-          "Checklist : What Gives and What Drains Your Resource",
-          "Checklist: Monthly Resource Replenishment Strategy"
-        ]
-      }
+      ]
     }
+  },
+  "curriculum": {
+    "title": "Course Curriculum",
+    "list": [
+      {
+        "title": "Day 1",
+        "step1": "The difference between masculine and feminine resources.",
+        "step2": "Understanding that resource is a tangible asset, not something amorphous."
+      },
+      {
+        "title": "Day 2",
+        "step1": "5 steps to harness your resource.",
+        "step2": "Identifying actions that drain versus replenish your resource."
+      },
+      {
+        "title": "Day 3",
+        "step1": "5 steps to harness your resource.",
+        "step2": "Discovering where to find time to replenish your resource."
+      },
+      {
+        "title": "Day 4",
+        "step1": "Exploring the resources of the body and mind.",
+        "step2": "Recognizing resource leaks and how to fix them."
+      },
+      {
+        "title": "Day 5",
+        "step1": "Online mastermind with me, where I will answer all your questions.",
+        "step2": "Action plan, strategy building."
+      }
+    ]
+  },
+  "bonus": {
+    "title": "Bonus",
+    "checklist": [
+      "Checklist : What Gives and What Drains Your Resource",
+      "Checklist: Monthly Resource Replenishment Strategy"
+    ]
   },
   "reviews": {
     "title": "What my students say",
@@ -94,36 +126,6 @@
         "review": "I never realized how much astrology could reveal about relationships. Fascinating!"
       }
     }
-  },
-  "curriculum": {
-    "title": "Course Curriculum",
-    "list": [
-      {
-        "title": "Day 1",
-        "step1": "The difference between masculine and feminine resources.",
-        "step2": "Understanding that resource is a tangible asset, not something amorphous."
-      },
-      {
-        "title": "Day 2",
-        "step1": "5 steps to harness your resource.",
-        "step2": "Identifying actions that drain versus replenish your resource."
-      },
-      {
-        "title": "Day 3",
-        "step1": "5 steps to harness your resource.",
-        "step2": "Discovering where to find time to replenish your resource."
-      },
-      {
-        "title": "Day 4",
-        "step1": "Exploring the resources of the body and mind.",
-        "step2": "Recognizing resource leaks and how to fix them."
-      },
-      {
-        "title": "Day 5",
-        "step1": "Online mastermind with me, where I will answer all your questions.",
-        "step2": "Action plan, strategy building."
-      }
-    ]
   },
   "contact": {
     "header": {
