@@ -11,7 +11,7 @@ export default function CourseCurriculum() {
   const curriculum = t("curriculum.list", { returnObjects: true }) as Record<string, { title: string; step1: string; step2: string }>;
 
   return (
-    <section id="reviews" className="pt-12 bg-[#FFFFFF] text-gray-900 h-[25rem]">
+    <section id="curriculum" className="pt-12 bg-[#FFFFFF] text-gray-900 h-[25rem]">
       <h2 className="text-3xl font-bold text-center">{t("curriculum.title")}</h2>
 
       <div className="relative w-full overflow-x-auto snap-start h-[20rem]">
@@ -19,9 +19,9 @@ export default function CourseCurriculum() {
           {Object.keys(curriculum).map((key) => (
             <div
               key={key}
-              className="flex-shrink-0 flex flex-col w-[20rem] h-[12rem] bg-white shadow-md rounded-lg p-6 snap-center border-1 border"
+              className="flex-shrink-0 flex flex-col w-[20rem] h-[14rem] bg-white shadow-md rounded-lg p-6 snap-center border-1 border"
             >
-              <h3 className="text-xl font-semibold flex justify-center items-center">
+              <h3 className="text-xl font-semibold flex justify-center items-center mb-3">
                 <Image
                   src={flowerIcon2}
                   alt="flower svg"
@@ -29,8 +29,8 @@ export default function CourseCurriculum() {
                 />
                 {curriculum[key].title}
               </h3>
-              <p className="text-gray-600 text-center mt-2">{curriculum[key].step1}</p>
-              <p className="text-gray-600 text-center mt-2">{curriculum[key].step2}</p>
+              <p className="text-gray-600 text-center mb-3">{curriculum[key].step1}</p>
+              <p className="text-gray-600 text-center mb-3">{curriculum[key].step2}</p>
             </div>
           ))}
         </div>
