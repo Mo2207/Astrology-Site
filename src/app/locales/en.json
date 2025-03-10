@@ -13,7 +13,8 @@
   "hero": {
     "h1": "Online intensive course by numerologist and\nwomen's mentor Maria Kovalenko",
     "Button": "Start Course",
-    "p": "Access for\n2 months"
+    "p": "Access for\n2 months",
+    "p2": "Start April 7"
   },
   "about": {
     "h2": "About",
@@ -44,6 +45,28 @@
       "You will eliminate accumulated fatigue and regain a sense of ease.",
       "You will boost your overall energy levels and overcome chronic fatigue."
     ]
+  },
+  "differences": {
+    "resource": {
+      "title": "Resource",
+      "list": [
+        "Systematic and structured information",
+        "Relevant and effective methods proven by experience",
+        "Lots of practice that will help you get real results from the first days of the intensive",
+        "Strong methodology built on 10 years of working with women",
+        "Your results are important to me."
+      ]
+    },
+    "other_courses": {
+      "title": "Other Courses",
+      "list": [
+        "lots of theory, little practice and structure",
+        "do not provide a full understanding of what a resource is and where to get it",
+        "no practical and useful bonuses",
+        "no specific step-by-step action plan",
+        "no successful experience in consulting and knowledge transfer"
+      ]
+    }
   },
   "price": {
     "sale_price": "Only $15",
@@ -120,36 +143,39 @@
     "title": "What my students say",
     "list": {
       "1": {
-        "name": "Miranda",
-        "review": "This course deepened my understanding of astrology like never before! So insightful."
+        "name": "Natalia",
+        "age": "34 years old",
+        "review": "“I came to the intensive course in a state of complete emotional burnout. I had no energy for anything. After just the first lesson, I recognized my mistakes and started taking action. Now, I feel inspired and full of energy—my husband and children hardly recognize me. I’m happy, and I’ve already received a promotion at work.”"
       },
       "2": {
-        "name": "Ava",
-        "review": "I finally understand my birth chart and how it influences my life. Highly recommend!"
+        "name": "Yana",
+        "age": "39 years old",
+        "review": "“Fatigue and apathy had become my normal state over the past few years. I didn’t even notice how I had fallen into this trap. But when I ended up in the hospital, I realized I couldn’t go on like this. I accidentally came across Maria’s intensive course, and it became my lifeline, opening my eyes. Maria explains everything in a very clear way. I finally found the strength to work on my project, and now I am the owner of my own business! But without this resource, I would never have achieved it.”"
       },
       "3": {
-        "name": "Alice",
-        "review": "Incredible course! I can now interpret planetary transits with confidence."
+        "name": "Regina",
+        "age": "45 years old",
+        "review": "“I was on the verge of divorce, and my children were suffering, but I felt completely powerless—I had no motivation to work on my relationship. That’s when I found the \"Resource\" intensive course, and it came at just the right time. I regained my inner strength, and, surprisingly, my relationships improved on their own. It turned out that both my husband and children were struggling because I had no energy to give them—I was simply drained. Now, I follow the plan Maria helped me create, and I have plenty of energy for myself and my loved ones!”"
       },
       "4": {
-        "name": "Allison",
-        "review": "I've always been curious about astrology, and this course made it so easy to learn."
+        "name": "Serafima",
+        "age": "39 years old",
+        "review": "“I have 3 children and have been on maternity leave for the past 10 years. I was exhausted and drained because household chores, home, and family took up all my time. I didn’t even dare to dream about having my own business. I asked my husband for help, but he often refused. Thank God, I came across Maria’s intensive course. I still don’t understand why it’s so affordable because the information inside is worth a fortune! I finally figured out how to manage my energy, and now I don’t wait for a miracle—I create it myself. My children are no longer an obstacle; I’ve learned how to manage my time in a way that keeps me energized.”"
       },
       "5": {
-        "name": "Samantha",
-        "review": "The lessons on moon phases and their impact on emotions were truly eye-opening!"
+        "name": "Varia",
+        "age": "37 years old",
+        "review": "“I felt lonely and unwanted. After the intensive course, I realized why—no one was interested in talking to me because all I did was complain about life. During the course, I understood that this was a dead-end road and decided to change my life according to a plan. Now, I have many new friends and have found a new job!”"
       },
       "6": {
-        "name": "Sophia",
-        "review": "This course helped me see astrology as a tool for self-discovery. So empowering!"
+        "name": "Yuliia",
+        "age": "33 years old",
+        "review": "“After the intensive course, my life will never be the same! I used to see happy women on social media and couldn’t understand how they managed it. Now, I’m one of them—I’ve created my own energy management plan and follow it (though sometimes with small detours, but I stay on track). Now, I replenish my energy in time, and I absolutely love it!”"
       },
       "7": {
-        "name": "Chelsea",
-        "review": "I can now read birth charts for my friends! This course exceeded my expectations."
-      },
-      "8": {
-        "name": "Liam",
-        "review": "I never realized how much astrology could reveal about relationships. Fascinating!"
+        "name": "Mila",
+        "age": "37 years old",
+        "review": "“I felt that something needed to change in my life, but I had no idea what or how. I bought the intensive course, and I have no regrets—my perspective expanded, I changed my habits, and everything fell into place. I met the man of my dreams, and now we’re planning our wedding!”"
       }
     }
   },

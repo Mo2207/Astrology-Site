@@ -2,7 +2,7 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import flowerIcon2 from "../../../public/assets/img/course/icons/flower2.svg";
+import flower from "../../../public/assets/img/curriculum/icons/flower.svg";
 import Image from "next/image";
 
 export default function CourseCurriculum() {
@@ -19,11 +19,11 @@ export default function CourseCurriculum() {
           {Object.keys(curriculum).map((key) => (
             <div
               key={key}
-              className="flex-shrink-0 flex flex-col w-[20rem] h-[14rem] bg-white shadow-md rounded-lg p-6 snap-center border-1 border"
+              className="flex-shrink-0 flex flex-col w-[20rem] h-[14rem] bg-[#faf5f3] shadow-md rounded-xl p-6 snap-center border border-[#AD6049]"
             >
-              <h3 className="text-xl font-semibold flex justify-center items-center mb-3">
+              <h3 className="text-xl text-[#AD6049] font-semibold flex justify-center items-center mb-3">
                 <Image
-                  src={flowerIcon2}
+                  src={flower}
                   alt="flower svg"
                   className="w-[2rem] h-[2rem] mr-2"
                 />
