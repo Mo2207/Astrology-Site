@@ -32,7 +32,7 @@ export default function CourseCards() {
         </div>
         {/* RIGHT SIDE */}
         {/* main text */}
-        <div className="w-1/2 flex flex-col justify-center">
+        <div className="w-1/2  p-4 flex flex-col justify-center">
           <h2 className="font-bold pb-6 text-center text-2xl">{t("course_cards.card1.title")}</h2>
           <div className="text-left font-medium text-lg text-gray-600 space-y-3">
             {card1Items.map((item, index) => (
@@ -61,7 +61,7 @@ export default function CourseCards() {
       <div className="h-[32rem] w-[90vw] flex flex-row p-6 rounded-lg bg-[#faf5f3] border border-[#AD6049] text-gray-900 overflow-hidden gap-6">
         {/* LEFT SIDE */}
         {/* main text */}
-        <div className="w-1/2 flex flex-col justify-center">
+        <div className="w-1/2  p-4 flex flex-col justify-center">
           <h2 className="font-bold pb-6 text-center text-2xl">{t("course_cards.card2.title")}</h2>
           <div className="text-left font-medium text-lg text-gray-600 space-y-3">
             {card2Items.map((item, index) => (

@@ -12,6 +12,7 @@ import Bonus from "./components/bonus";
 import Hero from "./components/hero";
 import Reviews from "./components/reviews";
 import Results from "./components/results";
+import CourseDifference from "./components/courseDifference";
 
 export default function Page() {
   return (
@@ -24,6 +25,7 @@ export default function Page() {
       <Reviews />
       <About />
       <Results />
+      <CourseDifference />
       <Contact />
       <Footer />
     </div>

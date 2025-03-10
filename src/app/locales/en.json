@@ -179,6 +179,29 @@
       }
     }
   },
+  "difference": {
+    "title": "What makes the Resource intensive different from others:",
+    "left": {
+      "title": "Resource",
+      "list": [
+        "Systematic and structured information.",
+        "Relevant and effective methods proven by experience.",
+        "Lots of practice that will help you get real results from the first days of the intensive.",
+        "Strong methodology built on 10 years of working with women.",
+        "Your results are important to me."
+      ]
+    },
+    "right": {
+      "title": "Other Courses",
+      "list": [
+        "Lots of theory, little practice and structure",
+        "Do not provide a full understanding of what a resource is and where to get it.",
+        "No practical and useful bonuses.",
+        "No specific step-by-step action plan.",
+        "No successful experience in consulting and knowledge transfer."
+      ]
+    }
+  },
   "contact": {
     "header": {
       "h2": "Contact",
