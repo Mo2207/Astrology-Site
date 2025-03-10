@@ -9,10 +9,10 @@ export default function Reviews() {
   const reviews = t("reviews.list", { returnObjects: true }) as Record<string, { name: string; age: string; review: string }>;
 
   return (
-    <section id="reviews" className="pt-12 bg-[#FFFFFF] text-gray-900 h-[32rem]">
+    <section id="reviews" className="bg-[#FFFFFF] text-gray-900 h-[35rem] pb-10">
       <h2 className="text-3xl font-bold text-center">{t("reviews.title")}</h2>
 
-      <div className="relative w-full overflow-x-auto h-full">
+      <div className="relative w-full overflow-hidden h-full">
         <div className="flex items-left justify-left space-x-6 px-6 pt-8 snap-x snap-mandatory overflow-x-scroll scrollbar-hide h-full">
           {Object.keys(reviews).map((key) => (
             <div

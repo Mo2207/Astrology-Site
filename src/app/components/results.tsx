@@ -12,7 +12,7 @@ export default function Results() {
   const results = t("results.list", {returnObjects: true}) as string[];
 
   return (
-    <section id="results" className="bg-[#F3F4F6] text-gray-900 h-[40rem] flex items-center justify-center">
+    <section id="results" className="bg-[#faf5f3] text-gray-900 h-[40rem] flex items-center justify-center">
       <div className="flex items-center flex-col">
         <h1 className="font-bold text-4xl mb-8">{t("results.title")}</h1>
         <div>
