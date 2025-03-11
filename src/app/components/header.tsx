@@ -6,6 +6,8 @@ import { useTranslation } from "react-i18next";
 import { ChevronDown } from "lucide-react";
 import { Button } from "./ui/button/button";
 import { handleScroll, navs } from "@/lib/utils";
+import logo from "../../../public/assets/img/navigation/icons/main-logo.svg";
+import Image from "next/image";
 
 const languages = [
   { code: 'en', label: 'English'},
@@ -29,12 +31,17 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-gray-800 text-white py-4 shadow-md z-50">
+    <header className="fixed top-0 left-0 w-full bg-[#faf5f3] text-gray-900 py-4 shadow-md z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6">
         
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src="/assets/img/header/logo.svg" alt="Logo" className="w-12 h-12" />
+          <Image
+            src={logo}
+            alt="main logo"
+            width={200}
+            height={200}
+          />
         </div>
 
         {/* Navigation */}

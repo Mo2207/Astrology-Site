@@ -27,7 +27,7 @@ export default function Footer() {
           {/* LEFT SIDE */}
           <Image
             src={logo}
-            alt="flower svg"
+            alt="main logo"
             width={200}
             height={200}
           />
@@ -35,13 +35,13 @@ export default function Footer() {
           <div className="flex flex-row gap-3 pb-4">
           <Image
             src={instagram}
-            alt="flower svg"
+            alt="instagram icon"
             width={50}
             height={50}
           />
           <Image
             src={facebook}
-            alt="flower svg"
+            alt="facebook icon"
             width={50}
             height={50}
           />
