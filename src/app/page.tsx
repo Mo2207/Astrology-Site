@@ -14,6 +14,7 @@ import Reviews from "./components/reviews";
 import Results from "./components/results";
 import CourseDifference from "./components/courseDifference";
 import CourseWorks from "./components/courseWorks";
+import Price from "./components/price";
 
 export default function Page() {
   return (
@@ -28,6 +29,7 @@ export default function Page() {
       <Results />
       <CourseDifference />
       <CourseWorks />
+      <Price />
       <Contact />
       <Footer />
     </div>
