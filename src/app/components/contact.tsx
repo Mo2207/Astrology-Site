@@ -8,7 +8,7 @@ export default function Contact() {
   const { t } = useTranslation();
 
   return (
-    <section id="contact" className="pt-[3rem] bg-white text-gray-900">
+    <section id="contact" className="pt-[3rem] bg-white text-gray-900 pb-20">
       <div className="flex flex-row justify-center gap-10 w-[90%] mx-auto">
 
         {/* LEFT SIDE */}
