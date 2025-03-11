@@ -1,7 +1,6 @@
 
 "use client"
 
-// import Zodiac from "./components/zodiac";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import About from "./components/about";
@@ -16,6 +15,7 @@ import CourseDifference from "./components/courseDifference";
 import CourseWorks from "./components/courseWorks";
 import Price from "./components/price";
 import Guarantee from "./components/guarantee";
+import Faq from "./components/faq";
 
 export default function Page() {
   return (
@@ -32,6 +32,7 @@ export default function Page() {
       <CourseWorks />
       <Price />
       <Guarantee />
+      <Faq />
       <Contact />
       <Footer />
     </div>

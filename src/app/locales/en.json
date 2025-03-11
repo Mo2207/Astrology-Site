@@ -2,7 +2,8 @@
 {
   "buttons": {
     "buy_course": "Buy Course",
-    "gain_access": "Gain Access"
+    "gain_access": "Gain Access",
+    "messenger": "Reach out"
   },
   "navs": {
     "1": {"name": "About Maria"},
@@ -240,24 +241,41 @@
     "p1": "If you take the intensive course and still have doubts about its effectiveness for you.",
     "p2": "I will refund you the full cost of your training. Just write to the customer service and they will refund your money without any questions."
   },
+  "faq": {
+    "title": "FAQ",
+    "list": [
+      {
+        "question": "How does the intensive course go?",
+        "answer": "The intensive course consists of five video lessons that you can watch at your convenience. Moreover, you will have access to all materials for 2 months. You will have a private chat for communication and support."
+      },
+      {
+        "question": "How much time should be allocated for training?",
+        "answer": "The intensive course consists of five video lessons that you can watch at your convenience."
+      },
+      {
+        "question": "Will there be feedback?",
+        "answer": "The intensive course consists of five video lessons that you can watch at your convenience."
+      },
+      {
+        "question": "What should I do if I don’t have time to complete the intensive course in 5 days?",
+        "answer": "The intensive course consists of five video lessons that you can watch at your convenience."
+      },
+      {
+        "question": "Is the intensive course suitable for me if I have no experience in working with resource states?",
+        "answer": "The intensive course consists of five video lessons that you can watch at your convenience."
+      },
+      {
+        "question": "I have small children and no time at all. Will I be able to get results?",
+        "answer": "The intensive course consists of five video lessons that you can watch at your convenience."
+      },
+      {
+        "question": "How to pay for participation?",
+        "answer": "The intensive course consists of five video lessons that you can watch at your convenience."
+      }
+    ]
+  },
   "contact": {
-    "header": {
-      "h2": "Contact",
-      "p": "Have questions about the course? Get in touch!"
-    },
-    "form": {
-      "name_label": "Name",
-      "name_placeholder": "Enter your name",
-      "email_label": "Email",
-      "email_placeholder": "Enter your email",
-      "message_label": "Message",
-      "message_placeholder": "Enter your message"
-    },
-    "submit": "Send Message",
-    "links": {
-      "facebook": "Facebook",
-      "x": "X",
-      "instagram": "Instagram"
-    }
+    "title": "Still have questions?",
+    "p": "You can contact me via Facebook Messenger."
   }
 }

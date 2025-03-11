@@ -12,7 +12,7 @@ export default function CourseCards() {
   // translations for all card items
   const card1Items= t("course_cards.card1.items", { returnObjects: true }) as string[];
   const card2Items= t("course_cards.card2.items", { returnObjects: true }) as string[];
-  const card3Items= t("course_cards.card3.items", { returnObjects: true }) as string[];
+  // const card3Items= t("course_cards.card3.items", { returnObjects: true }) as string[];
   
   return (
     <section id="course" className="flex flex-col items-center gap-12 bg-[#FFFFFF] text-gray-900 py-12">
