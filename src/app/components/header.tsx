@@ -5,30 +5,15 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { ChevronDown } from "lucide-react";
 import { Button } from "./ui/button/button";
+import { handleScroll, navs } from "@/lib/utils";
 
 const languages = [
   { code: 'en', label: 'English'},
   { code: 'ru', label: 'Russian'}
 ]
 
-const handleScroll = (id: string) => {
-  const element = document.getElementById(id);
-  if (element) {
-    const offset = 80;
-    const elementPosition = element.getBoundingClientRect().top + window.scrollY - offset;
-    window.scrollTo({ top: elementPosition, behavior: "smooth" });
-  }
-};
-
 export default function Header() {
-
   const { t, i18n } = useTranslation();
-  const navs = [
-    { id: 1, name: "About", href: "about" },
-    { id: 2, name: "Course", href: "course" },
-    { id: 3, name: "Reviews", href: "reviews" },
-    { id: 4, name: "Contact", href: "contact" },
-  ];
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
 

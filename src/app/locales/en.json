@@ -6,7 +6,7 @@
     "messenger": "Reach out"
   },
   "navs": {
-    "1": {"name": "About Maria"},
+    "1": {"name": "About Mariya"},
     "2": {"name": "Course"},
     "3": {"name": "Reviews"},
     "4": {"name": "Contact"}
@@ -20,7 +20,7 @@
   "about": {
     "h2": "About",
     "description": [
-      "Maria Kovalenko is Practicing Vedic numerologist, astrologer, psychologist, and women's mentor.",
+      "Mariya Kovalenko is Practicing Vedic numerologist, astrologer, psychologist, and women's mentor.",
       "Mother of three, happily married for 16 years",
       "Received a blessing from a spiritual mentor to provide counseling and share knowledge",
       "Conducted over 500 consultations",
@@ -277,5 +277,13 @@
   "contact": {
     "title": "Still have questions?",
     "p": "You can contact me via Facebook Messenger."
+  },
+  "footer": {
+    "list": [
+      "Powered by The Clicks",
+      "Offer Agreement",
+      "Privacy Policy",
+      "Copyright © 2025"
+    ]
   }
 }
