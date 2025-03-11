@@ -12,8 +12,8 @@ export default function CourseWorks() {
   const cards = t("works.list", { returnObjects: true }) as { title: string; p: string; image: string; }[];
 
   return (
-    <section id="course_works" className="pt-12 pb-12 bg-[#FFFFFF] text-gray-900">
-      <div className="flex justify-center text-3xl font-bold pb-10">
+    <section id="course_works" className="pt-12 pb-20 bg-[#FFFFFF] text-gray-900">
+      <div className="flex justify-center text-3xl font-bold pb-16">
         <h2>{t("works.title")}</h2>
       </div>
       <div className="flex flex-row justify-center px-20">

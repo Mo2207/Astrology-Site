@@ -235,6 +235,11 @@
     "price": "$15",
     "mission": "My mission"
   },
+  "guarantee": {
+    "title": "Guarantee",
+    "p1": "If you take the intensive course and still have doubts about its effectiveness for you.",
+    "p2": "I will refund you the full cost of your training. Just write to the customer service and they will refund your money without any questions."
+  },
   "contact": {
     "header": {
       "h2": "Contact",

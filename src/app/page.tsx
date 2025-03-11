@@ -15,6 +15,7 @@ import Results from "./components/results";
 import CourseDifference from "./components/courseDifference";
 import CourseWorks from "./components/courseWorks";
 import Price from "./components/price";
+import Guarantee from "./components/guarantee";
 
 export default function Page() {
   return (
@@ -30,6 +31,7 @@ export default function Page() {
       <CourseDifference />
       <CourseWorks />
       <Price />
+      <Guarantee />
       <Contact />
       <Footer />
     </div>
