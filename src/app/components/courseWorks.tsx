@@ -3,10 +3,7 @@
 
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
-import crissCrossIcon from "../../../public/assets/img/works/icons/criss-cross.svg";
-import heartHandIcon from "../../../public/assets/img/works/icons/heart-hand.svg";
-import notesIcon from "../../../public/assets/img/works/icons/notes.svg";
-import rocketIcon from "../../../public/assets/img/works/icons/rocket.svg";
+import { Button } from "./ui/button/button";
 
 
 export default function CourseWorks() {
@@ -25,7 +22,7 @@ export default function CourseWorks() {
         <div className="flex flex-col bg-[#FAF5F3] w-1/3">
           <Image
             src={"/assets/img/works/flower-girl.jpeg"}
-            width={400}
+            width={300}
             height={300}
             alt="girl with flowers"
             className="border-0 rounded-lg object-cover h-full w-full"
@@ -34,6 +31,8 @@ export default function CourseWorks() {
       
         {/* RIGHT SIDE */}
         <div className="flex flex-col px-8 w-2/3">
+
+        {/* cards */}
           <div className="flex flex-col gap-4">
             {cards.map((item, index) => (
               <div
@@ -53,7 +52,19 @@ export default function CourseWorks() {
                 </div>
               </div>
             ))}
-          </div> 
+          </div>
+
+          {/* pricing */}
+          <div className="pt-5">
+            <div className="flex flex-row items-start">
+              <Button className="mt-3 mr-10">{t("buttons.gain_access")}</Button>
+              <p className="mt-4 text-lg">
+                <span className="font-bold text-[#54994f]">{t("price.sale_price")}</span> 
+                <del className="text-gray-500 ml-2">{t("price.old_price")}</del>
+              </p>
+            </div>
+          </div>
+
         </div>
 
       </div>
