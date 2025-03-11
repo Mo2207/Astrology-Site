@@ -29,7 +29,7 @@ export default function CourseDifference() {
         <div className="flex flex-col p-8 bg-[#FAF5F3] border border-[#AD6049] rounded-xl">
         <h2 className="font-bold pb-6 text-center text-2xl">{t("difference.right.title")}</h2>
           <div className="text-left font-medium text-lg text-gray-600 space-y-3">
-            {leftList.map((item, index) => (
+            {rightList.map((item, index) => (
               <p key={index} className="flex items-top gap-2">
                 {item}
               </p>

@@ -202,6 +202,31 @@
       ]
     }
   },
+  "works": {
+    "title": "What makes this intensive course work",
+    "list": [
+      {
+        "title": "There is a complete understanding of what the resource gives and what it takes away",
+        "p": "You will determine your personal ways of filling the resource. After all, what is good for one is not suitable for another.",
+        "image": "/assets/img/works/icons/heart-hand.svg"
+      },
+      {
+        "title": "We remove resource holes",
+        "p": "You can fill the resource from morning to night, but if there are holes, the resource will not accumulate, no matter how hard we try.",
+        "image": "/assets/img/works/icons/criss-cross.svg"
+      },
+      {
+        "title": "We write out a clear strategy",
+        "p": "This is not just a theory where we talked and forgot - we will create a clear plan of simple actions that will not let you merge.",
+        "image": "/assets/img/works/icons/notes.svg"
+      },
+      {
+        "title": "Fast feedback",
+        "p": "I immediately sort out any questions that arise in a closed chat.",
+        "image": "/assets/img/works/icons/rocket.svg"
+      }
+    ]
+  },
   "contact": {
     "header": {
       "h2": "Contact",

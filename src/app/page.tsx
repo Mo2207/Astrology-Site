@@ -13,6 +13,7 @@ import Hero from "./components/hero";
 import Reviews from "./components/reviews";
 import Results from "./components/results";
 import CourseDifference from "./components/courseDifference";
+import CourseWorks from "./components/courseWorks";
 
 export default function Page() {
   return (
@@ -26,6 +27,7 @@ export default function Page() {
       <About />
       <Results />
       <CourseDifference />
+      <CourseWorks />
       <Contact />
       <Footer />
     </div>
