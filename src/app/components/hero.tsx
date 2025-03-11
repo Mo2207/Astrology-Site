@@ -2,48 +2,57 @@
 import { useTranslation } from "react-i18next";
 import { Button } from "./ui/button/button";
 import Image from "next/image";
-
+import sitting from "../../../public/assets/img/hero/woman-sitting.jpeg";
+import teaching from "../../../public/assets/img/hero/teaching.jpeg";
 
 export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section id="hero" className="pt-[20rem] pb-[15rem] bg-[#FFFFFF] text-gray-900">
+    <section id="hero" className="pt-[8rem] pb-[8rem] bg-[#FFFFFF] text-gray-900 flex justify-center flex-col">
 
-      <div className="flex flex-row justify-center">
-
-        {/* LEFT SIDE */}
-        <div className="flex flex-col">
-        <p className="mb-[2rem] font-light">
-          {t("hero.p2")}
-        </p>
-        <h1 className="font-light text-3xl text-left whitespace-pre-line">{t("hero.h1")}</h1>
-        <p className="mt-[1rem] font-light">
-          {t("hero.p")}
-        </p>
-        <Button className="mt-5 w-auto self-start">{t('hero.Button')}</Button>
-        {/* <p 
-          className="whitespace-pre-line absolute text-center flex items-center justify-center  
-          rotate-[-30deg] bg-[#e9e9e9] 
-          w-[6rem] h-[6rem] sm:w-[7rem] sm:h-[7rem] md:w-[7rem] md:h-[7rem] 
-          rounded-full transform -bottom-5 -right-20 sm:-bottom-[2rem] sm:-right-[2rem] md:-bottom-[4rem] md:-right-[1rem] lg:-bottom-[4rem] lg:right-[3rem] xl:-bottom-[4rem] xl:right-[8rem] 2xl:-bottom-[4rem] 2xl:right-[10rem]">
-            {t("hero.p")}
-        </p> */}
-        </div>
-
-        {/* RIGHT SIDE */}
-        {/* <div className="">
-          <Image
-            src={"/assets/img/hero/hero-star.svg"}
-            width={400}
-            height={300}
-            alt="random image"
-            className="border-0 rounded-lg object-cover h-full w-full"
-          />
-        </div> */}
-        
+      <div className="flex justify-center flex-col w-[50%] mx-auto py-10">
+        <h1 className="pb-8 font-bold text-3xl">{t("hero.title")}</h1>
+        <Button className="self-start self-center">{t("buttons.start_course")}</Button>
       </div>
 
+
+      <div className="grid grid-cols-4 grid-rows-2 gap-4 w-[90%] h-[50vh] mx-auto text-[#444444]">
+
+        <div className="col-span-2 row-span-2">
+          <Image
+            src={sitting}
+            width={500}
+            height={500}
+            alt="woman sitting on chair"
+            className="border-0 rounded-lg object-cover w-full h-full"
+          />
+        </div>
+
+        <div className="row-span-2">
+          <Image
+            src={teaching}
+            width={500}
+            height={500}
+            alt="woman teaching"
+            className="border-0 rounded-lg object-cover w-full h-full"
+          />
+        </div>
+
+        <div 
+          className="bg-cover bg-center bg-no-repeat border-0 rounded-xl flex justify-center flex-col items-center"
+          style={{ backgroundImage: "url('/assets/img/hero/sand-background.jpeg')" }}
+        >
+          <h2 className="font-bold text-xl pb-10">{t("hero.start.title")}</h2>
+          <p className="font-semibold">{t("hero.start.p")}</p>
+        </div>
+
+        <div className="bg-[#faf5f3] flex justify-center items-center flex-col px-6 border-0 rounded-xl">
+          <h2 className="font-bold text-xl pb-10">{t("hero.access.title")}</h2>
+          <p className="font-semibold">{t("hero.access.p")}</p>
+        </div>
+
+      </div>
     </section>
   );
 }

@@ -67,7 +67,7 @@ export default function Header() {
 
         {/* Dropdown Menu */}
         {dropdownOpen && (
-          <div className="absolute right-0 mt-2 w-40 bg-gray-700 rounded-lg shadow-lg">
+          <div className="absolute right-0 mt-2 w-40 bg-[#faf5f3] rounded-lg shadow-lg">
             {languages.map((lang) => (
               <button
                 key={lang.code}
@@ -75,7 +75,7 @@ export default function Header() {
                   changeLanguage(lang.code);
                   setDropdownOpen(false);
                 }}
-                className="block w-full px-4 py-2 text-left hover:bg-gray-600 hover:rounded-lg"
+                className="block w-full px-4 py-2 text-left hover:bg-[#ad9585] hover:rounded-lg"
               >
                 {lang.label}
               </button>
