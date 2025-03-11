@@ -15,7 +15,7 @@ export default function CourseDifference() {
       
       <div className="flex flex-row pt-8 gap-10 mx-10">
         {/* LEFT SIDE */}
-        <div className="flex flex-col p-8 bg-[#FAF5F3] border border-[#AD6049] rounded-xl">
+        <div className="flex flex-col p-8 bg-[#FAF5F3] border border-[#AD6049] rounded-xl w-1/2">
         <h2 className="font-bold pb-6 text-center text-2xl">{t("difference.left.title")}</h2>
           <div className="text-left font-medium text-lg text-gray-600 space-y-3">
             {leftList.map((item, index) => (
@@ -26,7 +26,7 @@ export default function CourseDifference() {
           </div>
         </div>
         {/* RIGHT SIDE */}
-        <div className="flex flex-col p-8 bg-[#FAF5F3] border border-[#AD6049] rounded-xl">
+        <div className="flex flex-col p-8 bg-[#FAF5F3] border border-[#AD6049] rounded-xl w-1/2">
         <h2 className="font-bold pb-6 text-center text-2xl">{t("difference.right.title")}</h2>
           <div className="text-left font-medium text-lg text-gray-600 space-y-3">
             {rightList.map((item, index) => (
