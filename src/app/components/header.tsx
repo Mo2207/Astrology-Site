@@ -130,7 +130,7 @@ export default function Header() {
         {/* mobile menu dropdown */}
         {mobileMenuOpen && (
           <div 
-            className="absolute top-[5rem] right-[1rem] p-3 border-0 rounded-xl bg-[#faf5f3]"
+            className="absolute top-[5rem] right-[1rem] p-3 border-0 rounded-xl bg-[#faf5f3] md:hidden shadow-lg"
             ref={mobileMenuRef}
           >
             <div className="flex flex-col justify-center gap-4">
