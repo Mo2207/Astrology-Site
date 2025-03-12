@@ -15,26 +15,26 @@ export default function CourseCards() {
   // const card3Items= t("course_cards.card3.items", { returnObjects: true }) as string[];
   
   return (
-    <section id="course" className="flex flex-col items-center gap-12 bg-[#FFFFFF] text-gray-900 py-12">
+    <section id="course" className="flex flex-col items-center gap-10 bg-[#FFFFFF] text-gray-900 pb-8">
       
       {/* Card 1 */}
-      <div className="h-[32rem] w-[90vw] flex flex-row rounded-lg bg-[#faf5f3] border border-[#AD6049] text-gray-900 overflow-hidden">
+      <div className="h-auto w-[90%] flex flex-col md:flex-row rounded-lg bg-[#faf5f3] border border-[#AD6049] text-gray-900 overflow-hidden">
         {/* LEFT SIDE */}
         {/* image */}
-        <div className="w-1/2">
+        <div className="h-1/2 w-full md:h-auto ">
           <Image
             src={"/assets/img/course/beach.png"}
             width={500}
             height={500}
             alt="woman standing on beach"
-            className="border-0 rounded-l-lg object-cover h-full w-full"
+            className="border-0 object-cover min-h-[15rem] h-full w-full"
           />
         </div>
         {/* RIGHT SIDE */}
         {/* main text */}
-        <div className="w-1/2  p-8 flex flex-col justify-center">
-          <h2 className="font-bold pb-6 text-center text-2xl">{t("course_cards.card1.title")}</h2>
-          <div className="text-left font-medium text-lg text-gray-600 space-y-3">
+        <div className="h-1/2 w-full md:h-auto flex flex-col justify-center items-center p-5">
+          <h2 className="font-bold pb-6 text-center text-xl sm:text-2xl md:text-xl lg:text-2xl">{t("course_cards.card1.title")}</h2>
+          <div className="text-left font-medium text-gray-600 space-y-3 text-md sm:text-lg md:text-lg lg:text-xl">
             {card1Items.map((item, index) => (
               <p key={index} className="flex items-top gap-2">
                 <Image
@@ -48,7 +48,7 @@ export default function CourseCards() {
           </div>
           {/* pricing section */}
           <div className="flex flex-col items-start">
-          <p className="mt-4 text-lg">
+          <p className="mt-4 text-md sm:text-lg md:text-lg lg:text-xl">
             <span className="font-bold text-[#54994f]">{t("price.sale_price")}</span> 
             <del className="text-gray-500 ml-2">{t("price.old_price")}</del>
           </p>
@@ -58,12 +58,12 @@ export default function CourseCards() {
       </div>
 
       {/* Card 2 */}
-      <div className="h-[32rem] w-[90vw] flex flex-row rounded-lg bg-[#faf5f3] border border-[#AD6049] text-gray-900 overflow-hidden">
+      <div className="h-auto w-[90%] flex flex-col md:flex-row rounded-lg bg-[#faf5f3] border border-[#AD6049] text-gray-900 overflow-hidden">
         {/* LEFT SIDE */}
         {/* main text */}
-        <div className="w-1/2  p-4 flex flex-col justify-center p-8">
-          <h2 className="font-bold pb-6 text-center text-2xl">{t("course_cards.card2.title")}</h2>
-          <div className="text-left font-medium text-lg text-gray-600 space-y-3">
+        <div className="h-1/2 w-full md:h-auto flex flex-col justify-center items-center p-5">
+          <h2 className="font-bold pb-6 text-center text-xl sm:text-2xl md:text-xl lg:text-2xl">{t("course_cards.card2.title")}</h2>
+          <div className="text-left font-medium text-md sm:text-lg md:text-lg lg:text-xl text-gray-600 space-y-3">
             {card2Items.map((item, index) => (
               <p key={index} className="flex items-top gap-2">
                 <Image
@@ -75,16 +75,24 @@ export default function CourseCards() {
               </p>
             ))}
           </div>
+          {/* pricing section */}
+          <div className="flex flex-col items-start">
+          <p className="mt-4 text-md sm:text-lg md:text-lg lg:text-xl">
+            <span className="font-bold text-[#54994f]">{t("price.sale_price")}</span> 
+            <del className="text-gray-500 ml-2">{t("price.old_price")}</del>
+          </p>
+            <Button className="mt-3">{t("buttons.gain_access")}</Button>
+          </div>
         </div>
         {/* RIGHT SIDE */}
         {/* image */}
-        <div className="w-1/2">
+        <div className="h-1/2 w-full md:h-auto">
           <Image
             src={"/assets/img/course/beach-sitting.png"}
             width={500}
             height={500}
-            alt="mountains"
-            className="border-0 rounded-r-lg object-cover h-full w-full"
+            alt="woman sitting on the beach"
+            className="border-0 object-cover h-full min-h-[15rem] w-full"
           />
         </div>
       </div>
