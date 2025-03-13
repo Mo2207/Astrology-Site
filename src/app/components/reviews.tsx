@@ -10,14 +10,14 @@ export default function Reviews() {
 
   return (
     <section id="reviews" className="bg-[#FFFFFF] text-gray-900 h-[35rem] pb-10">
-      <h2 className="text-3xl font-bold text-center">{t("reviews.title")}</h2>
+      <h2 className="text-2xl md:text-3xl lg-text-4xl font-bold text-center pb-10">{t("reviews.title")}</h2>
 
-      <div className="relative w-full overflow-hidden h-full">
-        <div className="flex items-left justify-left space-x-6 px-6 pt-8 snap-x snap-mandatory overflow-x-scroll scrollbar-hide h-full">
+      <div className="relative w-full overflow-x-auto snap-start">
+        <div className="flex flex-row items-center space-y-6 space-y-0 space-x-6 px-6 pt-8 snap-x snap-mandatory scrollbar-hide overflow-x-scroll ">
           {Object.keys(reviews).map((key) => (
             <div
               key={key}
-              className="flex-shrink-0 flex flex-col w-[28rem] h-[27rem] bg-[#faf5f3] shadow-md rounded-lg p-6 snap-center border border-[#AD6049]"
+              className="flex-shrink-0 flex flex-col justify-center w-full h-[25rem] md:w-[30rem] min-w-0 bg-[#faf5f3] shadow-md rounded-xl p-6 snap-center border border-[#AD6049]"
             >
               <h3 className="text-xl font-semibold">{reviews[key].name}</h3>
               <h2 className="font-light pb-3">{reviews[key].age}</h2>
