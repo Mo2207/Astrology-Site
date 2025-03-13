@@ -16,7 +16,7 @@ export default function Guarantee() {
         width={300}
         height={100}
         alt="spiral decal"
-        className="object-cover h-full px-8 self-center"
+        className="object-cover h-full px-8 self-center hidden"
       />
 
       <div className="flex flex-col w-[50%] border border-[#DDBEA9] p-6 rounded-xl bg-[#faf5f3]">
@@ -30,7 +30,7 @@ export default function Guarantee() {
         width={300}
         height={100}
         alt="spiral decal"
-        className="object-cover h-full px-8 self-center"
+        className="object-cover h-full px-8 self-center hidden"
       />
 
     </section>

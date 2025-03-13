@@ -13,27 +13,29 @@ export default function CourseWorks() {
 
   return (
     <section id="course_works" className="pt-12 pb-20 bg-[#FFFFFF] text-gray-900">
-      <div className="flex justify-center text-3xl font-bold pb-16">
+      <div className="flex justify-center text-center text-3xl font-bold pb-16">
         <h2>{t("works.title")}</h2>
       </div>
-      <div className="flex flex-row justify-center px-20">
-        
+
+      <div className="flex flex-col md:flex-row justify-center px-10 gap-5">
+
         {/* LEFT SIDE */}
-        <div className="flex flex-col bg-[#FAF5F3] w-1/3">
+        <div className="flex bg-[#FAF5F3] w-full md:w-2/5 flex-grow h-auto min-h-0">
           <Image
             src={"/assets/img/works/flower-girl.jpeg"}
-            width={300}
-            height={300}
+            width={500}
+            height={500}
             alt="girl with flowers"
-            className="border-0 rounded-lg object-cover h-full w-full"
-          />   
+            className="border-0 rounded-lg object-cover w-full max-h-[60vh] md:h-full md:max-h-full"
+            style={{ objectPosition: "center top" }}
+          />
         </div>
-      
-        {/* RIGHT SIDE */}
-        <div className="flex flex-col px-8 w-2/3">
 
-        {/* cards */}
-          <div className="flex flex-col gap-4">
+        {/* RIGHT SIDE */}
+        <div className="flex flex-col w-full md:w-3/5 flex-grow h-auto min-h-0">
+
+          {/* cards */}
+          <div className="flex flex-col gap-4 h-auto">
             {cards.map((item, index) => (
               <div
                 className="flex flex-row border-0 rounded-xl p-5 bg-[#faf5f3]"
@@ -52,21 +54,21 @@ export default function CourseWorks() {
                 </div>
               </div>
             ))}
-          </div>
 
-          {/* pricing */}
-          <div className="pt-5">
-            <div className="flex flex-row items-start">
-              <Button className="mt-3 mr-10">{t("buttons.gain_access")}</Button>
-              <p className="mt-4 text-lg">
-                <span className="font-bold text-[#54994f]">{t("price.sale_price")}</span> 
-                <del className="text-gray-500 ml-2">{t("price.old_price")}</del>
-              </p>
+            {/* pricing */}
+            <div className="">
+              <div className="flex flex-row items-start">
+                <Button className="mt-3 mr-10">{t("buttons.gain_access")}</Button>
+                <p className="mt-4 text-lg">
+                  <span className="font-bold text-[#54994f]">{t("price.sale_price")}</span>
+                  <del className="text-gray-500 ml-2">{t("price.old_price")}</del>
+                </p>
+              </div>
             </div>
+
           </div>
-
         </div>
-
+        
       </div>
     </section>
   )
