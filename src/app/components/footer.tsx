@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
 
         {/* navigation */}
-        <nav className="flex gap-12 justify-center text-2xl font-semibold border-t border-b border-[#DDBEA9] mb-10 py-2">
+        <nav className="flex gap-10 justify-center text-2xl font-semibold border-t border-b border-[#DDBEA9] mb-10 py-2">
             {navs.map((nav) => (
               <a key={nav.id} onClick={() => handleScroll(nav.href)} className="hover:text-gray-400 hover:cursor-pointer transition">
                 {t(`navs.${nav.id}.name`)}
@@ -58,7 +58,7 @@ export default function Footer() {
           </nav>
 
         {/* links */}
-        <div className="flex justify-center gap-20">
+        <div className="flex justify-center gap-10">
           {list.map((item, index) => (
             <div
               key={index}
