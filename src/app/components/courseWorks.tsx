@@ -49,17 +49,17 @@ export default function CourseWorks() {
                   className="w-[1.5rem] h-[1.5rem] mr-2"
                 />
                 <div>
-                  <p className="font-bold text-xl pb-2 flex flex-col">{item.title}</p>
-                  <p className="font-semibold">{item.p}</p>
+                  <p className="font-bold pb-2 flex flex-col text-lg md:text-xl">{item.title}</p>
+                  <p className="font-semibold text-md md:text-lg">{item.p}</p>
                 </div>
               </div>
             ))}
 
             {/* pricing */}
             <div className="">
-              <div className="flex flex-row items-start">
-                <Button className="mt-3 mr-10">{t("buttons.gain_access")}</Button>
-                <p className="mt-4 text-lg">
+              <div className="flex flex-row items-start gap-5">
+                <Button className="">{t("buttons.gain_access")}</Button>
+                <p className="mt-2 text-lg">
                   <span className="font-bold text-[#54994f]">{t("price.sale_price")}</span>
                   <del className="text-gray-500 ml-2">{t("price.old_price")}</del>
                 </p>

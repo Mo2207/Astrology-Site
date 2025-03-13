@@ -17,16 +17,16 @@ export default function Faq() {
   }
 
   return (
-    <section id="price" className="py-20 bg-white text-gray-900 flex justify-center">
+    <section id="price" className="pt-20 bg-white text-gray-900 flex justify-center">
 
-      <div className="flex flex-col w-[55rem]">
+      <div className="flex flex-col w-[90%] sm:w-[80%] md:w-[80%] md:w-[70%]">
       <h2 className="self-center font-bold text-3xl pb-12">{t("faq.title")}</h2>
 
       <div className="flex justify-center flex-col gap-6">
         {questions.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col border border-[#C58C6D] rounded-xl p-4 hover:bg-[#faf5f3]"
+            className="flex flex-col border border-[#C58C6D] rounded-xl p-4 hover:bg-[#FAF5F3]"
             onClick={() => {
               toggleAnswer(index);
             }}

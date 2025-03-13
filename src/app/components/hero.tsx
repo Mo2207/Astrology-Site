@@ -9,9 +9,9 @@ export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section id="hero" className="pt-[6rem] pb-[4rem] bg-[#FFFFFF] text-gray-900 flex justify-center flex-col">
+    <section id="hero" className="pb-[6rem] bg-[#FFFFFF] text-gray-900 flex justify-center flex-col">
 
-      <div className="flex justify-center flex-col w-[50%] mx-auto py-10">
+      <div className="flex justify-center flex-col w-[50%] mx-auto py-[8rem]">
         <h1 className="pb-8 font-bold text-center text-xl sm:text-3xl md:text-4xl">{t("hero.title")}</h1>
         <Button className="self-start self-center">{t("buttons.start_course")}</Button>
       </div>
