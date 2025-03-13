@@ -12,14 +12,14 @@ export default function CourseCurriculum() {
 
   return (
     <section id="curriculum" className="pt-12 bg-[#FFFFFF] text-gray-900 h-[25rem]">
-      <h2 className="text-3xl font-bold text-center">{t("curriculum.title")}</h2>
+      <h2 className="text-xl md:text-2xl lg-text-3xl font-bold text-center">{t("curriculum.title")}</h2>
 
       <div className="relative w-full overflow-x-auto snap-start h-[20rem]">
-        <div className="flex items-center space-x-6 px-6 snap-x snap-mandatory overflow-x-scroll scrollbar-hide h-full">
+        <div className="flex flex-col sm:flex-row items-center space-y-6 sm:space-y-0 sm:space-x-6 px-6 snap-x snap-mandatory scrollbar-hide sm:overflow-x-scroll h-full">
           {Object.keys(curriculum).map((key) => (
             <div
               key={key}
-              className="flex-shrink-0 flex flex-col w-[20rem] h-[14rem] bg-[#faf5f3] shadow-md rounded-xl p-6 snap-center border border-[#AD6049]"
+              className="flex-shrink-0 flex flex-col w-full sm:w-[20rem] min-w-0 bg-[#faf5f3] shadow-md rounded-xl p-6 snap-center border border-[#AD6049]"
             >
               <h3 className="text-xl text-[#AD6049] font-semibold flex justify-center items-center mb-3">
                 <Image

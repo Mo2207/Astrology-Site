@@ -63,30 +63,31 @@ export default function Header() {
   },[])
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-[#faf5f3] text-gray-900 py-4 shadow-md z-50">
-      <div className=" mx-auto flex justify-between items-center px-4">
+    <header className="fixed top-0 left-0 w-full bg-[#faf5f3] text-gray-900 shadow-md z-50">
+      <div className=" mx-auto flex justify-between items-center">
         
         {/* Logo */}
-        <div className="flex items-center gap-2 px-3 mt-2">
+        <div className="flex items-center gap-2 px-3 mt-2 pl-4">
           <Image
             src={logo}
             alt="main logo"
-            width={150}
-            height={150}
+            width={100}
+            height={100}
+            className="w-[140px] h-[50px] md:w-[160px] md:h-[70px]"
           />
         </div>
 
         {/* Navigation */}
-        <nav className="hidden md:flex gap-6 ">
+        <nav className="hidden md:flex md:absolute left-1/2 transform -translate-x-1/2 gap-6">
           {navs.map((nav) => (
-            <a key={nav.id} onClick={() => handleScroll(nav.href)} className="hover:text-gray-400 hover:cursor-pointer transition">
+            <a key={nav.id} onClick={() => handleScroll(nav.href)} className="hover:text-gray-400 hover:cursor-pointer transition md:text-lg">
               {t(`navs.${nav.id}.name`)}
             </a>
           ))}
         </nav>
 
         {/* Langauge Selection */}
-        <div className="relative">
+        <div className="relative pr-4">
 
         {/* Language Button */}
         <Button
@@ -117,7 +118,7 @@ export default function Header() {
         </div>
 
         {/* mobile menu hamburger  */}
-        <div className="md:hidden">
+        <div className="md:hidden pr-4">
           <button 
             className="text-[#ddbea9] hover:text-[#ad9585] text-3xl"
             onClick={handleToggleMenu} // toggle menu again when button clicked
