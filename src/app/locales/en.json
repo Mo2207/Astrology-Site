@@ -210,7 +210,7 @@
     }
   },
   "works": {
-    "title": "What makes this intensive course work",
+    "title": "What makes this intensive course work?",
     "list": [
       {
         "title": "There is a complete understanding of what the resource gives and what it takes away",
@@ -286,10 +286,22 @@
   },
   "footer": {
     "list": [
-      "Powered by The Clicks",
-      "Offer Agreement",
-      "Privacy Policy",
-      "Copyright © 2025"
+      {
+        "title": "Powered by The Clicks",
+        "link": "https://theclicks.ca/en"
+      },
+      {
+        "title": "Offer Agreement",
+        "link": ""
+      },
+      {
+        "title": "Privacy Policy",
+        "link": ""
+      },
+      {
+        "title": "Copyright © 2025",
+        "link": ""
+      }
     ]
   }
 }

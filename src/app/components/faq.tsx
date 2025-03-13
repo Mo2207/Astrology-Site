@@ -22,7 +22,7 @@ export default function Faq() {
       <div className="flex flex-col w-[90%] sm:w-[80%] md:w-[80%] md:w-[70%]">
       <h2 className="self-center font-bold text-3xl pb-12">{t("faq.title")}</h2>
 
-      <div className="flex justify-center flex-col gap-6">
+      <div className="flex justify-center flex-col gap-6 cursor-pointer">
         {questions.map((item, index) => (
           <div
             key={index}

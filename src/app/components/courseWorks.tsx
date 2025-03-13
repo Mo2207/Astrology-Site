@@ -13,7 +13,7 @@ export default function CourseWorks() {
 
   return (
     <section id="course_works" className="pt-12 pb-20 bg-[#FFFFFF] text-gray-900">
-      <div className="flex justify-center text-center text-3xl font-bold pb-16">
+      <div className="flex justify-center text-center text-3xl font-bold pb-16 px-5">
         <h2>{t("works.title")}</h2>
       </div>
 

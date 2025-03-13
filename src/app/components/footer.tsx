@@ -9,7 +9,7 @@ import facebook from "../../../public/assets/img/navigation/icons/facebook.svg";
 export default function Footer() {
   const { t } = useTranslation();
 
-  const list = t("footer.list", { returnObjects: true }) as string[];
+  const links = t("footer.list", { returnObjects: true }) as Array<{ title: string; link: string }>;
 
   // defined custom navs here since contact isnt need it is already at the bottom of page
   const navs = [
@@ -39,14 +39,14 @@ export default function Footer() {
             alt="instagram icon"
             width={100}
             height={100}
-            className="w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem]"
+            className="w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] cursor-pointer"
           />
           <Image
             src={facebook}
             alt="facebook icon"
             width={100}
             height={100}
-            className="w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem]"
+            className="w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] cursor-pointer"
           />
           </div>
         </div>
@@ -62,12 +62,17 @@ export default function Footer() {
 
         {/* links */}
         <div className="flex justify-center gap-10 px-5">
-          {list.map((item, index) => (
+          {links.map((item, index) => (
             <div
               key={index}
-              className="text-sm"
+              className="text-sm cursor-pointer"
             >
-              {item}
+              <a 
+                href={item.link}
+                className="hover:underline"
+              >
+                {item.title}
+              </a>
             </div>
           ))}
         </div>
