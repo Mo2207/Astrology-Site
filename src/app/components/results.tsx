@@ -12,10 +12,10 @@ export default function Results() {
   const results = t("results.list", {returnObjects: true}) as string[];
 
   return (
-    <section id="results" className="bg-[#faf5f3] text-gray-900 h-[40rem] flex items-center justify-center">
+    <section id="results" className="bg-[#faf5f3] text-gray-900 h-auto py-12 flex items-center justify-center">
       <div className="flex items-center flex-col">
-        <h1 className="font-bold text-4xl mb-8">{t("results.title")}</h1>
-        <div>
+        <h1 className="font-bold text-2xl md:text-3xl text-center p-5">{t("results.title")}</h1>
+        <div className="p-5 text-md md:text-lg">
           {results.map((item, index) => (
             <p
               key={index}
