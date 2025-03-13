@@ -20,7 +20,7 @@ export default function Footer() {
 
   return (
     <section id="footer" className="bg-[#faf5f3] text-gray-900">
-      <div className="flex justify-center flex-col py-10">
+      <div className="flex justify-center flex-col pb-10">
 
         {/* logo & social links */}
         <div className="flex flex-row justify-between px-4">
@@ -28,28 +28,31 @@ export default function Footer() {
           <Image
             src={logo}
             alt="main logo"
-            width={200}
-            height={200}
+            width={100}
+            height={100}
+            className="w-[10rem] h-[4rem] md:w-[14rem] md:h-[4rem] mt-2"
           />
           {/* RIGHT SIDE */}
-          <div className="flex flex-row gap-3 pb-4">
+          <div className="flex flex-row gap-3 items-center">
           <Image
             src={instagram}
             alt="instagram icon"
-            width={50}
-            height={50}
+            width={100}
+            height={100}
+            className="w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem]"
           />
           <Image
             src={facebook}
             alt="facebook icon"
-            width={50}
-            height={50}
+            width={100}
+            height={100}
+            className="w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem]"
           />
           </div>
         </div>
 
         {/* navigation */}
-        <nav className="flex gap-10 justify-center text-2xl font-semibold border-t border-b border-[#DDBEA9] mb-10 py-2">
+        <nav className="flex gap-10 justify-center font-semibold border-t border-b border-[#DDBEA9] mb-10 py-2 px-5 text-md md:text-xl">
             {navs.map((nav) => (
               <a key={nav.id} onClick={() => handleScroll(nav.href)} className="hover:text-gray-400 hover:cursor-pointer transition">
                 {t(`navs.${nav.id}.name`)}
@@ -58,11 +61,11 @@ export default function Footer() {
           </nav>
 
         {/* links */}
-        <div className="flex justify-center gap-10">
+        <div className="flex justify-center gap-10 px-5">
           {list.map((item, index) => (
             <div
               key={index}
-              className=""
+              className="text-sm"
             >
               {item}
             </div>

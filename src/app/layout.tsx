@@ -31,9 +31,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${raleway.variable}`}>
+    <html lang="en" className={`${raleway.variable} overflow-x-hidden w-[100vw]`}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden w-[100vw]`}
       >
         <I18nProvider>{children}</I18nProvider>
       </body>
