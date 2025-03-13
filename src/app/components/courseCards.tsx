@@ -15,7 +15,7 @@ export default function CourseCards() {
   // const card3Items= t("course_cards.card3.items", { returnObjects: true }) as string[];
   
   return (
-    <section id="course" className="flex flex-col items-center gap-10 bg-[#FFFFFF] text-gray-900 pb-8">
+    <section id="course" className="flex flex-col items-center gap-10 bg-[#FFFFFF] text-gray-900">
       
       {/* Card 1 */}
       <div className="h-auto w-[90%] flex flex-col md:flex-row rounded-lg bg-[#faf5f3] border border-[#AD6049] text-gray-900 overflow-hidden">

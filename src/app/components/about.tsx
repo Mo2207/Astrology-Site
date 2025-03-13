@@ -10,7 +10,7 @@ export default function About() {
   const description = t("about.description", { returnObjects: true }) as string[];
 
   return (
-    <section id="about" className="flex items-center py-[6rem] bg-white text-gray-900">
+    <section id="about" className="flex items-center py-[2rem] bg-white text-gray-900">
       <div className="w-[90%] h-[50rem] md:h-[35rem] mx-auto flex flex-col md:flex-row items-center gap-12">
 
         {/* LEFT SIDE */}
