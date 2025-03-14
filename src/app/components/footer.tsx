@@ -61,7 +61,7 @@ export default function Footer() {
           </nav>
 
         {/* links */}
-        <div className="flex justify-center gap-10 px-5">
+        <div className="flex justify-center gap-4 sm:gap-10 md:gap-12 px-5">
           {links.map((item, index) => (
             <div
               key={index}
