@@ -1,6 +1,7 @@
 
 import { useTranslation } from "react-i18next";
 import { Button } from "./ui/button/button";
+import CheckoutButton from "./ui/button/checkoutButton";
 import Image from "next/image";
 import sitting from "../../../public/assets/img/hero/woman-sitting.jpeg";
 import teaching from "../../../public/assets/img/hero/teaching.jpeg";
@@ -13,7 +14,7 @@ export default function Hero() {
 
       <div className="flex justify-center flex-col w-[50%] mx-auto py-[4rem] md:py-[8rem]">
         <h1 className="pb-8 font-bold text-center text-xl sm:text-3xl md:text-4xl">{t("hero.title")}</h1>
-        <Button className="self-start self-center">{t("buttons.start_course")}</Button>
+        <CheckoutButton className="self-start self-center" text={t("buttons.start_course")}></CheckoutButton>
       </div>
 
 
