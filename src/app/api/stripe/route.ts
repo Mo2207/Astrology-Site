@@ -39,9 +39,14 @@ export async function POST() {
         // one-time payment
         mode: 'payment',
 
+        // force email collection
+        billing_address_collection: "required", // Forces the user to enter billing info
+        customer_email: "customer@example.com",
+        customer_creation: "always", // makes stripe create a customer with an email
+
         // success and cancellation page urls
-        success_url: `https://dashboard.stripe.com/sessions/{CHECKOUT_SESSION_ID}`,
-        cancel_url: `https://dashboard.stripe.com/sessions/{CHECKOUT_SESSION_ID}`,
+        success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}`,
+        cancel_url: `${origin}/?canceled=true`,
       }
     );
 
