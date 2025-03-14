@@ -138,8 +138,11 @@ export default function Header() {
               {navs.map((nav) => (
                 <button 
                   key={nav.id}
-                  onClick={() => handleScroll(nav.href)} 
-                  className="hover:text-[#AD9585] hover:cursor-pointer transition flex flex-col py-2"
+                  onClick={() => {
+                    handleScroll(nav.href);
+                    setMobileMenuOpen(false);
+                  }} 
+                  className="hover:text-[#AD9585] hover:cursor-pointer transition flex flex-col py-2 font-semibold"
                 >
                   {t(`navs.${nav.id}.name`)}
                 </button>
