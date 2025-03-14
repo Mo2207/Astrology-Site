@@ -14,7 +14,9 @@ export default function Hero() {
 
       <div className="flex justify-center flex-col w-[50%] mx-auto py-[4rem] md:py-[8rem]">
         <h1 className="pb-8 font-bold text-center text-xl sm:text-3xl md:text-4xl">{t("hero.title")}</h1>
-        <CheckoutButton className="self-start self-center" text={t("buttons.start_course")}></CheckoutButton>
+        <div className="flex justify-center">
+          <CheckoutButton className="self-center" text={t("buttons.start_course")}></CheckoutButton>
+        </div>
       </div>
 
 
