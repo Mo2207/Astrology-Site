@@ -8,7 +8,7 @@ interface CheckoutButtonProps {
   text: string;
 }
 
-export default function CheckoutButton({ className, text }: CheckoutButtonProps) {
+export default function CheckoutButton({ text }: CheckoutButtonProps) {
   const [loading, setLoading] = useState(false);
 
   const handleCheckout = async (event: React.FormEvent) => {

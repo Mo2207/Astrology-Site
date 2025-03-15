@@ -2,6 +2,7 @@
 
 // import { section } from "framer-motion/client";
 // import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 
 export default function SuccessPage() {
   // const searchParams = useSearchParams();
@@ -13,9 +14,9 @@ export default function SuccessPage() {
         <h1 className="text-2xl font-bold">🎉 Payment Successful!</h1>
         <p>Thank you for your purchase!</p>
         {/* {sessionId && <p><strong>Session ID:</strong> {sessionId}</p>} */}
-        <a href="/" className="mt-4 inline-block text-blue-600 underline">
+        <Link href="/" className="mt-4 inline-block text-blue-600 underline">
           Return to Home
-        </a>
+        </Link>
       </div>
     </section>
   );

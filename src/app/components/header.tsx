@@ -20,16 +20,17 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const mobileBtnRef = useRef<HTMLButtonElement>(null);
+  const i18nRef = useRef(i18n);
 
   // language switcher
   const changeLanguage = (language: string) => {
-    i18n.changeLanguage(language);
+    i18nRef.current.changeLanguage(language);
     localStorage.setItem("language", language);
     setLanguagedDropdownOpen(false);
   }
   useEffect(() => {
     const savedLang = localStorage.getItem("language") || "en";
-    i18n.changeLanguage(savedLang);
+    i18nRef.current.changeLanguage(savedLang);
   }, []);
 
   // mobile menu toggle
