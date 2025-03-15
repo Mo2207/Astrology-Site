@@ -1,6 +1,5 @@
 
 import { useTranslation } from "react-i18next";
-import { Button } from "./ui/button/button";
 import CheckoutButton from "./ui/button/checkoutButton";
 import Image from "next/image";
 import sitting from "../../../public/assets/img/hero/woman-sitting.jpeg";
