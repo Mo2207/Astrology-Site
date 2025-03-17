@@ -13,7 +13,7 @@ export default function About() {
     <section id="about" className="flex items-center justify-center py-[2rem] bg-white text-gray-900">
       <div className="max-w-7xl">
       
-      <div className="w-full h-[50rem] md:h-[35rem] mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div className="w-[90%] h-[50rem] md:h-[35rem] mx-auto flex flex-col md:flex-row items-center gap-12">
 
         {/* LEFT SIDE */}
         <div className="w-full h-full md:w-1/2 flex justify-center overflow-hidden">
