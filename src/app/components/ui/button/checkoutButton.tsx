@@ -2,13 +2,15 @@
 "use client";
 import { Button } from "./button";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 interface CheckoutButtonProps {
   className?: string;
   text: string;
 }
 
-export default function CheckoutButton({ text }: CheckoutButtonProps) {
+export default function CheckoutButton({ text, className }: CheckoutButtonProps) {
+  const { t } = useTranslation();
   const [loading, setLoading] = useState(false);
 
   const handleCheckout = async (event: React.FormEvent) => {
@@ -51,8 +53,9 @@ export default function CheckoutButton({ text }: CheckoutButtonProps) {
         role="link"
         onClick={handleCheckout}
         disabled={loading}
+        className={className}
       >
-        {loading ? "Processing..." : text}
+        {loading ? t("processing") : text}
       </Button>
     </section>
     // </form>

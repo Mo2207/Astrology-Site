@@ -64,7 +64,7 @@ export default function Header() {
   },[])
 
   return (
-    <header className="sticky top-0 left-0 w-[100vw] bg-[#faf5f3] text-gray-900 shadow-md z-50">
+    <header className="fixed top-0 left-0 w-[100vw] bg-[#faf5f3] text-gray-900 shadow-md z-50">
       <div className=" mx-auto flex justify-between items-center">
         
         {/* Logo */}

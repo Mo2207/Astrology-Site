@@ -3,8 +3,7 @@
 
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
-import { Button } from "./ui/button/button";
-
+import CheckoutButton from "./ui/button/checkoutButton";
 
 export default function CourseWorks() {
   const { t } = useTranslation();
@@ -58,7 +57,7 @@ export default function CourseWorks() {
             {/* pricing */}
             <div className="">
               <div className="flex flex-row items-start gap-5">
-                <Button className="">{t("buttons.gain_access")}</Button>
+                <CheckoutButton className="" text={t("buttons.gain_access")}></CheckoutButton>
                 <p className="mt-2 text-lg">
                   <span className="font-bold text-[#54994f]">{t("price.sale_price")}</span>
                   <del className="text-gray-500 ml-2">{t("price.old_price")}</del>

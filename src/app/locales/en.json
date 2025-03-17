@@ -6,6 +6,7 @@
     "messenger": "Reach out",
     "start_course": "Start Course"
   },
+  "processing": "processing...",
   "navs": {
     "1": {"name": "About Mariya"},
     "2": {"name": "Course"},
