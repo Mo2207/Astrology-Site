@@ -10,7 +10,9 @@ export default function Bonus() {
   const checklist = t("bonus.checklist", { returnObjects: true }) as string[];
 
   return (
-    <section id="course" className="flex flex-col items-center bg-[#FFFFFF] text-gray-900 py-16">
+    <section id="course" className="flex flex-col justify-center items-center bg-[#FFFFFF] text-gray-900 py-16">
+      <div className="max-w-7xl">
+
       {/* bonus section */}
       <div className="flex flex-col mt-4">
         <h2 className="font-bold text-3xl md:text-3xl lg:text-4xl flex justify-center mb-6">{t("bonus.title")}</h2>
@@ -27,6 +29,8 @@ export default function Bonus() {
           </p>
           <Button className="mt-3">{t("buttons.gain_access")}</Button>
         </div>
+      </div>
+
       </div>
     </section>
   );

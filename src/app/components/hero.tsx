@@ -10,6 +10,7 @@ export default function Hero() {
 
   return (
     <section id="hero" className="pb-[6rem] bg-[#FFFFFF] text-gray-900 flex justify-center flex-col">
+      
 
       <div className="flex justify-center flex-col w-[50%] mx-auto py-[4rem] md:py-[8rem]">
         <h1 className="pb-8 font-bold text-center text-xl sm:text-3xl md:text-4xl">{t("hero.title")}</h1>

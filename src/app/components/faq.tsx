@@ -18,8 +18,9 @@ export default function Faq() {
 
   return (
     <section id="price" className="pt-20 bg-white text-gray-900 flex justify-center">
+      <div className="max-w-7xl flex justify-center">
 
-      <div className="flex flex-col w-[90%] sm:w-[80%] md:w-[80%] md:w-[70%]">
+      <div className="flex flex-col w-[90%]">
       <h2 className="self-center font-bold text-3xl pb-12">{t("faq.title")}</h2>
 
       <div className="flex justify-center flex-col gap-6 cursor-pointer">
@@ -42,10 +43,10 @@ export default function Faq() {
             </div>
 
             {/* dropdown with answer */}
-            <div className="">
+            <div className="overflow-hidden text-wrap">
               {openIndex === index && (
                 <p 
-                  className="mt-3 transition-opacity duration-600"
+                  className="mt-3 transition-opacity duration-600 max-w-[853px] break-words"
                 >
                   {item.answer}
                 </p>
@@ -56,6 +57,7 @@ export default function Faq() {
         ))}
       </div>
 
+      </div>
       </div>
     </section>
   )

@@ -13,6 +13,8 @@ export default function Results() {
 
   return (
     <section id="results" className="bg-[#faf5f3] text-gray-900 h-auto py-12 flex items-center justify-center">
+      <div className="max-w-7xl flex justify-center">
+
       <div className="flex items-center flex-col w-[90%]">
         <h1 className="font-bold text-2xl md:text-3xl text-center p-5">{t("results.title")}</h1>
         <div className="p-5 text-md md:text-lg">
@@ -30,6 +32,7 @@ export default function Results() {
             </p>
           ))}
         </div>
+      </div>
       </div>
     </section>
   )

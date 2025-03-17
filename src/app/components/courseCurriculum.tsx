@@ -12,9 +12,10 @@ export default function CourseCurriculum() {
 
   return (
     <section id="curriculum" className="pt-12 bg-[#FFFFFF] text-gray-900 h-[25rem]">
+
       <h2 className="text-2xl md:text-3xl lg-text-4xl font-bold text-center pb-10">{t("curriculum.title")}</h2>
 
-      <div className="relative w-full overflow-hidden snap-start">
+      <div className="relative w-full overflow-hidden snap-start justify-center flex">
         <div className="flex flex-row space-y-0 space-x-6 px-6 pt-8 snap-x snap-mandatory scrollbar-hide overflow-y-hidden h-[18rem]">
           {Object.keys(curriculum).map((key) => (
             <div

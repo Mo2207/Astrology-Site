@@ -15,10 +15,11 @@ export default function CourseCards() {
   // const card3Items= t("course_cards.card3.items", { returnObjects: true }) as string[];
   
   return (
-    <section id="course" className="flex flex-col items-center gap-10 bg-[#FFFFFF] text-gray-900">
+    <section id="course" className="flex flex-col justify-center items-center gap-10 bg-[#FFFFFF] text-gray-900">
+      <div className="max-w-7xl flex flex-col gap-5">
       
       {/* Card 1 */}
-      <div className="h-auto w-[90%] flex flex-col md:flex-row rounded-lg bg-[#faf5f3] border border-[#AD6049] text-gray-900 overflow-hidden">
+      <div className="h-auto w-[90%] self-center flex flex-col md:flex-row rounded-lg bg-[#faf5f3] border border-[#AD6049] text-gray-900 overflow-hidden">
         {/* LEFT SIDE */}
         {/* image */}
         <div className="h-1/2 w-full md:h-auto ">
@@ -58,7 +59,7 @@ export default function CourseCards() {
       </div>
 
       {/* Card 2 */}
-      <div className="h-auto w-[90%] flex flex-col md:flex-row rounded-lg bg-[#faf5f3] border border-[#AD6049] text-gray-900 overflow-hidden">
+      <div className="h-auto w-[90%] self-center flex flex-col md:flex-row rounded-lg bg-[#faf5f3] border border-[#AD6049] text-gray-900 overflow-hidden">
         {/* LEFT SIDE */}
         {/* main text */}
         <div className="h-1/2 w-full md:h-auto flex flex-col justify-center items-center p-5">
@@ -97,6 +98,7 @@ export default function CourseCards() {
         </div>
       </div>
 
+    </div>
     </section>
   );
 }

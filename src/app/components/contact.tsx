@@ -8,8 +8,10 @@ export default function Contact() {
   const { t } = useTranslation();
 
   return (
-    <section id="contact" className="py-[4rem] bg-white text-gray-900">
-      <div className="flex flex-col md:flex-row justify-center gap-5 w-[90%] mx-auto">
+    <section id="contact" className="py-[4rem] bg-white text-gray-900 flex justify-center">
+      <div className="max-w-7xl">
+
+      <div className="flex flex-col md:flex-row justify-center gap-5 w-full mx-auto">
 
         {/* LEFT SIDE */}
         <div className="flex-[3]">
@@ -26,6 +28,7 @@ export default function Contact() {
           <Button className="self-start">{t("buttons.messenger")}</Button>
         </div>
 
+      </div>
       </div>
     </section>
   );

@@ -10,6 +10,7 @@ export default function Guarantee() {
 
   return (
     <section id="price" className="pt-20 bg-white text-gray-900 flex justify-center relative">
+      <div className="max-w-7xl flex justify-center">
       
       <Image
         src={graf}
@@ -33,6 +34,7 @@ export default function Guarantee() {
         className="absolute md:right-2 z-0 hidden md:flex object-cover h-full self-center"
       />
 
+    </div>
     </section>
   )
 }
