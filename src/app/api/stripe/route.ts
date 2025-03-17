@@ -24,7 +24,14 @@ export async function POST() {
     const origin = headersList.get('origin') || "http://localhost:3000";
 
     // price is set from stripe products
-    const priceId = process.env.STRIPE_PRICE_ID;
+    const productId = ""; // course product ID
+
+    // fetch the price dynamically from Stripe
+    const prices = await stripe.prices.list({
+      product: productId, 
+      active: true, // only active prices are fetched
+      limit: 1, // Get the latest price
+    });
 
     // Create Checkout Sessions from body params.
     const session: Stripe.Checkout.Session = await stripe.checkout.sessions.create(
@@ -32,7 +39,7 @@ export async function POST() {
         payment_method_types: ["card"],
         line_items: [
           {
-            price: priceId,
+            price: prices.data[0].id,
             quantity: 1,
           },
         ],

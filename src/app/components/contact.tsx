@@ -11,7 +11,7 @@ export default function Contact() {
     <section id="contact" className="py-[4rem] bg-white text-gray-900 flex justify-center">
       <div className="max-w-7xl">
 
-      <div className="flex flex-col md:flex-row justify-center gap-5 w-full mx-auto">
+      <div className="flex flex-col md:flex-row justify-center gap-5 w-[90%] mx-auto">
 
         {/* LEFT SIDE */}
         <div className="flex-[3]">
