@@ -1,12 +1,19 @@
 "use client";
 
 // import { section } from "framer-motion/client";
-// import { useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
+import { stripe } from '../../lib/stripe';
 import Link from "next/link";
 
-export default function SuccessPage() {
-  // const searchParams = useSearchParams();
-  // const sessionId = searchParams.get("session_id");
+export default async function SuccessPage() {
+  const searchParams = useSearchParams();
+  const sessionId = searchParams.get("session_id");
+
+  const session = await stripe.checkout.sessions.retrieve(sessionId, {
+    expand: ["customer"],
+  });
+
+  const customerEmail = session.customer_details?.email ?? "No email provided";
 
   return (
     <section className="bg-white h-[100vh] flex justify-center items-center text-gray-900">

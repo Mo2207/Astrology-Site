@@ -41,7 +41,6 @@ export async function POST() {
 
         // force email collection
         billing_address_collection: "required", // Forces the user to enter billing info
-        customer_email: "customer@example.com",
         customer_creation: "always", // makes stripe create a customer with an email
 
         // success and cancellation page urls

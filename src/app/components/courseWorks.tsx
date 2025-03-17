@@ -17,28 +17,28 @@ export default function CourseWorks() {
         <h2>{t("works.title")}</h2>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center px-10 gap-5">
+      <div className="flex flex-col md:flex-row justify-center px-10 gap-5 items-stretch">
 
         {/* LEFT SIDE */}
-        <div className="flex bg-[#FAF5F3] w-full md:w-2/5 flex-grow h-auto min-h-0">
+        <div className="flex bg-[#FAF5F3] w-full md:w-2/5">
           <Image
             src={"/assets/img/works/flower-girl.jpeg"}
             width={500}
             height={500}
             alt="girl with flowers"
-            className="border-0 rounded-lg object-cover w-full max-h-[60vh] md:h-full md:max-h-full"
+            className="border-0 rounded-lg object-cover w-full max-h-[60vh] md:max-h-full"
             style={{ objectPosition: "center top" }}
           />
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="flex flex-col w-full md:w-3/5 flex-grow h-auto min-h-0">
+        <div className="flex flex-col w-full md:w-3/5">
 
           {/* cards */}
-          <div className="flex flex-col gap-4 h-auto">
+          <div className="flex flex-col justify-between flex-grow">
             {cards.map((item, index) => (
               <div
-                className="flex flex-row border-0 rounded-xl p-5 bg-[#faf5f3]"
+                className="flex flex-row border-0 rounded-xl p-5 bg-[#faf5f3] mb-2"
                 key={index}
               >
                 <Image
