@@ -24,7 +24,7 @@ export async function POST() {
     const origin = headersList.get('origin') || "http://localhost:3000";
 
     // price is set from stripe products
-    const productId = ""; // course product ID
+    const productId = "prod_RwTYI09xsRhanH"; // course product ID
 
     // fetch the price dynamically from Stripe
     const prices = await stripe.prices.list({
