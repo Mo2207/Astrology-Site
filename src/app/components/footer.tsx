@@ -69,6 +69,7 @@ export default function Footer() {
             >
               <a 
                 href={item.link}
+                target="_blank"
                 className="hover:underline"
               >
                 {item.title}
