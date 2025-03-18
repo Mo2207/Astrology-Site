@@ -14,7 +14,7 @@ i18n
       en: { translation: en },
       ru: { translation: ru },
     },
-    lng: "en",
+    // lng: localStorage.getItem("i18nextLng") || "en", // load local language before render
     fallbackLng: "en",
     interpolation: {
       escapeValue: false,

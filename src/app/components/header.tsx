@@ -22,15 +22,20 @@ export default function Header() {
   const mobileBtnRef = useRef<HTMLButtonElement>(null);
   const i18nRef = useRef(i18n);
 
+  const userLanguage = localStorage.getItem("i18nextLng") || "en";
+
   // language switcher
-  const changeLanguage = (language: string) => {
-    i18nRef.current.changeLanguage(language);
-    localStorage.setItem("language", language);
-    setLanguagedDropdownOpen(false);
+  const changeLanguage = (lang: string) => {
+    i18nRef.current.changeLanguage(lang);
+    localStorage.setItem("lang", lang);
+    setLanguagedDropdownOpen(false); // close dropdown
   }
   useEffect(() => {
-    const savedLang = localStorage.getItem("language") || "en";
-    i18nRef.current.changeLanguage(savedLang);
+    const savedLang = localStorage.getItem("lang") || "en";
+    
+    if (i18nRef.current) { // make sure i18nRef is initialized first
+      i18nRef.current.changeLanguage(savedLang);
+    }
   }, []);
 
   // mobile menu toggle

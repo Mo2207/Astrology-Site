@@ -1,4 +1,5 @@
 
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Raleway } from "next/font/google";
 import "./globals.css";
@@ -25,11 +26,7 @@ export const metadata: Metadata = {
   description: "Online Intensive Resource",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children,}: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en" className={`${raleway.variable} overflow-x-hidden w-[100vw]`}>
       <body
