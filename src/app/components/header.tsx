@@ -22,8 +22,6 @@ export default function Header() {
   const mobileBtnRef = useRef<HTMLButtonElement>(null);
   const i18nRef = useRef(i18n);
 
-  const userLanguage = localStorage.getItem("i18nextLng") || "en";
-
   // language switcher
   const changeLanguage = (lang: string) => {
     i18nRef.current.changeLanguage(lang);
