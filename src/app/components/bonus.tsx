@@ -2,7 +2,7 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import { Button } from "./ui/button/button";
+import CheckoutButton from "./ui/button/checkoutButton";
 
 export default function Bonus() {
   const { t } = useTranslation();
@@ -27,7 +27,7 @@ export default function Bonus() {
             <span className="font-bold text-[#54994f]">{t("price.sale_price")}</span> 
             <del className="text-gray-500 ml-2">{t("price.old_price")}</del>
           </p>
-          <Button className="mt-3">{t("buttons.gain_access")}</Button>
+          <CheckoutButton className="mt-3" text={t("buttons.gain_access")}></CheckoutButton>
         </div>
       </div>
 
