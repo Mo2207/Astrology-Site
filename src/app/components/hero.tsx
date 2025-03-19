@@ -32,7 +32,16 @@ export default function Hero() {
           />
         </div>
 
-        <div className="row-span-2">
+          <div 
+            className="bg-[#faf5f3] bg-center bg-no-repeat border-0 rounded-xl flex justify-center flex-col items-center"
+          >
+            <div className="text-center p-4 text-sm sm:text-lg lg:text-xl">
+              <h2 className="font-bold pb-6">{t("hero.start.title")}</h2>
+              <p className="font-semibold">{t("hero.start.p")}</p>
+            </div>
+          </div>
+
+          <div className="row-span-2">
           <Image
             src={teaching}
             width={500}
@@ -42,22 +51,12 @@ export default function Hero() {
           />
         </div>
 
-        <div 
-          className="bg-cover bg-center bg-no-repeat border-0 rounded-xl flex justify-center flex-col items-center"
-          style={{ backgroundImage: "url('/assets/img/hero/sand-background.jpeg')" }}
-        >
-          <div className="text-center p-4 text-sm sm:text-lg lg:text-xl">
-            <h2 className="font-bold pb-6">{t("hero.start.title")}</h2>
-            <p className="font-semibold">{t("hero.start.p")}</p>
+          <div className="bg-[#faf5f3] flex justify-center items-center flex-col px-6 border-0 rounded-xl">
+            <div className="text-center p-4 text-sm sm:text-lg lg:text-xl">
+              <h2 className="font-bold pb-6">{t("hero.access.title")}</h2>
+              <p className="font-semibold">{t("hero.access.p")}</p>
+            </div>
           </div>
-        </div>
-
-        <div className="bg-[#faf5f3] flex justify-center items-center flex-col px-6 border-0 rounded-xl">
-          <div className="text-center p-4 text-sm sm:text-lg lg:text-xl">
-            <h2 className="font-bold pb-6">{t("hero.access.title")}</h2>
-            <p className="font-semibold">{t("hero.access.p")}</p>
-          </div>
-        </div>
 
       </div>
     </section>
