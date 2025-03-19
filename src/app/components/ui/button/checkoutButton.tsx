@@ -17,7 +17,7 @@ export default function CheckoutButton({ text, className }: CheckoutButtonProps)
     event.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch("/api/stripe", { 
+      const response = await fetch("/api/checkout", { 
         method: "POST", 
         headers: { "Content-Type": "application/json" }
       });
