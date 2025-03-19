@@ -18,7 +18,7 @@ export async function POST(req: Request) {
       signature,
       process.env.STRIPE_WEBHOOK_SECRET!
     );
-    console.log("Full event data:", JSON.stringify(event, null, 2));
+    console.error("Full event data:", JSON.stringify(event, null, 2));
 
     // check if checkout session has completed
     if (event.type === "checkout.session.completed") {
@@ -40,7 +40,7 @@ export async function POST(req: Request) {
         react: EmailTemplate({ courseLink: courseLink }) as React.ReactElement,
       });
 
-      console.log(`Email sent to ${email}`);
+      console.error(`Email sent to ${email}`);
     }
 
     return NextResponse.json({ received: true }, { status: 200 });
