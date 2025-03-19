@@ -11,7 +11,7 @@ export default function Footer() {
 
   const links = t("footer.list", { returnObjects: true }) as Array<{ title: string; link: string }>;
 
-  // defined custom navs here since contact isnt need it is already at the bottom of page
+  // defined custom navs here since contact isnt needed it is already at the bottom of page
   const navs = [
     { id: 1, name: "About", href: "about" },
     { id: 2, name: "Course", href: "course" },
@@ -34,20 +34,24 @@ export default function Footer() {
           />
           {/* RIGHT SIDE */}
           <div className="flex flex-row gap-3 items-center">
-          <Image
-            src={instagram}
-            alt="instagram icon"
-            width={100}
-            height={100}
-            className="w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] cursor-pointer"
-          />
-          <Image
-            src={facebook}
-            alt="facebook icon"
-            width={100}
-            height={100}
-            className="w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] cursor-pointer"
-          />
+            <a href="">
+              <Image
+                src={instagram}
+                alt="instagram icon"
+                width={100}
+                height={100}
+                className="w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <Image
+                src={facebook}
+                alt="facebook icon"
+                width={100}
+                height={100}
+                className="w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] cursor-pointer"
+              />
+            </a>
           </div>
         </div>
 

@@ -9,12 +9,14 @@ Multi-Language Support 🌍 → English & Russian (i18n integration)
 Fully Responsive Design 📱 → Optimized for all screen sizes
 Tailwind Styling 🎨 → Efficient and maintainable design
 Mobile-Friendly Dropdown Menu 📂 → Collapsible navigation with language toggle
+Stripe Checkout Page 💰 → For purchasing the online course
 
 🛠 Tech Stack
 Framework: Next.js 14
 Styling: Tailwind CSS
+Payment: Stripe
 State Management: useState, useEffect
-Multilingual Support: react-i18next
+Multilingual Support: react-i18next (English & Russian)
 Image Optimization: Next.js Image Component
 Deployment: Vercel
 

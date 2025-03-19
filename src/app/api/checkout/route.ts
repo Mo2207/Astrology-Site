@@ -3,6 +3,8 @@ import { NextResponse } from 'next/server';
 import { headers } from 'next/headers';
 import { stripe } from '../../../lib/stripe';
 import Stripe from 'stripe';
+import { Resend } from 'resend';
+// import { EmailTemplate } from '@/app/components/emailTemplate';
 
 // preflight browser options request to allow API requests from any origin
 export async function OPTIONS() {
@@ -15,6 +17,8 @@ export async function OPTIONS() {
   });
 }
 
+const resend = new Resend(process.env.RESEND_API_KEY!);
+
 export async function POST() {
   try {
     // grab the headers from the post req
@@ -24,7 +28,7 @@ export async function POST() {
     const origin = headersList.get('origin') || "http://localhost:3000";
 
     // price is set from stripe products
-    const productId = "prod_RwTYI09xsRhanH"; // course product ID
+    const productId = "prod_RxytS1d3n8hsxN"; // course product ID
 
     // fetch the price dynamically from Stripe
     const prices = await stripe.prices.list({

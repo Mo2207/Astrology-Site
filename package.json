@@ -20,6 +20,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.4.1",
+    "resend": "^4.1.2",
     "stripe": "^17.7.0",
     "tailwind-scrollbar-hide": "^2.0.0"
   },

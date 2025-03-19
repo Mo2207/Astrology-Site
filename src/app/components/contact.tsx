@@ -9,9 +9,9 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-[4rem] bg-white text-gray-900 flex justify-center">
-      <div className="max-w-7xl">
+      <div className="max-w-7xl flex justify-center">
 
-      <div className="flex flex-col md:flex-row justify-center gap-5 w-[90%] mx-auto">
+      <div className="flex flex-col md:flex-row justify-center gap-5 min-w-[90%]">
 
         {/* LEFT SIDE */}
         <div className="flex-[3]">
@@ -22,10 +22,10 @@ export default function Contact() {
           />
         </div>
         {/* RIGHT SIDE */}
-        <div className="flex-[2] flex flex-col justify-center">
+        <div className="flex-[2] flex flex-col justify-center md:items-center">
           <h2 className="font-bold text-2xl pb-4">{t("contact.title")}</h2>
-          <p className="font-semibold pb-3">{t("contact.p")}</p>
-          <Button className="self-start">{t("buttons.messenger")}</Button>
+          <p className="font-semibold pb-3 md:text-center">{t("contact.p")}</p>
+          <Button className="self-start md:self-center">{t("buttons.messenger")}</Button>
         </div>
 
       </div>

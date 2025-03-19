@@ -17,7 +17,7 @@ export default function Faq() {
   }
 
   return (
-    <section id="price" className="pt-20 bg-white text-gray-900 flex justify-center">
+    <section id="faq" className="pt-20 bg-white text-gray-900 flex justify-center">
       <div className="max-w-7xl flex justify-center">
 
       <div className="flex flex-col w-[90%]">
