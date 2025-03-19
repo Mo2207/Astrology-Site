@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import { headers } from 'next/headers';
 import { stripe } from '../../../lib/stripe';
 import Stripe from 'stripe';
-import { Resend } from 'resend';
+// import { Resend } from 'resend';
 // import { EmailTemplate } from '@/app/components/emailTemplate';
 
 // preflight browser options request to allow API requests from any origin
@@ -17,7 +17,7 @@ export async function OPTIONS() {
   });
 }
 
-const resend = new Resend(process.env.RESEND_API_KEY!);
+// const resend = new Resend(process.env.RESEND_API_KEY!);
 
 export async function POST() {
   try {

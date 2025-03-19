@@ -10,6 +10,6 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
 }) => (
   <div>
     <h1>Congratulations!</h1>
-    <p>Thank you for purchasing the course! Here is your unique course link: LINK</p>
+    <p>Thank you for purchasing the course! Here is your unique course link: {courseLink}</p>
   </div>
 );
