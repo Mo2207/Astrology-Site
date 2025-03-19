@@ -12,14 +12,13 @@ export async function POST(req: Request) {
   const payload = await req.text();
   const signature = req.headers.get("stripe-signature") || "";
 
-  console.log("POST send email")
-
   try {
     const event = stripe.webhooks.constructEvent(
       payload,
       signature,
       process.env.STRIPE_WEBHOOK_SECRET!
     );
+    console.log("Full event data:", JSON.stringify(event, null, 2));
 
     // check if checkout session has completed
     if (event.type === "checkout.session.completed") {
