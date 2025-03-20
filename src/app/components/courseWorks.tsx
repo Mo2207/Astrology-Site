@@ -12,12 +12,12 @@ export default function CourseWorks() {
 
   return (
     <section id="course_works" className="flex justify-center pt-12 pb-20 bg-[#FFFFFF] text-gray-900">
-      <div className="max-w-7xl self-center">
+      <div className="max-w-7xl self-center w-[90%]">
       <div className="flex justify-center text-center text-3xl font-bold pb-16 px-5">
         <h2>{t("works.title")}</h2>
       </div>
 
-      <div className="flex flex-col lg:flex-row justify-center px-10 gap-5 items-stretch">
+      <div className="flex flex-col lg:flex-row justify-center  gap-5 items-stretch">
 
         {/* LEFT SIDE */}
         <div className="flex flex-1 w-full max-h-[500px] lg:max-h-none justify-center">
@@ -56,9 +56,9 @@ export default function CourseWorks() {
 
             {/* pricing */}
             <div className="">
-              <div className="flex flex-row justify-center lg:justify-start gap-5">
-                <CheckoutButton className="" text={t("buttons.gain_access")}></CheckoutButton>
-                <p className="mt-2 text-lg">
+              <div className="flex flex-row justify-center items-center lg:justify-start gap-3">
+                <CheckoutButton className="text-md md:text-lg" text={t("buttons.gain_access")}></CheckoutButton>
+                <p className="text-md md:text-lg">
                   <span className="font-bold text-[#54994f]">{t("price.sale_price")}</span>
                   <del className="text-gray-500 ml-2">{t("price.old_price")}</del>
                 </p>
