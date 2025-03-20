@@ -20,7 +20,7 @@ export default function Faq() {
     <section id="faq" className="pt-20 bg-white text-gray-900 flex justify-center">
       <div className="max-w-7xl flex justify-center">
 
-      <div className="flex flex-col w-[90%]">
+      <div className="flex flex-col w-[80vw]">
       <h2 className="self-center font-bold text-3xl pb-12">{t("faq.title")}</h2>
 
       <div className="flex justify-center flex-col gap-6 cursor-pointer">
@@ -43,10 +43,10 @@ export default function Faq() {
             </div>
 
             {/* dropdown with answer */}
-            <div className="overflow-hidden text-wrap">
+            <div className="overflow-hidden text-wrap w-full">
               {openIndex === index && (
                 <p 
-                  className="mt-3 transition-opacity duration-600 max-w-[853px] break-words"
+                  className="mt-3 transition-opacity duration-600 break-words max-w-[90%]"
                 >
                   {item.answer}
                 </p>

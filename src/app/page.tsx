@@ -31,11 +31,11 @@ export default function Page() {
       <Reviews />
       <Guarantee />
       <Results />
+      <Faq />
+      <Contact />
       <CourseDifference />
       <CourseWorks />
       <Price />
-      <Faq />
-      <Contact />
       <Footer />
     </div>
   )
