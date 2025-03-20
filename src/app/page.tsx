@@ -33,9 +33,9 @@ export default function Page() {
       <Results />
       <Faq />
       <Contact />
-      <CourseDifference />
       <CourseWorks />
       <Price />
+      <CourseDifference />
       <Footer />
     </div>
   )
