@@ -16,13 +16,13 @@ export default function About() {
       <div className="w-[90%] h-[50rem] md:h-[35rem] mx-auto flex flex-col md:flex-row items-center gap-12">
 
         {/* LEFT SIDE */}
-        <div className="w-full h-full md:w-1/2 flex justify-center overflow-hidden">
+        <div className="w-full h-full md:w-1/2 flex justify-center items-center overflow-hidden">
           <Image 
             src={'/assets/img/about/Maria.jpeg'} 
             alt="Astrology Image" 
             width={400} 
             height={400} 
-            className="w-full h-full object-cover rounded-lg shadow-lg"
+            className="w-[80%] h-[80%] object-cover rounded-lg shadow-lg"
           />
         </div>
 
