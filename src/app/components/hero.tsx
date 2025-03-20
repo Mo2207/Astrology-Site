@@ -12,10 +12,11 @@ export default function Hero() {
     <section id="hero" className="pb-[6rem] bg-[#FFFFFF] text-gray-900 flex justify-center flex-col">
       
 
-      <div className="flex justify-center flex-col w-[50%] mx-auto py-[4rem] md:py-[8rem]">
-        <h1 className="pb-8 font-bold text-center text-xl sm:text-3xl md:text-4xl">{t("hero.title")}</h1>
+      <div className="flex justify-center flex-col w-[90%] mx-auto pt-[8rem] pb-[4rem] md:py-[8rem]">
+        <h2 className="font-bold text-center text-sm xxs:text-lg xs:text-2xl sm:text-2xl md:text-4xl">{t("hero.title.line1")}</h2>
+        <h2 className="pb-8 font-bold text-center text-sm xxs:text-lg xs:text-2xl sm:text-2xl md:text-4xl">{t("hero.title.line2")}</h2>
         <div className="flex justify-center">
-          <CheckoutButton className="self-center" text={t("buttons.start_course")}></CheckoutButton>
+          <CheckoutButton className="self-center text-md sm:text-lg" text={t("buttons.start_course")}></CheckoutButton>
         </div>
       </div>
 

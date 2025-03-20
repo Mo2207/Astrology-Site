@@ -14,7 +14,10 @@
     "4": {"name": "Contact"}
   },
   "hero": {
-    "title": "Online intensive course by numerologist and\nwomen's mentor Maria Kovalenko",
+    "title": {
+      "line1": "Online intensive course by numerologist",
+      "line2": "and women's mentor Maria Kovalenko"
+    },
     "start": {
       "title": "Course starts April 7",
       "p": "Duration 5 days"
