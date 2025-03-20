@@ -87,14 +87,31 @@ export default function CourseCards() {
         </div>
         {/* RIGHT SIDE */}
         {/* image */}
-        <div className="h-1/2 w-full md:h-auto">
+        <div className="h-1/2 w-full md:h-auto relative">
           <Image
             src={"/assets/img/course/beach-sitting.png"}
             width={500}
             height={500}
             alt="woman sitting on the beach"
-            className="border-0 object-cover h-full min-h-[15rem] w-full"
-          />
+            className="border-0 object-cover h-full min-h-[15rem] w-full z-0"
+            />
+
+            {/* spoiler 1 */}
+            <div className="absolute flex top-4 left-4 z-10 bg-white bg-opacity-80 border-0 rounded-md p-3 font-md text-md md:font-semibold md:text-lg">
+              <div>
+                <p className="text-center">{t("spoilers.1.p1")}</p>
+                <p className="text-center">{t("spoilers.1.p2")}</p>
+              </div>
+            </div>
+
+            {/* spoiler 2 */}
+            <div className="absolute flex bottom-4 right-4 z-10 bg-white bg-opacity-80 border-0 rounded-md p-3 font-md text-md md:font-semibold md:text-lg">
+              <div>
+                <p className="text-center">{t("spoilers.2.p1")}</p>
+                <p className="text-center">{t("spoilers.2.p2")}</p>
+              </div>
+            </div>
+
         </div>
       </div>
 

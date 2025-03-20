@@ -113,6 +113,16 @@
       ]
     }
   },
+  "spoilers": {
+    "1": {
+      "p1": "You don't need extra time in",
+      "p2": "a day to live in a resource."
+    },
+    "2": {
+      "p1": "Living in a resource is not",
+      "p2": "about big money, it's FREE"
+    }
+  },
   "curriculum": {
     "title": "Course Curriculum",
     "list": [
