@@ -3,7 +3,7 @@
 
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
-import flowerIcon from "../../../public/assets/img/course/icons/flower.svg";
+import check from "../../../public/assets/img/icons/check.svg";
 
 
 export default function Results() {
@@ -21,14 +21,14 @@ export default function Results() {
           {results.map((item, index) => (
             <p
               key={index}
-              className="font-semibold mb-3 flex flex-row"
+              className="font-semibold mb-3 flex flex-row items-center"
             >
               <Image
-                  src={flowerIcon}
-                  alt="flower svg"
-                  className="w-[1rem] h-[1rem] mt-1 mr-1"
+                  src={check}
+                  alt="check mark icon"
+                  className="w-[2rem] h-[2rem] mr-1"
                 />
-              {item}
+                {item}
             </p>
           ))}
         </div>

@@ -29,11 +29,11 @@ export default function Page() {
       <CourseIntro />
       <Bonus />
       <Reviews />
+      <Guarantee />
       <Results />
       <CourseDifference />
       <CourseWorks />
       <Price />
-      <Guarantee />
       <Faq />
       <Contact />
       <Footer />

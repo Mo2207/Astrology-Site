@@ -9,7 +9,7 @@ export default function Guarantee() {
   const { t } = useTranslation();
 
   return (
-    <section id="price" className="pt-20 bg-white text-gray-900 flex justify-center relative">
+    <section id="price" className="py-[5rem] bg-white text-gray-900 flex justify-center relative">
       <div className="max-w-7xl flex justify-center">
       
       <Image
