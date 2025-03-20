@@ -32,7 +32,7 @@ export default function Reviews() {
 
       <div className="relative w-full overflow-hidden snap-start pb-10 h-[500px]">
         <div 
-          className="flex flex-row items-start space-y-0 space-x-6 px-6 pt-8 snap-x snap-mandatory scrollbar-hidden overflow-y-hidden w-full h-full md:h-[30rem]"
+          className="flex flex-row items-start space-y-0 space-x-6 px-6 pt-8 snap-x snap-mandatory scrollbar-hide overflow-y-hidden w-full h-full md:h-[30rem]"
           ref={scrollContainerRef}
         >
           {Object.keys(reviews).map((key) => (

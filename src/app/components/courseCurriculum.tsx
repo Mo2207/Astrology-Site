@@ -47,7 +47,7 @@ export default function CourseCurriculum() {
         />
 
         <div 
-          className="flex flex-row space-x-6  px-6 pt-8 snap-x snap-mandatory  overflow-x-auto h-[16rem] w-full"
+          className="flex flex-row space-x-6  px-6 pt-8 snap-x snap-mandatory scrollbar-hide overflow-x-auto h-[16rem] w-full"
           ref={scrollContainerRef}
         > 
           {Object.keys(curriculum).map((key) => (
