@@ -18,8 +18,8 @@ export default function About() {
         {/* LEFT SIDE */}
         <div className="w-full h-full md:w-1/2 flex justify-center items-center overflow-hidden">
           <Image 
-            src={'/assets/img/about/Maria.jpeg'} 
-            alt="Astrology Image" 
+            src={'/assets/img/hero/woman-sitting.jpeg'} 
+            alt="Picture of Mariya" 
             width={400} 
             height={400} 
             className="w-[90%] h-[80%] object-cover rounded-lg shadow-lg"
