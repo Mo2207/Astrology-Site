@@ -2,7 +2,7 @@
 import { useTranslation } from "react-i18next";
 import CheckoutButton from "./ui/button/checkoutButton";
 import Image from "next/image";
-import sitting from "../../../public/assets/img/hero/woman-sitting.jpeg";
+// import sitting from "../../../public/assets/img/hero/woman-sitting.jpeg";
 import teaching from "../../../public/assets/img/hero/teaching.jpeg";
 
 export default function Hero() {
