@@ -17,6 +17,7 @@ import CourseWorks from "./components/courseWorks";
 import Price from "./components/price";
 import Guarantee from "./components/guarantee";
 import Faq from "./components/faq";
+import MobileHoverButton from "./components/mobileHoverButton";
 
 export default function Page() {
   return (
@@ -37,6 +38,7 @@ export default function Page() {
       <Price />
       <CourseDifference />
       <Footer />
+      <MobileHoverButton />
     </div>
   )
 }
