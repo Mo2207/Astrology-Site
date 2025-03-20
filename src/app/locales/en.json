@@ -25,15 +25,16 @@
     }
   },
   "about": {
-    "h2": "About",
+    "h2": "About The Author",
     "description": [
-      "Mariya Kovalenko is Practicing Vedic numerologist, astrologer, psychologist, and women's mentor.",
-      "Mother of three, happily married for 16 years",
-      "Received a blessing from a spiritual mentor to provide counseling and share knowledge",
-      "Conducted over 500 consultations",
-      "Author and organizer of women's circles and gatherings",
-      "Guest speaker at international festivals and women's events",
-      "Over 10 years of experience in supporting women's well-being"
+      "Maria Kovalenko",
+      "Practicing Vedic numerologist, astrologer, psychologist and female mentor",
+      "Mother of 3 children, 16 years old happily married",
+      "Received a blessing from a spiritual advisor for counseling and imparting knowledge",
+      "Conducted 500+ consultations",
+      "Author and ornamenter of women's circles and meetings",
+      "Guest speaker at international festivals and women's meetings",
+      "Experience in working with women's condition – more than 10 years"
     ]
   },
   "results": {
@@ -85,19 +86,21 @@
       "title": "Out of love for yourself",
       "items": [
         "5 video lessons for creating your own life strategy in the resource",
-        "Eliminate weakness and apathy with a unique, action-based strategy for lasting energy and resilience.",
         "Community chat & all materials",
-        "After registration you will get a bonus mood-meditation for the day"
+        "Immediately after registration, you will receive a BONUS: Meditation-mood for the day",
+        "Checklist: \"TOP Ways to Fill Your Resource by Date of Birth\""
       ]
     },
     "card2": {
-      "title": "This course is for you if",
+      "title": "The Intensive PRO Resource is for you if",
       "items": [
-        "You feel fatigue, apathy and lack of energy",
-        "You're burnt out at work and don't know how to recover",
-        "You are confused and do not understand what you want",
+        "You feel tired, apathetic and lack energy",
+        "You want a change, but you don't know where to start",
+        "Burned out at work and don't know how to recover",
+        "Confused in yourself and don't understand what you want",
+        "Constantly stressed and feeling emotionally exhausted",
         "You want to regain drive, joy and interest in life",
-        "You're ready to stop procrastinating and start acting"
+        "You are ready to stop procrastinating and start acting"
       ]
     },
     "card3": {
@@ -115,23 +118,23 @@
     "list": [
       {
         "title": "Day 1",
-        "step1": "The difference between masculine and feminine resources.",
-        "step2": "Understanding that resource is a tangible asset, not something amorphous."
+        "step1": "The difference between male and female resources.",
+        "step2": "A resource is a concrete thing, not something amorphous."
       },
       {
         "title": "Day 2",
-        "step1": "5 steps to harness your resource.",
-        "step2": "Identifying actions that drain versus replenish your resource."
+        "step1": "5 steps to the resource.",
+        "step2": "Resource-taking and resource-giving actions."
       },
       {
         "title": "Day 3",
-        "step1": "5 steps to harness your resource.",
-        "step2": "Discovering where to find time to replenish your resource."
+        "step1": "5 steps to the resource.",
+        "step2": "Where to find time to replenish the resource."
       },
       {
         "title": "Day 4",
-        "step1": "Exploring the resources of the body and mind.",
-        "step2": "Recognizing resource leaks and how to fix them."
+        "step1": "The resource of the body and the resource of the psyche.",
+        "step2": "Resource holes and how to fix them."
       },
       {
         "title": "Day 5",

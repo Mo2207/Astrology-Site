@@ -10,7 +10,7 @@ export default function Bonus() {
   const checklist = t("bonus.checklist", { returnObjects: true }) as string[];
 
   return (
-    <section id="course" className="flex flex-col justify-center items-center bg-[#FFFFFF] text-gray-900 py-16">
+    <section id="course" className="flex flex-col justify-center items-center bg-[#FFFFFF] text-gray-900 py-[10rem]">
       <div className="max-w-7xl">
 
       {/* bonus section */}

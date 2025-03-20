@@ -19,7 +19,7 @@ export default function CourseCards() {
       <div className="max-w-7xl flex flex-col gap-5">
       
       {/* Card 1 */}
-      <div className="h-auto w-[90%] self-center flex flex-col md:flex-row rounded-lg bg-[#faf5f3] border border-[#AD6049] text-gray-900 overflow-hidden">
+      <div className="hidden h-auto w-[90%] self-center flex-col md:flex-row rounded-lg bg-[#faf5f3] border border-[#AD6049] text-gray-900 overflow-hidden">
         {/* LEFT SIDE */}
         {/* image */}
         <div className="h-1/2 w-full md:h-auto ">
