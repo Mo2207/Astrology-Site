@@ -12,6 +12,7 @@ import Hero from "./components/hero";
 import Reviews from "./components/reviews";
 import Results from "./components/results";
 import CourseDifference from "./components/courseDifference";
+import CourseIntro from "./components/courseIntro";
 import CourseWorks from "./components/courseWorks";
 import Price from "./components/price";
 import Guarantee from "./components/guarantee";
@@ -23,10 +24,11 @@ export default function Page() {
       <Header />
       <Hero />
       <CourseCards />
+      <About />
       <CourseCurriculum />
+      <CourseIntro />
       <Bonus />
       <Reviews />
-      <About />
       <Results />
       <CourseDifference />
       <CourseWorks />

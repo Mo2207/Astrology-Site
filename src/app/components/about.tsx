@@ -22,7 +22,7 @@ export default function About() {
             alt="Astrology Image" 
             width={400} 
             height={400} 
-            className="w-[80%] h-[80%] object-cover rounded-lg shadow-lg"
+            className="w-[90%] h-[80%] object-cover rounded-lg shadow-lg"
           />
         </div>
 
