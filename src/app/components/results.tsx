@@ -17,21 +17,21 @@ export default function Results() {
 
       <div className="flex items-center flex-col w-[90%]">
         <h1 className="font-bold text-2xl md:text-3xl text-center p-5">{t("results.title")}</h1>
-        <div className="p-5 text-md md:text-lg">
-          {results.map((item, index) => (
-            <p
-              key={index}
-              className="font-semibold mb-3 flex flex-row items-center"
-            >
-              <Image
+          <div className="p-5 text-md md:text-lg">
+            {results.map((item, index) => (
+              <p
+                key={index}
+                className="font-semibold mb-3 flex flex-row items-center"
+              >
+                <Image
                   src={check}
                   alt="check mark icon"
                   className="w-[2rem] h-[2rem] mr-1"
                 />
                 {item}
-            </p>
-          ))}
-        </div>
+              </p>
+            ))}
+          </div>
       </div>
       </div>
     </section>
