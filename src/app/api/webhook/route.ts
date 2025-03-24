@@ -32,7 +32,7 @@ export async function POST(req: Request) {
       const email = session.customer_details?.email; // email now available after payment
 
       if (!email) {
-        console.error("No email found in customer_details.");
+        console.log("No email found in customer_details.");
         return NextResponse.json({ error: "Email missing." }, { status: 400 });
       }
 
@@ -40,13 +40,13 @@ export async function POST(req: Request) {
 
       // send the email via resend
       await resend.emails.send({
-        from: "Your Company <no-reply@yourdomain.com>",
+        from: "Mariya Numerologist <no-reply@mariya-numerologist.com>",
         to: email,
         subject: "Your Course Access",
         react: EmailTemplate({ courseLink: courseLink }) as React.ReactElement,
       });
 
-      console.error(`Email sent to ${email}`);
+      console.log(`Email sent to ${email}`);
     }
 
     return NextResponse.json({ received: true }, { status: 200 });
