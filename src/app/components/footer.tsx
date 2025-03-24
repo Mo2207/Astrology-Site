@@ -19,6 +19,7 @@ export default function Footer() {
   ];
 
   return (
+    <>
     <section id="footer" className="bg-[#faf5f3] text-gray-900">
       <div className="flex justify-center flex-col pb-10">
 
@@ -84,5 +85,9 @@ export default function Footer() {
 
       </div>
     </section>
+
+    {/* spacer to prevent button covering footer on mobile */}
+    <div className="h-[80px] md:hidden bg-[#faf5f3]" />
+    </>
   );
 }
