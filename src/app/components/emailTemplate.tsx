@@ -5,11 +5,11 @@ interface EmailTemplateProps {
   courseLink: string;
 }
 
-export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
-  courseLink,
-}) => (
-  <div>
-    <h1>Congratulations!</h1>
-    <p>Thank you for purchasing the course! Here is your unique course link: {courseLink}</p>
-  </div>
-);
+export function EmailTemplate({ courseLink }: EmailTemplateProps) {
+  return (
+    <div>
+      <h1>Welcome to Your Course!</h1>
+      <p>You can access your course here: <a href={courseLink}>{courseLink}</a></p>
+    </div>
+  );
+}

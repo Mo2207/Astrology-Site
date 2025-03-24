@@ -22,7 +22,8 @@ export async function POST(req: Request) {
 
     // check if checkout session has completed
     if (event.type === "checkout.session.completed") {
-      const session = event.data.object;
+      const session = event.data.object as Stripe.Checkout.Session;
+      console.log("Session data:", JSON.stringify(session, null, 2));
       const email = session.customer_email; // email now available after payment
 
       if (!email) {
