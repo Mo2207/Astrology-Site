@@ -71,7 +71,7 @@ export default function CourseCards() {
                 <Image
                   src={flowerIcon}
                   alt="flower svg"
-                  className="w-[1rem] h-[1rem] mt-2"
+                  className="w-[1rem] h-[1rem] mt-1"
                 />
                 {item}
               </p>
@@ -79,14 +79,14 @@ export default function CourseCards() {
           </div>
           <div className="text-left font-medium text-md sm:text-lg md:text-lg lg:text-xl text-gray-600 space-y-3 bg-white rounded-[16px] p-4">
             {card2Spoilers.map((item, index) => (
-              <p key={index} className="flex items-top gap-2" dangerouslySetInnerHTML={{ __html: t(item).replace(/<strong>/g, "<b>").replace(/<\/strong>/g, "</b>") }} />
+              <p key={index} className="items-top gap-2" dangerouslySetInnerHTML={{ __html: t(item).replace(/<strong>/g, "<b>").replace(/<\/strong>/g, "</b>") }} />
               // <p key={index} className="flex items-top gap-2">
               //   {item}
               // </p>
             ))}
           </div>
           {/* pricing section */}
-          <div className="flex flex-col items-start hidden md:block">
+          <div className="flex-col items-start hidden md:block">
             <p className="mt-4 text-md sm:text-lg md:text-lg lg:text-xl">
               <span className="font-bold text-[#54994f]">{t("price.sale_price")}</span> 
               <del className="text-gray-500 ml-2 font-bold">{t("price.old_price")}</del>
@@ -106,20 +106,20 @@ export default function CourseCards() {
             />
 
             {/* spoiler 1 */}
-            <div className="absolute flex top-4 left-4 z-10 bg-white bg-opacity-80 border-0 rounded-md p-3 font-md text-md md:font-semibold md:text-lg">
+            {/* <div className="absolute flex top-4 left-4 z-10 bg-white bg-opacity-80 border-0 rounded-md p-3 font-md text-md md:font-semibold md:text-lg">
               <div>
                 <p className="text-center">{t("spoilers.1.p1")}</p>
                 <p className="text-center">{t("spoilers.1.p2")}</p>
               </div>
-            </div>
+            </div> */}
 
             {/* spoiler 2 */}
-            <div className="absolute flex bottom-4 right-4 z-10 bg-white bg-opacity-80 border-0 rounded-md p-3 font-md text-md md:font-semibold md:text-lg">
+            {/* <div className="absolute flex bottom-4 right-4 z-10 bg-white bg-opacity-80 border-0 rounded-md p-3 font-md text-md md:font-semibold md:text-lg">
               <div>
                 <p className="text-center">{t("spoilers.2.p1")}</p>
                 <p className="text-center">{t("spoilers.2.p2")}</p>
               </div>
-            </div>
+            </div> */}
 
         </div>
       </div>
