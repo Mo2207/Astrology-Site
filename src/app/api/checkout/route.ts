@@ -25,7 +25,8 @@ export async function POST() {
     const headersList = await headers();
 
     // origin = the user or local testing
-    const origin = headersList.get('origin') || "http://localhost:3000";
+    const origin = headersList.get('origin') || process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+
 
     // price is set from stripe products
     const productId = process.env.STRIPE_PRODUCT_ID!; // course product ID
