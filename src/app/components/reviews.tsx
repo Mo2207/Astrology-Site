@@ -31,13 +31,14 @@ export default function Reviews() {
       <h2 className="text-lg md:text-xl lg-text-2xl font-normal text-center">{t("reviews.title1")}</h2>
       <h2 className="text-2xl md:text-3xl lg-text-4xl font-bold text-center">{t("reviews.title2")}</h2>
 
-      <div className="relative w-full overflow-hidden snap-start pb-10 h-[500px]">
+      <div className="relative w-full overflow-hidden snap-start pb-10 md:h-[500px]">
         <div 
           className="flex flex-col md:flex-row 
                space-y-6 md:space-y-0 md:space-x-6 
                px-6 pt-8 
-               overflow-y-auto md:overflow-x-auto 
-               overflow-x-hidden md:overflow-y-hidden 
+               overflow-y-auto
+               md:overflow-x-auto 
+               md:overflow-y-hidden 
                snap-y md:snap-x snap-mandatory 
                scrollbar-hide w-full h-full"
           ref={scrollContainerRef}

@@ -16,7 +16,7 @@ export default function About() {
       <div className="w-[90%] h-[50rem] md:h-[35rem] mx-auto flex flex-col md:flex-row items-center gap-12">
 
         {/* LEFT SIDE */}
-        <div className="w-full h-full md:w-1/2 flex justify-center items-center overflow-hidden hidden md:block">
+        <div className="w-full h-full md:w-1/2 justify-center items-center overflow-hidden hidden md:flex">
           <Image 
             src={'/assets/img/hero/woman-sitting.jpeg'} 
             alt="Picture of Mariya" 
