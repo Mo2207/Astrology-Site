@@ -25,7 +25,7 @@ export default function Contact() {
         <div className="flex-[2] flex flex-col justify-center md:items-center">
           <h2 className="font-bold text-2xl pb-4">{t("contact.title")}</h2>
           <p className="font-semibold pb-3 md:text-center">{t("contact.p")}</p>
-          <Button className="self-start md:self-center">{t("buttons.messenger")}</Button>
+          <Button onClick={() => window.open("https://t.me/Resursinner_bot", "_blank")} className="self-start md:self-center">{t("buttons.messenger")}</Button>
         </div>
 
       </div>

@@ -10,7 +10,7 @@ export default function Bonus() {
   const checklist = t("bonus.checklist", { returnObjects: true }) as string[];
 
   return (
-    <section id="course" className="flex flex-col justify-center items-center bg-[#FFFFFF] text-gray-900 pt-5 pb-[8rem]">
+    <section id="course" className="flex flex-col justify-center items-center bg-[#FFFFFF] text-gray-900 pt-5 pb-[4rem]">
       <div className="max-w-7xl">
 
       {/* bonus section */}
@@ -22,10 +22,10 @@ export default function Bonus() {
           ))}
         </div>
         {/* pricing section */}
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col items-center text-center hidden md:block">
           <p className="mt-4 pb-4 text-md md:text-xl lg:text-2xl">
             <span className="font-bold text-[#54994f]">{t("price.sale_price")}</span> 
-            <del className="text-gray-500 ml-2">{t("price.old_price")}</del>
+            <del className="text-gray-500 ml-2 font-bold">{t("price.old_price")}</del>
           </p>
           <CheckoutButton className="mt-3" text={t("buttons.gain_access")}></CheckoutButton>
         </div>

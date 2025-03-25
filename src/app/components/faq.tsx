@@ -9,7 +9,7 @@ import { useState } from "react";
 export default function Faq() {
   const { t } = useTranslation();
 
-  const questions = t("faq.list", { returnObjects: true }) as Array<{ question: string; answer: string }>;
+  const questions = t("faq.list", { returnObjects: true }) as Array<{ question: string; answer: string, answer2?: string, answer3?: string }>;
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const toggleAnswer = (index: number) => {
@@ -45,12 +45,39 @@ export default function Faq() {
             {/* dropdown with answer */}
             <div className="overflow-hidden text-wrap w-full">
               {openIndex === index && (
+                <>
+                  <p 
+                    className="mt-3 transition-opacity duration-600 break-words max-w-[90%]"
+                    dangerouslySetInnerHTML={{ __html: item.answer.replace(/<strong>/g, "<b>").replace(/<\/strong>/g, "</b>") }}
+                  />
+                  {/* {item.answer} */}
+                  {index === 0 && (
+                    <>
+                    <p className="mt-3 transition-opacity duration-600 break-words max-w-[90%]"
+                      dangerouslySetInnerHTML={{ __html: item.answer2!.replace(/<strong>/g, "<b>").replace(/<\/strong>/g, "</b>") }}
+                    />
+                    <p className="mt-3 transition-opacity duration-600 break-words max-w-[90%]"
+                      dangerouslySetInnerHTML={{ __html: item.answer3!.replace(/<strong>/g, "<b>").replace(/<\/strong>/g, "</b>") }}
+                    />
+                    </>
+                  )}
+                </>
+              )}
+              {/* {index === 0 && (
+                <>
                 <p 
                   className="mt-3 transition-opacity duration-600 break-words max-w-[90%]"
                 >
                   {item.answer}
                 </p>
-              )}
+                  <p className="mt-3 transition-opacity duration-600 break-words max-w-[90%]">
+                    {item.answer2}
+                  </p>
+                  <p className="mt-3 transition-opacity duration-600 break-words max-w-[90%]">
+                    {item.answer3}
+                  </p>
+                </>
+              )} */}
             </div>
             
           </div>

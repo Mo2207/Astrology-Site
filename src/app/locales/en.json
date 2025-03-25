@@ -15,16 +15,29 @@
   },
   "hero": {
     "title": {
-      "line1": "Online intensive course by numerologist",
-      "line2": "and women's mentor Maria Kovalenko"
+      "title1": "Online Intensive by Numerologist and Women's Mentor Maria Kovalenko",
+      "title2-1": "Access",
+      "title2-2": "2 Months",
+      "title2-3": "Start",
+      "title2-4": "April 14",
+      "title3": "PRO Resource",
+      "title4": "Out of Love for Yourself",
+      "title5": "<strong>5 Video Lessons</strong> to Create Your Own Life Strategy in Resourcefulness",
+      "title6": "Permanently Eliminate Fatigue and Apathy with a Unique Methodology for Building a Resourceful Strategy Through Simple Actions",
+      "bonusTitle": "Right After Registration, You Will Receive a <strong>BONUS:</strong>",
+      "bonusText1": "Morning Meditation Tune-in",
+      "bonusText2": "Checklist: 'TOP Ways to Replenish Your Energy Based on Your Birth Date'",
+      "bonusText3": "Get Access for $15/599 UAH Instead of $75/2500 UAH",
+      "line1": "Online Intensive by Numerologist",
+      "line2": "and Women's Mentor Maria Kovalenko"
     },
     "start": {
-      "title": "Course starts April 14",
-      "p": "Duration 5 days"
+      "title": "Start on April 14",
+      "p": "Duration: 5 Days"
     },
     "access": {
-      "title": "Online mastermind",
-      "p": "Access for 2 months"
+      "title": "Online Mastermind",
+      "p": "Access for 2 Months"
     }
   },
   "about": {
@@ -102,6 +115,10 @@
         "Constantly stressed and feeling emotionally exhausted",
         "You want to regain drive, joy and interest in life",
         "You are ready to stop procrastinating and start acting"
+      ],
+      "spoilers": [
+        "<strong>Spoiler 1:</strong> You don't need extra hours in the day to live in resourcefulness.",
+        "<strong>Spoiler 2:</strong> Living in resourcefulness is not about having lots of money—it's FREE."
       ]
     },
     "card3": {
@@ -164,6 +181,13 @@
       "Private chat communication and support.",
       "BONUSES: Checklist \"What the resource gives and what it takes\".",
       "Checklist \"Strategy for filling the resource for the month\"."
+    ],
+    "title2": "Start on April 14",
+    "list2": [
+      "4 recorded video lessons so you can watch them at a convenient time. I recommend watching in the morning to reflect on the new information throughout the day and apply it immediately in real life.",
+      "1 online mastermind session where I will answer your questions and analyze real situations. A recording of the session will be available.",
+      "Access to all materials for 2 months.",
+      "A private chat for communication and support."
     ]
   },
   "bonus": {
@@ -279,7 +303,9 @@
     "list": [
       {
         "question": "How does the intensive work?",
-        "answer": "The intensive course consists of five video lessons that you can watch at your convenience. You will have access to all materials for 2 months and a private chat for communication and support."
+        "answer": "The intensive course consists of five video lessons that you can watch at your convenience. You will have access to all materials for 2 months and a private chat for communication and support.",
+        "answer2": "Access to all materials –<strong>2 months</strong>",
+        "answer3": "You will have a <strong>private chat for communication and support</strong>."
       },
       {
         "question": "How much time should be allocated for training?",

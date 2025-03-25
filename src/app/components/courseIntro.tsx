@@ -9,6 +9,7 @@ export default function CourseIntro() {
   const { t } = useTranslation();
 
   const list = t("intro.list", { returnObjects: true }) as string[];
+  const list2 = t("intro.list2", { returnObjects: true }) as string[];
 
   return (
     <section id="course_intro" className="pt-[10rem] pb-12 bg-[#FFFFFF] text-gray-900 flex justify-center">
@@ -19,7 +20,7 @@ export default function CourseIntro() {
 
         <h2 className="font-bold pb-6 text-center text-xl md:text-2xl">{t("intro.title")}</h2>
 
-        <div className="">
+        <div className="pb-6">
           {list.map((item, index) => (
             <p 
               key={index}
@@ -30,6 +31,25 @@ export default function CourseIntro() {
                   alt="flower svg"
                   className="w-[1rem] h-[1rem] mt-1 mr-2 md:mt-2"
                 />
+              <span className="font-bold pb-6" dangerouslySetInnerHTML={{ __html: t(item).replace(/<strong>/g, "<b>").replace(/<\/strong>/g, "</b>") }} />
+              {/* {item} */}
+            </p>
+          ))}
+        </div>
+        <h2 className="font-bold pb-6 text-center text-xl md:text-2xl">{t("intro.title2")}</h2>
+
+        <div className="">
+          {list2.map((item, index) => (
+            <p 
+              key={index}
+              className="pb-2 flex flex-row"
+            >
+              <Image
+                  src={flowerIcon}
+                  alt="flower svg"
+                  className="w-[1rem] h-[1rem] mt-1 mr-2 md:mt-2"
+                />
+                
               {item}
             </p>
           ))}

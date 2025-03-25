@@ -12,6 +12,7 @@ export default function CourseCards() {
   // translations for all card items
   const card1Items= t("course_cards.card1.items", { returnObjects: true }) as string[];
   const card2Items= t("course_cards.card2.items", { returnObjects: true }) as string[];
+  const card2Spoilers= t("course_cards.card2.spoilers", { returnObjects: true }) as string[];
   // const card3Items= t("course_cards.card3.items", { returnObjects: true }) as string[];
   
   return (
@@ -51,7 +52,7 @@ export default function CourseCards() {
           <div className="flex flex-col items-start">
           <p className="mt-4 text-md sm:text-lg md:text-lg lg:text-xl">
             <span className="font-bold text-[#54994f]">{t("price.sale_price")}</span> 
-            <del className="text-gray-500 ml-2">{t("price.old_price")}</del>
+            <del className="text-gray-500 ml-2 font-bold">{t("price.old_price")}</del>
           </p>
             <CheckoutButton className="mt-3" text={t("buttons.gain_access")}></CheckoutButton>
           </div>
@@ -64,7 +65,7 @@ export default function CourseCards() {
         {/* main text */}
         <div className="h-1/2 w-full md:h-auto flex flex-col justify-center items-center p-5">
           <h2 className="font-bold pb-6 text-center text-xl sm:text-2xl md:text-xl lg:text-2xl">{t("course_cards.card2.title")}</h2>
-          <div className="text-left font-medium text-md sm:text-lg md:text-lg lg:text-xl text-gray-600 space-y-3">
+          <div className="text-left font-medium text-md sm:text-lg md:text-lg lg:text-xl text-gray-600 space-y-3 pb-10">
             {card2Items.map((item, index) => (
               <p key={index} className="flex items-top gap-2">
                 <Image
@@ -76,12 +77,20 @@ export default function CourseCards() {
               </p>
             ))}
           </div>
+          <div className="text-left font-medium text-md sm:text-lg md:text-lg lg:text-xl text-gray-600 space-y-3 bg-white rounded-[16px] p-4">
+            {card2Spoilers.map((item, index) => (
+              <p key={index} className="flex items-top gap-2" dangerouslySetInnerHTML={{ __html: t(item).replace(/<strong>/g, "<b>").replace(/<\/strong>/g, "</b>") }} />
+              // <p key={index} className="flex items-top gap-2">
+              //   {item}
+              // </p>
+            ))}
+          </div>
           {/* pricing section */}
-          <div className="flex flex-col items-start">
-          <p className="mt-4 text-md sm:text-lg md:text-lg lg:text-xl">
-            <span className="font-bold text-[#54994f]">{t("price.sale_price")}</span> 
-            <del className="text-gray-500 ml-2">{t("price.old_price")}</del>
-          </p>
+          <div className="flex flex-col items-start hidden md:block">
+            <p className="mt-4 text-md sm:text-lg md:text-lg lg:text-xl">
+              <span className="font-bold text-[#54994f]">{t("price.sale_price")}</span> 
+              <del className="text-gray-500 ml-2 font-bold">{t("price.old_price")}</del>
+            </p>
             <CheckoutButton className="mt-3" text={t("buttons.gain_access")}></CheckoutButton>
           </div>
         </div>

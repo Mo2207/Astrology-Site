@@ -53,7 +53,7 @@ export default function CourseCurriculum() {
           {Object.keys(curriculum).map((key) => (
             <div
               key={key}
-              className="flex-shrink-0 flex flex-col justify-start w-full h-[90%] sm:w-[20rem] min-w-0 bg-[#faf5f3] shadow-md rounded-xl p-6 snap-center border border-[#AD6049]"
+              className="flex-shrink-0 flex flex-col justify-start w-full h-[90%] sm:w-[20rem] min-w-0 bg-[#faf5f3] shadow-md rounded-xl p-4 snap-center border border-[#AD6049]"
             >
               <h3 className="text-lg md:text-xl text-[#AD6049] font-semibold flex justify-center items-center mb-3">
                 <Image

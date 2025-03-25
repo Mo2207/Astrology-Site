@@ -55,12 +55,12 @@ export default function CourseWorks() {
             ))}
 
             {/* pricing */}
-            <div className="">
+            <div className="hidden md:block">
               <div className="flex flex-row justify-center items-center lg:justify-start gap-3">
                 <CheckoutButton className="text-md md:text-lg" text={t("buttons.gain_access")}></CheckoutButton>
                 <p className="text-md md:text-lg">
                   <span className="font-bold text-[#54994f]">{t("price.sale_price")}</span>
-                  <del className="text-gray-500 ml-2">{t("price.old_price")}</del>
+                  <del className="text-gray-500 ml-2 font-bold">{t("price.old_price")}</del>
                 </p>
               </div>
             </div>

@@ -34,7 +34,8 @@ export default function Results() {
           </div>
         </div>
 
-        <h2 className="text-lg md:text-xl font-bold p-6 self-center text-center">{t("results.h2")}</h2>
+        {/* <h2 className="text-lg md:text-xl font-normal p-6 self-center text-center">{t("results.h2")}</h2> */}
+        <h2 className="text-lg md:text-xl font-normal p-6 self-center text-center" dangerouslySetInnerHTML={{ __html: t("results.h2").replace(/<strong>/g, "<b>").replace(/<\/strong>/g, "</b>") }} />
 
       </div>
     </section>

@@ -21,7 +21,7 @@ export default function Guarantee() {
       />
 
       <div className="flex z-10 flex-col w-[80%] border border-[#DDBEA9] p-6 rounded-xl bg-[#faf5f3] text-center">
-        <h2 className="self-center font-bold text-3xl pb-8">{t("guarantee.title")}</h2>
+        <h2 className="self-center font-bold text-2xl pb-8">{t("guarantee.title")}</h2>
         <p className="text-lg pb-5">{t("guarantee.p1")}</p>
         <p className="text-lg">{t("guarantee.p2")}</p>
       </div>
