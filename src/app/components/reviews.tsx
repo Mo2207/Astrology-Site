@@ -29,8 +29,8 @@ export default function Reviews() {
 
   return (
     <section id="reviews" className="bg-[#FFFFFF] text-gray-900 h-auto">
-      <h2 className="text-lg md:text-xl lg-text-2xl font-normal text-center">{t("reviews.title1")}</h2>
-      <h2 className="text-2xl md:text-3xl lg-text-4xl font-bold text-center">{t("reviews.title2")}</h2>
+      <h2 className="text-2xl md:text-3xl lg-text-4xl font-bold text-center pb-2">{t("reviews.title1")}</h2>
+      <h2 className="text-lg md:text-xl lg-text-2xl font-normal text-center">{t("reviews.title2")}</h2>
 
       <div className="relative w-full overflow-hidden snap-start pb-10 md:h-[500px]">
         <div 
