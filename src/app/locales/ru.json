@@ -337,16 +337,12 @@
       "link": "https://theclicks.ca/en"
     },
     {
-      "title": "Договор оферты",
-      "link": ""
+      "title": "Оферта",
+      "link": "/docs/offer-agreement.pdf"
     },
     {
-      "title": "Политика конфиденциальности",
-      "link": ""
-    },
-    {
-      "title": "Авторские права © 2025",
-      "link": ""
+      "title": "Условия использования",
+      "link": "/docs/TOU.pdf"
     }
   ]
 }
