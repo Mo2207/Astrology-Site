@@ -12,7 +12,7 @@ export default function CourseIntro() {
   const list2 = t("intro.list2", { returnObjects: true }) as string[];
 
   return (
-    <section id="course_intro" className="pt-[2rem] pb-12 bg-[#FFFFFF] text-gray-900 flex justify-center">
+    <section id="course_intro" className="pt-[4rem] pb-12 bg-[#FFFFFF] text-gray-900 flex justify-center">
       <div className="max-w-7xl">
       
       <div className="flex justify-center">
