@@ -27,7 +27,7 @@ export default function CourseCurriculum() {
   const curriculum = t("curriculum.list", { returnObjects: true }) as Record<string, { title: string; step1: string; step2: string }>;
 
   return (
-    <section id="curriculum" className="pt-12 bg-[#FFFFFF] text-gray-900 h-[25rem]">
+    <section id="curriculum" className="pt-6 bg-[#FFFFFF] text-gray-900 h-[25rem]">
 
       <h2 className="text-2xl md:text-3xl lg-text-4xl font-bold text-center pb-10">{t("curriculum.title")}</h2>
 
