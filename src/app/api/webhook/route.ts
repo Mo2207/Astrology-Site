@@ -42,7 +42,7 @@ export async function POST(req: Request) {
       await resend.emails.send({
         from: "Mariya Numerologist <no-reply@mariya-numerologist.com>",
         to: email,
-        subject: "Your Course Access",
+        subject: "Your Course Link",
         react: EmailTemplate({ courseLink: courseLink }) as React.ReactElement,
       });
 
