@@ -35,7 +35,7 @@ export default function Footer() {
           />
           {/* RIGHT SIDE */}
           <div className="flex flex-row gap-3 items-center">
-            <a href="">
+            <a href="https://www.instagram.com/maryko_soul?igsh=Znd5YmMwaGV2OWg2&utm_source=qr">
               <Image
                 src={instagram}
                 alt="instagram icon"
@@ -44,7 +44,7 @@ export default function Footer() {
                 className="w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] cursor-pointer"
               />
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/profile.php?id=1349430859&mibextid=LQQJ4d">
               <Image
                 src={facebook}
                 alt="facebook icon"
