@@ -11,6 +11,7 @@
   "dependencies": {
     "@stripe/react-stripe-js": "^3.4.0",
     "@stripe/stripe-js": "^6.0.0",
+    "axios": "^1.8.4",
     "framer-motion": "^12.4.7",
     "i18next": "^24.2.2",
     "i18next-browser-languagedetector": "^8.0.4",
