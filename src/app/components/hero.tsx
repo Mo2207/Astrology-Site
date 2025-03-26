@@ -8,18 +8,18 @@ export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section id="hero" className="pb-[6rem] bg-[#FFFFFF] text-gray-900 flex justify-center flex-col">
+    <section id="hero" className="pb-[3rem] bg-[#FFFFFF] text-gray-900 flex justify-center flex-col">
       
 
-      <div className="flex justify-center flex-col w-[90%] mx-auto pt-[8rem] pb-[4rem] md:py-[8rem]">
+      <div className="flex justify-center flex-col w-[90%] mx-auto pt-[6rem] pb-[2rem] md:pt-[9rem] md:pb-[4rem]">
         <div className="font-normal text-center text-sm xxs:text-lg xs:text-xl sm:text-xl md:text-xl pb-2">{t("hero.title.title1")}</div>
         <div className="font-normal text-center text-sm xxs:text-lg xs:text-xl sm:text-xl md:text-xl pb-5">
-          {t("hero.title.title2-1")}
-          <span className="font-bold text-[#E69761]">{t("hero.title.title2-2")}</span>
           {t("hero.title.title2-3")}
           <span className="font-bold text-[#E69761]">{t("hero.title.title2-4")}</span>
+          {t("hero.title.title2-1")}
+          <span className="font-bold text-[#E69761]">{t("hero.title.title2-2")}</span>
         </div>
-        <div className="font-bold text-center text-xl xxs:text-2xl xs:text-4xl sm:text-4xl md:text-6xl">{t("hero.title.title3")}</div>
+        <div className="font-bold text-center text-4xl sm:text-5xl md:text-6xl text-[#e48c51]">{t("hero.title.title3")}</div>
         
         {/* <h2 className="font-bold text-center text-sm xxs:text-lg xs:text-2xl sm:text-2xl md:text-4xl">{t("hero.title.line1")}</h2> */}
         {/* <h2 className="pb-8 font-bold text-center text-sm xxs:text-lg xs:text-2xl sm:text-2xl md:text-4xl">{t("hero.title.line2")}</h2> */}

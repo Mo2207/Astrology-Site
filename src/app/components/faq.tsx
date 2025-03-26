@@ -17,13 +17,13 @@ export default function Faq() {
   }
 
   return (
-    <section id="faq" className="pt-20 bg-white text-gray-900 flex justify-center">
+    <section id="faq" className="pt-6 bg-white text-gray-900 flex justify-center">
       <div className="max-w-7xl flex justify-center">
 
-      <div className="flex flex-col w-[80vw]">
-      <h2 className="self-center font-bold text-3xl pb-12">{t("faq.title")}</h2>
+      <div className="flex flex-col w-[90vw] md:w-[80vw]">
+      <h2 className="self-center font-bold text-3xl pb-8">{t("faq.title")}</h2>
 
-      <div className="flex justify-center flex-col gap-6 cursor-pointer">
+      <div className="flex justify-center flex-col gap-4 cursor-pointer">
         {questions.map((item, index) => (
           <div
             key={index}

@@ -9,7 +9,7 @@ export default function Guarantee() {
   const { t } = useTranslation();
 
   return (
-    <section id="price" className="py-[5rem] bg-white text-gray-900 flex justify-center relative">
+    <section id="price" className="py-[2rem] bg-white text-gray-900 flex justify-center relative">
       <div className="max-w-7xl flex justify-center">
       
       <Image
@@ -20,7 +20,7 @@ export default function Guarantee() {
         className="absolute left-2 z-0 hidden md:flex object-cover h-full self-center "
       />
 
-      <div className="flex z-10 flex-col w-[80%] border border-[#DDBEA9] p-6 rounded-xl bg-[#faf5f3] text-center">
+      <div className="flex z-10 flex-col w-[93%] md:w-[80%] border border-[#DDBEA9] p-6 rounded-xl bg-[#faf5f3] text-center">
         <h2 className="self-center font-bold text-2xl pb-8">{t("guarantee.title")}</h2>
         <p className="text-lg pb-5">{t("guarantee.p1")}</p>
         <p className="text-lg">{t("guarantee.p2")}</p>

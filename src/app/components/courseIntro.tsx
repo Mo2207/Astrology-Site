@@ -12,7 +12,7 @@ export default function CourseIntro() {
   const list2 = t("intro.list2", { returnObjects: true }) as string[];
 
   return (
-    <section id="course_intro" className="pt-[4rem] pb-12 bg-[#FFFFFF] text-gray-900 flex justify-center">
+    <section id="course_intro" className="pt-[3rem] pb-[1rem] bg-[#FFFFFF] text-gray-900 flex justify-center">
       <div className="max-w-7xl">
       
       <div className="flex justify-center">
@@ -31,7 +31,7 @@ export default function CourseIntro() {
                   alt="flower svg"
                   className="w-[1rem] h-[1rem] mt-1 mr-2 md:mt-2"
                 />
-              <span className="font-bold pb-6" dangerouslySetInnerHTML={{ __html: t(item).replace(/<strong>/g, "<b>").replace(/<\/strong>/g, "</b>") }} />
+              <span className="font-bold pb-3" dangerouslySetInnerHTML={{ __html: t(item).replace(/<strong>/g, "<b>").replace(/<\/strong>/g, "</b>") }} />
               {/* {item} */}
             </p>
           ))}

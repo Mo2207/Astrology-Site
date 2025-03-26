@@ -12,10 +12,10 @@ export default function Results() {
   const results = t("results.list", { returnObjects: true }) as string[];
 
   return (
-    <section id="results" className="bg-[#faf5f3] text-gray-900 h-auto py-12 flex items-center justify-center">
-      <div className="max-w-7xl flex justify-center felx flex-col">
+    <section id="results" className="bg-[#faf5f3] text-gray-900 h-auto pt-3 pb-5 flex items-center justify-center">
+      <div className="max-w-7xl flex justify-center items-center flex-col">
 
-        <div className="flex items-center flex-col w-[90%]">
+        <div className="flex items-center justify-center flex-col w-[90%]">
           <h1 className="font-bold text-2xl md:text-3xl text-center p-5">{t("results.title")}</h1>
           <div className="p-5 text-md md:text-lg">
             {results.map((item, index) => (
@@ -35,7 +35,7 @@ export default function Results() {
         </div>
 
         {/* <h2 className="text-lg md:text-xl font-normal p-6 self-center text-center">{t("results.h2")}</h2> */}
-        <h2 className="text-lg md:text-xl font-normal p-6 self-center text-center" dangerouslySetInnerHTML={{ __html: t("results.h2").replace(/<strong>/g, "<b>").replace(/<\/strong>/g, "</b>") }} />
+        <h2 className="text-lg md:text-xl font-normal px-3 py-2 self-center text-center" dangerouslySetInnerHTML={{ __html: t("results.h2").replace(/<strong>/g, "<b>").replace(/<\/strong>/g, "</b>") }} />
 
       </div>
     </section>

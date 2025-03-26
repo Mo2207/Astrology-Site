@@ -48,12 +48,12 @@ export default function CourseCurriculum() {
         /> */}
         <Image
             src={dots}
-            alt="right arrow icon"
+            alt="dots icon"
             className="w-[3rem] h-[3rem] absolute bottom-[-1rem] left-1/2 -translate-x-1/2 -translate-y-1/2 hidden sm:flex"
           />
 
         <div 
-          className="flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-6 px-6 pt-8 snap-y sm:snap-x snap-mandatory scrollbar-hide sm:overflow-x-auto sm:h-[16rem] w-full"
+          className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-6 px-6 pt-8 snap-y sm:snap-x snap-mandatory scrollbar-hide sm:overflow-x-auto sm:h-[16rem] w-full"
           // ref={scrollContainerRef}
         > 
           {Object.keys(curriculum).map((key) => (
