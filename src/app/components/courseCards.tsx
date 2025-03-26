@@ -91,7 +91,9 @@ export default function CourseCards() {
               <span className="font-bold text-[#54994f]">{t("price.sale_price")}</span> 
               <del className="text-gray-500 ml-2 font-bold">{t("price.old_price")}</del>
             </p>
-            <CheckoutButton className="mt-3" text={t("buttons.gain_access")}></CheckoutButton>
+            <div className="flex justify-center">
+              <CheckoutButton className="mt-3" text={t("buttons.gain_access")}></CheckoutButton>
+            </div>
           </div>
         </div>
         {/* RIGHT SIDE */}
