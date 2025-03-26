@@ -13,10 +13,10 @@ export default function CourseDifference() {
   const rightList = t("difference.right.list", { returnObjects: true }) as string[];
 
   return (
-    <section id="course_difference" className="pt-12 pb-12 bg-[#FFFFFF] text-gray-900 flex justify-center">
+    <section id="course_difference" className="pt-[1rem] pb-[3rem] bg-[#FFFFFF] text-gray-900 flex justify-center">
       <div className="max-w-7xl">
 
-      <h2 className="flex justify-center text-center text-3xl font-bold py-5 px-6">{t("difference.title")}</h2>
+      <h2 className="flex justify-center text-center text-3xl font-bold pb-0 pt-[1rem] px-6">{t("difference.title")}</h2>
       
       <div className="flex flex-col md:flex-row pt-8 gap-3 mx-5 justify-center">
         {/* LEFT SIDE */}

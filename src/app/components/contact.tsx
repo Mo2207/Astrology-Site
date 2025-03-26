@@ -8,7 +8,7 @@ export default function Contact() {
   const { t } = useTranslation();
 
   return (
-    <section id="contact" className="py-[4rem] bg-white text-gray-900 flex justify-center">
+    <section id="contact" className="pt-[3rem] pb-0 bg-white text-gray-900 flex justify-center">
       <div className="max-w-7xl flex justify-center">
 
       <div className="flex flex-col md:flex-row justify-center gap-5 min-w-[90%] w-[90%]">
