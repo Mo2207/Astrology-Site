@@ -13,11 +13,15 @@ export default function Hero() {
 
       <div className="flex justify-center flex-col w-[90%] mx-auto pt-[4rem] pb-[2rem] md:pt-[9rem] md:pb-[4rem]">
         <div className="font-normal text-center text-sm xxs:text-lg xs:text-xl sm:text-xl md:text-xl pb-2">{t("hero.title.title1")}</div>
-        <div className="font-normal text-center text-sm xxs:text-lg xs:text-xl sm:text-xl md:text-xl pb-5">
-          {t("hero.title.title2-3")}
-          <span className="font-bold text-[#E69761]">{t("hero.title.title2-4")}</span>
+        <div className="font-normal text-center text-sm xxs:text-lg xs:text-xl sm:text-xl md:text-xl pb-5 max-w-[600px] mx-auto flex justify-between w-full">
+          <div>
           {t("hero.title.title2-1")}
           <span className="font-bold text-[#E69761]">{t("hero.title.title2-2")}</span>
+          </div>
+          <div>
+          {t("hero.title.title2-3")}
+          <span className="font-bold text-[#E69761]">{t("hero.title.title2-4")}</span>
+          </div>
         </div>
         <div className="font-bold text-center text-5xl sm:text-5xl md:text-6xl text-[#e48c51]">{t("hero.title.title3")}</div>
         <div className="font-normal text-center text-xl">{t("hero.title.title4")}</div>
@@ -96,7 +100,7 @@ export default function Hero() {
             <p className="font-semibold text-[#E69761]">{t("hero.title.bonusText2")}</p>
           </div>
         </div>
-        <div className="col-span-2 sm:col-span-1 row-span-2 sm:row-span-6">
+        <div className="col-span-2 sm:col-span-1 row-span-2 sm:row-span-6 relative h-[16rem]">
           <Image
             src={teaching}
             width={500}
