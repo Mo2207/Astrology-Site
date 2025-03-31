@@ -340,8 +340,9 @@
   "footer": {
     "list": [
       {
-        "title": "Powered by The Clicks",
-        "link": "https://theclicks.ca/en"
+        "title": "Powered by",
+        "link": "https://theclicks.ca/en",
+        "logo": "/assets/img/icons/clicks-logo.svg"
       },
       {
         "title": "Offer Agreement",

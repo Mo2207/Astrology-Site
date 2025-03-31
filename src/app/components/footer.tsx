@@ -5,11 +5,12 @@ import Image from "next/image";
 import logo from "../../../public/assets/img/navigation/icons/main-logo.svg";
 import instagram from "../../../public/assets/img/navigation/icons/instagram.svg";
 import facebook from "../../../public/assets/img/navigation/icons/facebook.svg";
+// import clicks from "../../../public/assets/img/icons/clicks-logo.webp";
 
 export default function Footer() {
   const { t } = useTranslation();
 
-  const links = t("footer.list", { returnObjects: true }) as Array<{ title: string; link: string }>;
+  const links = t("footer.list", { returnObjects: true }) as Array<{ title: string; link: string; logo: string }>;
 
   // defined custom navs here since contact isnt needed it is already at the bottom of page
   const navs = [
@@ -70,14 +71,15 @@ export default function Footer() {
           {links.map((item, index) => (
             <div
               key={index}
-              className="text-sm cursor-pointer"
+              className="text-sm cursor-pointer flex justify-center"
             >
               <a 
                 href={item.link}
                 target="_blank"
-                className="hover:underline"
+                className="hover:underline flex justify-center items-center"
               >
                 {item.title}
+                {item.logo && <img src={item.logo} alt="TheClicks logo" className="w-[4rem] h-[4rem]" />}
               </a>
             </div>
           ))}

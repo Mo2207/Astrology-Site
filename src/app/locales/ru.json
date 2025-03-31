@@ -332,8 +332,9 @@
   "footer": {
   "list": [
     {
-      "title": "Разработано The Clicks",
-      "link": "https://theclicks.ca/en"
+      "title": "Разработано",
+      "link": "https://theclicks.ca/en",
+      "logo": "/assets/img/icons/clicks-logo.svg"
     },
     {
       "title": "Оферта",
