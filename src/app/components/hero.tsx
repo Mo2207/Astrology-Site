@@ -66,9 +66,9 @@ export default function Hero() {
         <div className="bg-[#faf5f3] flex justify-center items-center flex-col border-0 rounded-xl row-span-4 sm:row-span-3">
           <div className="text-center p-4 text-sm xxs:text-md xs:text-lg sm:text-lg lg:text-xl flex flex-col gap-6 xs:gap-2 sm:gap-1 md:gap-4">
             {/* <h2 className="font-bold pb-6">{t("hero.title.bonusTitle")}</h2> */}
-            <h2 className="font-bold pb-4" dangerouslySetInnerHTML={{ __html: t("hero.title.bonusTitle").replace(/<strong>/g, "<b>").replace(/<\/strong>/g, "</b>") }} />
-            <p className="font-semibold pb-4 text-[#E69761]">{t("hero.title.bonusText1")}</p>
-            <p className="font-semibold text-[#E69761]">{t("hero.title.bonusText2")}</p>
+            <h2 className="font-bold pb-4" dangerouslySetInnerHTML={{ __html: t("hero.title.bonusTitle").replace(/<strong>/g, "<span class='text-[#E69761]'>").replace(/<\/strong>/g, "</span>") }} />
+            <p className="font-semibold pb-4">{t("hero.title.bonusText1")}</p>
+            <p className="font-semibold">{t("hero.title.bonusText2")}</p>
           </div>
         </div>
 
@@ -93,7 +93,7 @@ export default function Hero() {
         </div>
 
         <div className="bg-[#faf5f3] flex justify-center items-center flex-col border-0 rounded-xl row-span-4 sm:row-span-3 mb-2">
-          <div className="text-center p-4 text-sm xxs:text-md xs:text-lg sm:text-lg lg:text-xl flex flex-col gap-6 xs:gap-2 sm:gap-1 md:gap-4">
+          <div className="text-center p-4 text-sm xxs:text-md xs:text-lg sm:text-lg lg:text-xl flex flex-col gap xs:gap-2 sm:gap-1 md:gap-4">
             {/* <h2 className="font-bold pb-6">{t("hero.title.bonusTitle")}</h2> */}
             <h2 className="font-bold pb-4" dangerouslySetInnerHTML={{ __html: t("hero.title.bonusTitle").replace(/<strong>/g, "<b>").replace(/<\/strong>/g, "</b>") }} />
             <p className="font-semibold pb-4 text-[#E69761]">{t("hero.title.bonusText1")}</p>
