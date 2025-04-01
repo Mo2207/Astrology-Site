@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Raleway } from "next/font/google";
 import "./globals.css";
 import I18nProvider from "../app/components/I18nProvider";
+import Script from "next/script";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -32,6 +33,18 @@ export default function RootLayout({ children,}: Readonly<{children: React.React
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden w-[100vw]`}
       >
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-19TJE8FG09"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-19TJE8FG09');
+          `}
+        </Script>
         <I18nProvider>{children}</I18nProvider>
       </body>
     </html>
