@@ -34,7 +34,7 @@ export default function RootLayout({ children,}: Readonly<{children: React.React
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden w-[100vw]`}
       >
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-19TJE8FG09"
+          src="https://www.googletagmanager.com/gtag/js?id=G-9V0PJQ81XL"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -42,7 +42,7 @@ export default function RootLayout({ children,}: Readonly<{children: React.React
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-19TJE8FG09');
+            gtag('config', 'G-9V0PJQ81XL');
           `}
         </Script>
         <I18nProvider>{children}</I18nProvider>
