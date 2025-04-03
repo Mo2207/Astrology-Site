@@ -8,7 +8,7 @@ export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section id="hero" className="pb-[3rem] bg-[#FFFFFF] text-gray-900 flex justify-center flex-col">
+    <section id="hero" className="pb-[3rem] pt-[2rem] bg-[#FFFFFF] text-gray-900 flex justify-center flex-col">
       
 
       <div className="flex justify-center flex-col w-[90%] mx-auto pt-[4rem] pb-[2rem] md:pt-[9rem] md:pb-[4rem]">
@@ -73,6 +73,8 @@ export default function Hero() {
         </div>
 
       </div>
+
+      {/* Mobile */}
       <div className="w-[90%] h-auto max-h-[40rem] md:min-h-[20rem] mx-auto text-[#444444] block md:hidden">
 
         {/* <div className="col-span-2 row-span-2 md:col-span-2 md:row-span-2">
@@ -86,11 +88,21 @@ export default function Hero() {
         </div> */}
 
         <div className="bg-[#faf5f3] bg-center bg-no-repeat border-0 rounded-xl flex justify-center flex-col items-center row-span-4 sm:row-span-3 mb-2 pt-4 relative">
-          <div className="font-normal text-center text-sm block md:hidden absolute top-1 left-2">{t("hero.title.title4")}</div>
+          <div className="font-normal text-center text-sm xxs:text-md xs:text-lg sm:text-lg lg:text-xl block md:hidden">{t("hero.title.title4")}</div>
           <div className="text-center p-4 text-sm xxs:text-md xs:text-lg sm:text-lg lg:text-xl flex flex-col gap-6 xs:gap-2 sm:gap-1 md:gap-4">
             <div dangerouslySetInnerHTML={{ __html: t("hero.title.title5").replace(/<strong>/g, "<b>").replace(/<\/strong>/g, "</b>") }} />
             <p className="font-semibold">{t("hero.title.title6")}</p>
           </div>
+        </div>
+
+        <div className="col-span-2 sm:col-span-1 row-span-2 sm:row-span-6 relative h-[16rem] mb-2">
+          <Image
+            src={teaching}
+            width={500}
+            height={500}
+            alt="woman teaching"
+            className="border-0 rounded-lg object-cover w-full h-full"
+          />
         </div>
 
         <div className="bg-[#faf5f3] flex justify-center items-center flex-col border-0 rounded-xl row-span-4 sm:row-span-3 mb-2">
@@ -100,15 +112,6 @@ export default function Hero() {
             <p className="font-semibold pb-4 text-[#E69761]">{t("hero.title.bonusText1")}</p>
             <p className="font-semibold text-[#E69761]">{t("hero.title.bonusText2")}</p>
           </div>
-        </div>
-        <div className="col-span-2 sm:col-span-1 row-span-2 sm:row-span-6 relative h-[16rem]">
-          <Image
-            src={teaching}
-            width={500}
-            height={500}
-            alt="woman teaching"
-            className="border-0 rounded-lg object-cover w-full h-full"
-          />
         </div>
 
       </div>
