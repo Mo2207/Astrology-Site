@@ -27,6 +27,8 @@ export default function CheckoutButton({ text, className }: CheckoutButtonProps)
         console.error("Stripe API Error:", errorData);
         throw new Error(errorData.error || "Failed to create checkout session");
       }
+
+      window?.fbq?.("track", "Lead");
   
       const data = await response.json();
       if (data.url) {
