@@ -25,6 +25,7 @@ export default function Hero() {
         </div>
         <div className="font-bold text-center text-5xl sm:text-5xl md:text-6xl text-[#e48c51]">{t("hero.title.title3")}</div>
         <div className="font-normal text-center text-xl hidden md:block">{t("hero.title.title4")}</div>
+        <div className="font-normal text-center text-sm xxs:text-md xs:text-lg sm:text-lg lg:text-xl block md:hidden">{t("hero.title.title4")}</div>
         
         {/* <h2 className="font-bold text-center text-sm xxs:text-lg xs:text-2xl sm:text-2xl md:text-4xl">{t("hero.title.line1")}</h2> */}
         {/* <h2 className="pb-8 font-bold text-center text-sm xxs:text-lg xs:text-2xl sm:text-2xl md:text-4xl">{t("hero.title.line2")}</h2> */}
@@ -88,7 +89,6 @@ export default function Hero() {
         </div> */}
 
         <div className="bg-[#faf5f3] bg-center bg-no-repeat border-0 rounded-xl flex justify-center flex-col items-center row-span-4 sm:row-span-3 mb-2 pt-4 relative">
-          <div className="font-normal text-center text-sm xxs:text-md xs:text-lg sm:text-lg lg:text-xl block md:hidden">{t("hero.title.title4")}</div>
           <div className="text-center p-4 text-sm xxs:text-md xs:text-lg sm:text-lg lg:text-xl flex flex-col gap-6 xs:gap-2 sm:gap-1 md:gap-4">
             <div dangerouslySetInnerHTML={{ __html: t("hero.title.title5").replace(/<strong>/g, "<b>").replace(/<\/strong>/g, "</b>") }} />
             <p className="font-semibold">{t("hero.title.title6")}</p>
