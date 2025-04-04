@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
-export default function SuccessPage() {
+function SuccessPage() {
   const searchParams = useSearchParams();
   const sessionId = searchParams.get("session_id");
 
@@ -27,5 +27,14 @@ export default function SuccessPage() {
         </Link>
       </div>
     </section>
+  );
+}
+
+
+export default function SuspensePage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <SuccessPage />
+    </Suspense>
   );
 }
