@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { use, useEffect } from "react";
+import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
 export default function SuccessPage() {
