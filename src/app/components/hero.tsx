@@ -23,9 +23,9 @@ export default function Hero() {
           <span className="font-bold text-[#E69761]">{t("hero.title.title2-4")}</span>
           </div>
         </div>
-        <div className="font-bold text-center text-5xl sm:text-5xl md:text-6xl text-[#e48c51]">{t("hero.title.title3")}</div>
-        <div className="font-normal text-center text-xl hidden md:block">{t("hero.title.title4")}</div>
-        <div className="font-normal text-center text-sm xxs:text-md xs:text-lg sm:text-lg lg:text-xl block md:hidden">{t("hero.title.title4")}</div>
+        <div className="font-semibold text-center text-5xl sm:text-5xl md:text-6xl text-[#e48c51]">{t("hero.title.title3")}</div>
+        <div className="font-semibold text-center text-xl hidden md:block">{t("hero.title.title4")}</div>
+        <div className="font-bold text-center text-sm xxs:text-md xs:text-lg sm:text-lg lg:text-xl block md:hidden">{t("hero.title.title4")}</div>
         
         {/* <h2 className="font-bold text-center text-sm xxs:text-lg xs:text-2xl sm:text-2xl md:text-4xl">{t("hero.title.line1")}</h2> */}
         {/* <h2 className="pb-8 font-bold text-center text-sm xxs:text-lg xs:text-2xl sm:text-2xl md:text-4xl">{t("hero.title.line2")}</h2> */}
