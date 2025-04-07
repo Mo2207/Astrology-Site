@@ -29,7 +29,7 @@ export default function Header() {
     setLanguagedDropdownOpen(false); // close dropdown
   }
   useEffect(() => {
-    const savedLang = localStorage.getItem("lang") || "en";
+    const savedLang = localStorage.getItem("lang") || "ru";
     
     if (i18nRef.current) { // make sure i18nRef is initialized first
       i18nRef.current.changeLanguage(savedLang);
