@@ -2,7 +2,7 @@
 # Astrology Course Website
 
 ## 📌 Overview  
-This is a fully responsive astrology course website designed and developed by me.  
+This is a fully responsive astrology course website developed by me.  
 The website serves as a platform for **Mariya Kovalenko** to showcase and sell her online intensive course.  
 It provides structured content, an intuitive user experience, and seamless navigation to guide users through the course offerings.
 
@@ -81,7 +81,7 @@ This project allowed me to:
 
 ## 🌐 Live Demo & Deployment
 
-- 🔗 **Live URL:** [astrology-template.vercel.app](https://astrology-template.vercel.app/)
+- 🔗 **Live URL:** [mariya-numerologist.com](https://www.mariya-numerologist.com/)
 - 📦 **Hosted on:** Vercel
 
 ---
