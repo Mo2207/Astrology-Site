@@ -28,16 +28,19 @@ export async function POST(req: Request) {
     const origin = headersList.get('origin') || process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
 
-    // default price is set from stripe products
-    let productId = process.env.STRIPE_PRODUCT_ID!; // course product ID
+    
 
     // check search parameters for audience
     const { searchParams } = new URL(req.url);
     const audience = searchParams.get('audience');
+    let productId;
 
     // if audience=2 parameter is in url
     if (audience === '2') {
       productId = process.env.STRIPE_PRODUCT_ID_2!; // course product ID for audience 2
+    } else {
+      // default price is set from stripe products
+      productId = process.env.STRIPE_PRODUCT_ID!; // course product ID
     }
 
 
