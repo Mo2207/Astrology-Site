@@ -19,7 +19,7 @@ export async function OPTIONS() {
 
 // const resend = new Resend(process.env.RESEND_API_KEY!);
 
-export async function POST() {
+export async function POST(req: Request) {
   try {
     // grab the headers from the post req
     const headersList = await headers();
@@ -28,8 +28,18 @@ export async function POST() {
     const origin = headersList.get('origin') || process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
 
-    // price is set from stripe products
-    const productId = process.env.STRIPE_PRODUCT_ID!; // course product ID
+    // default price is set from stripe products
+    let productId = process.env.STRIPE_PRODUCT_ID!; // course product ID
+
+    // check search parameters for audience
+    const { searchParams } = new URL(req.url);
+    const audience = searchParams.get('audience');
+
+    // if audience=2 parameter is in url
+    if (audience === '2') {
+      productId = process.env.STRIPE_PRODUCT_ID_2!; // course product ID for audience 2
+    }
+
 
     // fetch the price dynamically from Stripe
     const prices = await stripe.prices.list({
