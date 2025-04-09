@@ -16,7 +16,6 @@ export default function CourseCards() {
   const oldPrice = audience === '2' ? '$95USD/3700' : '$95CAD/2700';
 
   // translations for all card items
-  const card1Items= t("course_cards.card1.items", { returnObjects: true }) as string[];
   const card2Items= t("course_cards.card2.items", { returnObjects: true }) as string[];
   const card2Spoilers= t("course_cards.card2.spoilers", { returnObjects: true }) as string[];
   
