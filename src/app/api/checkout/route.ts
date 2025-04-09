@@ -3,8 +3,6 @@ import { NextResponse } from 'next/server';
 import { headers } from 'next/headers';
 import { stripe } from '../../../lib/stripe';
 import Stripe from 'stripe';
-// import { Resend } from 'resend';
-// import { EmailTemplate } from '@/app/components/emailTemplate';
 
 // preflight browser options request to allow API requests from any origin
 export async function OPTIONS() {
@@ -17,8 +15,7 @@ export async function OPTIONS() {
   });
 }
 
-// const resend = new Resend(process.env.RESEND_API_KEY!);
-
+// POST request to create a checkout session
 export async function POST(req: Request) {
   try {
     // grab the headers from the post req
@@ -26,9 +23,6 @@ export async function POST(req: Request) {
 
     // origin = the user or local testing
     const origin = headersList.get('origin') || process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
-
-
-    
 
     // check search parameters for audience
     const { searchParams } = new URL(req.url);
@@ -42,7 +36,6 @@ export async function POST(req: Request) {
       // default price is set from stripe products
       productId = process.env.STRIPE_PRODUCT_ID!; // course product ID
     }
-
 
     // fetch the price dynamically from Stripe
     const prices = await stripe.prices.list({

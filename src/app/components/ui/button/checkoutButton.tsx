@@ -3,6 +3,7 @@
 import { Button } from "./button";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useSearchParams } from 'next/navigation';
 
 interface CheckoutButtonProps {
   className?: string;
@@ -12,12 +13,14 @@ interface CheckoutButtonProps {
 export default function CheckoutButton({ text, className }: CheckoutButtonProps) {
   const { t } = useTranslation();
   const [loading, setLoading] = useState(false);
+  const searchParams = useSearchParams();
+  const audience = searchParams.get("audience");
 
   const handleCheckout = async (event: React.FormEvent) => {
     event.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch("/api/checkout", { 
+      const response = await fetch(`/api/checkout${audience ? `?audience=${audience}` : ""}`, { 
         method: "POST", 
         headers: { "Content-Type": "application/json" }
       });
