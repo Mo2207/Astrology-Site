@@ -2,10 +2,16 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
+import { useSearchParams } from "next/navigation";
 import CheckoutButton from "./ui/button/checkoutButton";
 
 export default function Bonus() {
   const { t } = useTranslation();
+  const searchParams = useSearchParams();
+  const audience = searchParams.get("audience");
+  
+  const salePrice = audience === '2' ? '$9USD/370' : '$15CAD/580';
+  const oldPrice = audience === '2' ? '$95USD/3700' : '$95CAD/2700';
 
   const checklist = t("bonus.checklist", { returnObjects: true }) as string[];
 
@@ -22,10 +28,10 @@ export default function Bonus() {
           ))}
         </div>
         {/* pricing section */}
-        <div className="flex flex-col items-center text-center hidden md:block">
+        <div className="flex flex-col items-center text-center">
           <p className="mt-4 pb-4 text-md md:text-xl lg:text-2xl">
-            <span className="font-bold text-[#54994f]">{t("price.sale_price")}</span> 
-            <del className="text-gray-500 ml-2 font-bold">{t("price.old_price")}</del>
+            <span className="font-bold text-[#54994f]">{salePrice}{t("price.sign")}</span> 
+            <del className="text-gray-500 ml-2 font-bold">{oldPrice}{t("price.sign")}</del>
           </p>
           <CheckoutButton className="mt-3" text={t("buttons.gain_access")}></CheckoutButton>
         </div>

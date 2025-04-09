@@ -2,11 +2,17 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
+import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import CheckoutButton from "./ui/button/checkoutButton";
 
 export default function CourseWorks() {
   const { t } = useTranslation();
+  const searchParams = useSearchParams();
+  const audience = searchParams.get("audience");
+
+  const salePrice = audience === '2' ? '$9USD/370' : '$15CAD/580';
+  const oldPrice = audience === '2' ? '$95USD/3700' : '$95CAD/2700';
 
   const cards = t("works.list", { returnObjects: true }) as { title: string; p: string; image: string; }[];
 
@@ -59,8 +65,8 @@ export default function CourseWorks() {
               <div className="flex flex-row justify-center items-center lg:justify-start gap-3">
                 <CheckoutButton className="text-md md:text-lg" text={t("buttons.gain_access")}></CheckoutButton>
                 <p className="text-md md:text-lg">
-                  <span className="font-bold text-[#54994f]">{t("price.sale_price")}</span>
-                  <del className="text-gray-500 ml-2 font-bold">{t("price.old_price")}</del>
+                  <span className="font-bold text-[#54994f]">{salePrice}{t("price.sign")}</span>
+                  <del className="text-gray-500 ml-2 font-bold">{oldPrice}{t("price.sign")}</del>
                 </p>
               </div>
             </div>
