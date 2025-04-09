@@ -63,21 +63,6 @@ export default function Faq() {
                   )}
                 </>
               )}
-              {/* {index === 0 && (
-                <>
-                <p 
-                  className="mt-3 transition-opacity duration-600 break-words max-w-[90%]"
-                >
-                  {item.answer}
-                </p>
-                  <p className="mt-3 transition-opacity duration-600 break-words max-w-[90%]">
-                    {item.answer2}
-                  </p>
-                  <p className="mt-3 transition-opacity duration-600 break-words max-w-[90%]">
-                    {item.answer3}
-                  </p>
-                </>
-              )} */}
             </div>
             
           </div>

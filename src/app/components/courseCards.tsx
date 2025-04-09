@@ -13,7 +13,6 @@ export default function CourseCards() {
   const card1Items= t("course_cards.card1.items", { returnObjects: true }) as string[];
   const card2Items= t("course_cards.card2.items", { returnObjects: true }) as string[];
   const card2Spoilers= t("course_cards.card2.spoilers", { returnObjects: true }) as string[];
-  // const card3Items= t("course_cards.card3.items", { returnObjects: true }) as string[];
   
   return (
     <section id="course" className="flex flex-col justify-center items-center gap-10 bg-[#FFFFFF] text-gray-900">
@@ -80,9 +79,6 @@ export default function CourseCards() {
           <div className="text-left font-medium text-md sm:text-lg md:text-lg lg:text-xl text-gray-600 space-y-3 bg-white rounded-[16px] p-4">
             {card2Spoilers.map((item, index) => (
               <p key={index} className="items-top gap-2" dangerouslySetInnerHTML={{ __html: t(item).replace(/<strong>/g, "<b>").replace(/<\/strong>/g, "</b>") }} />
-              // <p key={index} className="flex items-top gap-2">
-              //   {item}
-              // </p>
             ))}
           </div>
           {/* pricing section */}
@@ -106,22 +102,6 @@ export default function CourseCards() {
             alt="woman sitting on the beach"
             className="border-0 object-cover h-full min-h-[15rem] w-full z-0"
             />
-
-            {/* spoiler 1 */}
-            {/* <div className="absolute flex top-4 left-4 z-10 bg-white bg-opacity-80 border-0 rounded-md p-3 font-md text-md md:font-semibold md:text-lg">
-              <div>
-                <p className="text-center">{t("spoilers.1.p1")}</p>
-                <p className="text-center">{t("spoilers.1.p2")}</p>
-              </div>
-            </div> */}
-
-            {/* spoiler 2 */}
-            {/* <div className="absolute flex bottom-4 right-4 z-10 bg-white bg-opacity-80 border-0 rounded-md p-3 font-md text-md md:font-semibold md:text-lg">
-              <div>
-                <p className="text-center">{t("spoilers.2.p1")}</p>
-                <p className="text-center">{t("spoilers.2.p2")}</p>
-              </div>
-            </div> */}
 
         </div>
       </div>

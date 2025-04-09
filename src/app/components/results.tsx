@@ -41,7 +41,6 @@ export default function Results() {
           </div>
         </div>
 
-        {/* <h2 className="text-lg md:text-xl font-normal p-6 self-center text-center">{t("results.h2")}</h2> */}
         <h2 
           className="text-lg md:text-xl font-normal px-3 py-2 self-center text-center" 
           dangerouslySetInnerHTML={{ 

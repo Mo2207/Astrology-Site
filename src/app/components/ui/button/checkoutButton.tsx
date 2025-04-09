@@ -51,7 +51,6 @@ export default function CheckoutButton({ text, className }: CheckoutButtonProps)
   };
 
   return (
-    // <form action="app/api/stripe/route" method="POST">
     <section>
       <Button 
         type="submit" 
@@ -63,6 +62,5 @@ export default function CheckoutButton({ text, className }: CheckoutButtonProps)
         {loading ? t("processing") : text}
       </Button>
     </section>
-    // </form>
   );
 }
