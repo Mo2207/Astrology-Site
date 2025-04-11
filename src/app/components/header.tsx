@@ -3,8 +3,8 @@
 
 import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { ChevronDown } from "lucide-react";
-import { Button } from "./ui/button/button";
+// import { ChevronDown } from "lucide-react";
+// import { Button } from "./ui/button/button";
 import { handleScroll, navs } from "@/lib/utils";
 import logo from "../../../public/assets/img/navigation/icons/main-logo.svg";
 import Image from "next/image";
