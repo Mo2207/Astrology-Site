@@ -29,13 +29,13 @@ export default function Header() {
     localStorage.setItem("lang", lang);
     setLanguagedDropdownOpen(false); // close dropdown
   }
-  useEffect(() => {
-    const savedLang = localStorage.getItem("lang") || "ru";
+  // useEffect(() => {
+  //   const savedLang = localStorage.getItem("lang") || "ru";
     
-    if (i18nRef.current) { // make sure i18nRef is initialized first
-      i18nRef.current.changeLanguage(savedLang);
-    }
-  }, []);
+  //   if (i18nRef.current) { // make sure i18nRef is initialized first
+  //     i18nRef.current.changeLanguage(savedLang);
+  //   }
+  // }, []);
 
   // detect browser language
   useEffect(() => {
@@ -45,10 +45,11 @@ export default function Header() {
     const isDefaultRu = !storedLang && detectedBrowserLang.startsWith("ru");
     setHideLangSwitcher(isDefaultRu);
   
-    const savedLang = storedLang || (isDefaultRu ? "ru" : "en");
-    i18nRef.current.changeLanguage(savedLang);
-  }, []);  
-
+    const finalLang = storedLang || (isDefaultRu ? "ru" : "en");
+    i18nRef.current.changeLanguage(finalLang);
+    localStorage.setItem("lang", finalLang);
+  }, []);
+    
   // mobile menu toggle
   const handleToggleMenu = () => {
     // setTimeout delays the state update until after the mousedown event is processed,
