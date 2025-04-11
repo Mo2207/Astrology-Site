@@ -170,16 +170,18 @@ export default function Header() {
             </div>
 
             {/* language button toggle */}
-            <Button
-              className="items-center mt-4"
-              onClick={() => {
-                const nextLanguage = i18n.language === "en"? "ru" : "en";
-                changeLanguage(nextLanguage);
-              }}
-            >
-              {/* display opposite label */}
-              {languages.find((lang) => lang.code === (i18n.language === "en" ? "ru" : "en"))?.label}
-            </Button>
+            {!hideLangSwitcher && (
+              <Button
+                className="items-center mt-4"
+                onClick={() => {
+                  const nextLanguage = i18n.language === "en"? "ru" : "en";
+                  changeLanguage(nextLanguage);
+                }}
+              >
+                {/* display opposite label */}
+                {languages.find((lang) => lang.code === (i18n.language === "en" ? "ru" : "en"))?.label}
+              </Button>
+            )}
 
           </div>
         )}
