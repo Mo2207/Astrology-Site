@@ -113,13 +113,13 @@ export default function Header() {
         <div className="relative pr-4">
 
         {/* Language Button */}
-        <Button
+        {/* <Button
           className="hidden md:flex items-center"
           onClick={() => setLanguagedDropdownOpen(!languagedDropdownOpen)}
         >
           {languages.find((lang) => lang.code === i18n.language)?.label}
           <ChevronDown className="w-5 h-5" />
-        </Button>
+        </Button> */}
 
         {/* Language Dropdown Menu */}
         {languagedDropdownOpen && (
@@ -174,18 +174,18 @@ export default function Header() {
             </div>
 
             {/* language button toggle */}
-            {langInitialized && !hideLangSwitcher && (
+            {/* {langInitialized && !hideLangSwitcher && (
               <Button
                 className="items-center mt-4"
                 onClick={() => {
                   const nextLanguage = i18n.language === "en"? "ru" : "en";
                   changeLanguage(nextLanguage);
                 }}
-              >
+              > */}
                 {/* display opposite label */}
-                {languages.find((lang) => lang.code === (i18n.language === "en" ? "ru" : "en"))?.label}
+                {/* {languages.find((lang) => lang.code === (i18n.language === "en" ? "ru" : "en"))?.label}
               </Button>
-            )}
+            )} */}
 
           </div>
         )}
