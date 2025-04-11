@@ -1,356 +1,348 @@
 
 {
   "buttons": {
-    "buy_course": "Buy Course",
-    "gain_access": "Gain Access",
-    "messenger": "Reach out",
-    "start_course": "Start Course"
+    "buy_course": "Получить доступ",
+    "gain_access": "Получить доступ",
+    "messenger": "Связаться",
+    "start_course": "Начать курс"
   },
-  "processing": "processing...",
+  "processing": "обработка...",
   "navs": {
-    "1": {"name": "About Mariya"},
-    "2": {"name": "Course"},
-    "3": {"name": "Reviews"},
-    "4": {"name": "Contact"}
+    "1": {"name": "О Марии"},
+    "2": {"name": "Курс"},
+    "3": {"name": "Отзывы"},
+    "4": {"name": "Контакт"}
   },
   "hero": {
     "title": {
-      "title1": "Online Intensive by Numerologist and Women's Mentor Maria Kovalenko",
-      "title2-1": "Access for ",
-      "title2-2": "2 Months",
-      "title2-3": "Starting ",
-      "title2-4": "April 29 ",
-      "title3": "PRO Resource",
-      "title4": "out of Love for yourself",
-      "title5": "<strong>5 Video Lessons</strong> to Create Your Own Life Strategy in Resourcefulness",
-      "title6": "Permanently Eliminate Fatigue and Apathy with a Unique Methodology for Building a Resourceful Strategy Through Simple Actions",
-      "bonusTitle": "Right After Registration, You Will Receive a <strong>BONUS:</strong>",
-      "bonusText1": "Morning Meditation Tune-in",
-      "bonusText2": "Checklist: 'TOP Ways to Replenish Your Energy Based on Your Birth Date'",
-      "bonusText3": "Get Access for $9/370 UAH Instead of $95/3700 UAH",
-      "line1": "Online Intensive by Numerologist",
-      "line2": "and Women's Mentor Maria Kovalenko"
+      "title1": "онлайн –интенсив от нумеролога и женского наставника Марии Коваленко",
+      "title2-1": "Доступ - ",
+      "title2-2": "2 месяца",
+      "title2-3": "Старт - ",
+      "title2-4": "29 апреля ",
+      "title3": "PRO Ресурс",
+      "title4": "из любви к себе",
+      "title5": "<strong>5 видео-уроков</strong> для создания собственной стратегии жизни в ресурсе",
+      "title6": "Навсегда избавься от состояния нехватки сил и апатии благодаря уникальной методике создания стратегии наполнения ресурсом через простые действия",
+      "bonusTitle": "Сразу после регистрации вы получите <strong>БОНУС:</strong>",
+      "bonusText1": "Медитация-настрой на день",
+      "bonusText2": "Чек-лист: «ТОП способов наполнить свой ресурс по дате рождения»",
+      "bonusText3": "Получить доступ за $9/370грн вместо $95/3700грн",
+      "line1": "Онлайн-интенсив от нумеролога",
+      "line2": "и женского наставника Марии Коваленко"
     },
     "start": {
-      "title": "Start on April 29",
-      "p": "Duration: 5 Days"
+      "title": "Старт 29 апреля",
+      "p": "Длительность 5 дней"
     },
     "access": {
-      "title": "Online Mastermind",
-      "p": "Access for 2 Months"
+      "title": "Онлайн-мастермайнд",
+      "p": "Доступ 2 месяца"
     }
   },
   "about": {
-    "h2": "About The Author",
+    "h2": "Про автора",
     "description": [
-      "Maria Kovalenko, a practicing Vedic numerologist, astrologer, psychologist and female mentor",
-      "Mother of 3 children, 16 years old happily married",
-      "Received a blessing from a spiritual advisor for counseling and imparting knowledge",
-      "Conducted 500+ consultations",
-      "Author and ornamenter of women's circles and meetings",
-      "Guest speaker at international festivals and women's meetings",
-      "Experience in working with women's condition – more than 10 years"
+      "Мария Коваленко — практикующий ведический нумеролог, астролог, психолог и женский наставник",
+      "Мама 3х детей, 16 лет счастлива замужем",
+      "Получила благословение от духовного наставника на консультирование и передачу знаний",
+      "Провела 500+ консультаций",
+      "Автор и организатор женских кругов и встреч",
+      "Приглашенный спикер на международных фестивалях и женских встречах",
+      "Опыт работы с женским состоянием – более 10 лет"
     ]
   },
-  "results": {
-    "title": "Your results after the \"PRO Resource\" Intensive",
-    "list": [
-      "You will stop snapping at your husband and children.",
-      "You will be able to devote time to yourself without sacrificing your family.",
-      "You will see that your energy is equal to your income level.",
-      "You will begin to attract more opportunities without burnout.",
-      "You will stop earning at the cost of your health and nerves",
-      "You will learn to competently build personal boundaries without feeling guilty.",
-      "You will understand where your energy goes and stop draining your strength.",
-      "You will learn to set personal boundaries effectively—without guilt.",
-      "You will understand where your energy goes and stop draining your strength.",
-      "You will stop postponing your dreams and start acting."
-    ],
-    "h2": "After the intensive, you will feel calm, fulfilled and ready to move forward without stress and overload!"
-  },
+"results": {
+  "title": "Ваши результаты после интенсива PRO&nbsp;Ресурс»",
+  "list": [
+    "Перестанешь срываться на мужа и детей",
+    "Сможешь уделять время себе, не жертвуя семьей",
+    "Увидишь, что твоя энергия равна твоему уровню дохода",
+    "Начнешь привлекать больше возможностей без выгорания",
+    "Перестанешь зарабатывать ценой здоровья и нервов",
+    "Научишься грамотно выстраивать личные границы без чувства вины",
+    "Поймешь, куда уходит твоя энергия и перестанешь сливать свои силы",
+    "Перестанешь откладывать свои мечты и начнешь действовать"
+  ],
+  "h2": "После интенсива <strong>ты почувствуешь себя спокойной, наполненной и готовой двигаться вперед без стресса и перегруза!</strong>"
+},
   "differences": {
     "resource": {
-      "title": "Resource",
+      "title": "Ресурс",
       "list": [
-        "Systematic and structured information",
-        "Relevant and effective methods proven by experience",
-        "Lots of practice that will help you get real results from the first days of the intensive",
-        "Strong methodology built on 10 years of working with women",
-        "Your results are important to me."
+        "Систематизированная и структурированная информация",
+        "Актуальные и эффективные методы, проверенные опытом",
+        "Много практики, которая поможет вам получить реальные результаты с первых дней интенсива",
+        "Сильная методика, основанная на 10-летнем опыте работы с женщинами",
+        "Ваши результаты для меня важны."
       ]
     },
     "other_courses": {
-      "title": "Other Courses",
+      "title": "Другие курсы",
       "list": [
-        "lots of theory, little practice and structure",
-        "do not provide a full understanding of what a resource is and where to get it",
-        "no practical and useful bonuses",
-        "no specific step-by-step action plan",
-        "no successful experience in consulting and knowledge transfer"
+        "много теории, мало практики и структуры",
+        "не дают полного понимания, что такое ресурс и где его взять",
+        "нет практических и полезных бонусов",
+        "отсутствует конкретный пошаговый план действий",
+        "нет успешного опыта в консультировании и передаче знаний"
       ]
     }
   },
   "price": {
-    "sign": "UAH"
+    "sign": "ГРН"
   },
   "course_cards": {
     "card1": {
-      "title": "Out of love for yourself",
+      "title": "Для кого этот курс?",
       "items": [
-        "5 video lessons for creating your own life strategy in the resource",
-        "Community chat & all materials",
-        "Immediately after registration, you will receive a BONUS: Meditation-mood for the day",
-        "Checklist: \"TOP Ways to Fill Your Resource by Date of Birth\""
+        "5 видео-уроков по созданию собственной жизненной стратегии в ресурсе",
+        "Чат сообщества и все материалы",
+        "Сразу после регистрации вы получите БОНУС: Медитация-настрой на день",
+        "Чек-лист: \"ТОП-способы наполнить свой ресурс по дате рождения\""
       ]
     },
     "card2": {
-      "title": "The Intensive PRO Resource is for you if",
+      "title": "Интенсив PRO Ресурс для тебя, если ты:",
       "items": [
-        "You feel tired, apathetic and lack energy",
-        "You want a change, but you don't know where to start",
-        "Burned out at work and don't know how to recover",
-        "Confused in yourself and don't understand what you want",
-        "Constantly stressed and feeling emotionally exhausted",
-        "You want to regain drive, joy and interest in life",
-        "You are ready to stop procrastinating and start acting"
+        "чувствуешь усталость, апатию и нехватку энергии",
+        "хочется перемен, но не знаешь с чего начать",
+        "перегорела на работе и не знаешь, как восстановиться",
+        "запуталась в себе и не понимаешь, чего хочешь",
+        "постоянно в стрессе и ощущаешь эмоциональное истощение",
+        "хочешь вернуть драйв, радость и интерес к жизни",
+        "готова перестать откладывать и начать действовать"
       ],
       "spoilers": [
-        "<strong>Spoiler 1:</strong> You don't need extra hours in the day to live in resourcefulness.",
-        "<strong>Spoiler 2:</strong> Living in resourcefulness is not about having lots of money—it's FREE."
+        "<strong>Спойлер 1:</strong> Тебе не нужно дополнительное время в сутках, чтобы жить в ресурсе",
+        "<strong>Спойлер 2:</strong> Жизнь в ресурсе – это не про большие деньги, это БЕСПЛАТНО"
       ]
     },
     "card3": {
-      "title": "Intensive Program",
+      "title": "Интенсивная программа",
       "items": [
-        "Access to all materials for 2 months",
-        "Private chat for communication and support",
-        "Mastermind with live breakdowns in real time.",
-        "5 video lessons for creating your own life strategy in the resource"
+        "Доступ ко всем материалам на 2 месяца.",
+        "Приватный чат для общения и поддержки",
+        "Mastermind с живыми разборами в реальном времени.",
+        "5 видеоуроков по созданию собственной жизненной стратегии на ресурсе"
       ]
     }
   },
   "spoilers": {
-    "1": {
-      "p1": "You don't need extra time in",
-      "p2": "a day to live in a resource."
-    },
-    "2": {
-      "p1": "Living in a resource is not",
-      "p2": "about big money, it's FREE"
-    }
+  "1": {
+    "p1": "Вам не нужно дополнительное время",
+    "p2": "в день, чтобы жить в ресурсе."
   },
+  "2": {
+    "p1": "Жить в ресурсе — это не",
+    "p2": "про большие деньги, это БЕСПЛАТНО."
+  }
+},
   "curriculum": {
-    "title": "Course Curriculum",
+    "title": "Программа интенсива:",
     "list": [
       {
-        "title": "Day 1",
-        "step1": "The difference between male and female resources.",
-        "step2": "A resource is a concrete thing, not something amorphous."
+        "title": "День 1",
+        "step1": "Отличие мужского и женского ресурса.",
+        "step2": "Ресурс – конкретная вещь, а не нечто аморфное."
       },
       {
-        "title": "Day 2",
-        "step1": "5 steps to the resource.",
-        "step2": "Resource-taking and resource-giving actions."
+        "title": "День 2",
+        "step1": "5 шагов к ресурсу.",
+        "step2": "Ресурсозабирающие и ресурсодающие действия."
       },
       {
-        "title": "Day 3",
-        "step1": "5 steps to the resource.",
-        "step2": "Where to find time to replenish the resource."
+        "title": "День 3",
+        "step1": "5 шагов к ресурсу.",
+        "step2": "Где взять время на восполнение ресурса."
       },
       {
-        "title": "Day 4",
-        "step1": "The resource of the body and the resource of the psyche.",
-        "step2": "Resource holes and how to fix them."
+        "title": "День 4",
+        "step1": "Ресурс тела и ресурс психики.",
+        "step2": "Ресурсные дыры."
       },
       {
-        "title": "Day 5",
-        "step1": "Online mastermind with me, where I will answer all your questions.",
-        "step2": "Action plan, strategy building."
+        "title": "День 5",
+        "step1": "Онлайн мастермайнд, где я отвечу на все ваши вопросы.",
+        "step2": "План действий, построение стратегии."
       }
     ]
   },
-  "intro": {
-    "title": "How the intensive will be held",
-    "list": [
-      "Immediately after payment, you get access to the \"Set Up for the Day\" meditation.",
-      "4 recorded video lessons so you can watch them at your convenience. I recommend watching it in the morning in order to comprehend new information during the day and immediately apply it in life.",
-      "1 online mastermind, where I will answer your questions, analyze real situations. There will definitely be an appointment.",
-      "Access to all materials - 2 months.",
-      "Private chat communication and support.",
-      "BONUSES: Checklist \"What the resource gives and what it takes\".",
-      "Checklist \"Strategy for filling the resource for the month\"."
-    ],
-    "title2": "Start on April 29",
-    "list2": [
-      "4 recorded video lessons so you can watch them at a convenient time. I recommend watching in the morning to reflect on the new information throughout the day and apply it immediately in real life.",
-      "1 online mastermind session where I will answer your questions and analyze real situations. A recording of the session will be available.",
-      "Access to all materials for 2 months.",
-      "A private chat for communication and support."
-    ]
+"intro": {
+  "title": "Как будет проходить интенсив",
+  "list": [
+    "Сразу после оплаты вы получаете доступ к <strong>медитации</strong> «Настрой на день» и <strong>Чек-лист</strong>: «ТОП способов наполнить свой ресурс по дате рождения»"
+  ],
+  "title2": "Старт 29 апреля",
+  "list2": [
+    "4 видео-урока в записи, чтобы вы могли смотреть их в удобное для вас время. Я рекомендую смотреть утром, чтобы в течении дня осмыслить новую информацию и сразу применять в жизни",
+    "1 онлайн мастермайнд, где я отвечу на ваши вопросы, разберем реальные ситуации. Запись встречи обязательно будет",
+    "Доступ ко всем материалам - 2 месяца",
+    "Закрытый чат общения и поддержки"
+  ]
   },
   "bonus": {
-    "title": "Bonus",
+    "title": "Бонусы:",
     "checklist": [
-      "Checklist : What Gives and What Drains Your Resource",
-      "Checklist: Monthly Resource Replenishment Strategy"
+      "Чек-лист «Что дает и что забирает ресурс»",
+      "Чек-лист «Стратегия наполнения ресурсом на месяц»"
     ]
   },
   "reviews": {
-    "title1": "Why You Should Join the PRO Resource Intensive",
-    "title2": "Here’s What Participants Are Saying:",
+    "title1": "Почему тебе стоит пройти интенсив PRO Ресурс",
+    "title2": "Вот что говорят участницы интенсива:",
     "list": {
       "1": {
-        "name": "Serafima",
-        "age": "39 years old",
-        "review": "“I have 3 children and have been on maternity leave for the past 10 years. I was exhausted and drained because household chores, home, and family took up all my time. I didn’t even dare to dream about having my own business. I asked my husband for help, but he often refused. Thank God, I came across Maria’s intensive course. I still don’t understand why it’s so affordable because the information inside is worth a fortune! I finally figured out how to manage my energy, and now I don’t wait for a miracle—I create it myself. My children are no longer an obstacle; I’ve learned how to manage my time in a way that keeps me energized.”"
+        "name": "Серафима",
+        "age": "39 лет",
+        "review": "«У меня трое детей, и последние 10 лет я была в декрете. Я чувствовала себя истощенной и выжатой, потому что все мое время уходило на дом, быт и семью. Я даже не мечтала о собственном деле. Я просила мужа о помощи, но он часто отказывал. Слава Богу, я наткнулась на интенсив Марии. До сих пор не понимаю, почему он стоит так дешево, ведь информация внутри просто бесценна! Я наконец-то поняла, как управлять своей энергией, и теперь не жду чуда – я создаю его сама. Дети больше не являются препятствием, я научилась организовывать свое время так, чтобы оставаться в ресурсном состоянии.»"
       },
       "2": {
-        "name": "Yana",
-        "age": "39 years old",
-        "review": "“Fatigue and apathy had become my normal state over the past few years. I didn’t even notice how I had fallen into this trap. But when I ended up in the hospital, I realized I couldn’t go on like this. I accidentally came across Maria’s intensive course, and it became my lifeline, opening my eyes. Maria explains everything in a very clear way. I finally found the strength to work on my project, and now I am the owner of my own business! But without this resource, I would never have achieved it.”"
+        "name": "Яна",
+        "age": "39 лет",
+        "review": "«Усталость и апатия стали для меня нормой за последние несколько лет. Я даже не заметила, как оказалась в этой ловушке. Но когда я попала в больницу, поняла, что так больше нельзя. Случайно наткнулась на интенсив Марии, и он стал для меня настоящим спасением, открыв мне глаза. Мария объясняет все очень доступно. Я наконец-то нашла силы работать над своим проектом, и теперь я владелица собственного бизнеса! Без этого ресурса я бы никогда этого не достигла.»"
       },
       "3": {
-        "name": "Regina",
-        "age": "45 years old",
-        "review": "“I was on the verge of divorce, and my children were suffering, but I felt completely powerless—I had no motivation to work on my relationship. That’s when I found the \"Resource\" intensive course, and it came at just the right time. I regained my inner strength, and, surprisingly, my relationships improved on their own. It turned out that both my husband and children were struggling because I had no energy to give them—I was simply drained. Now, I follow the plan Maria helped me create, and I have plenty of energy for myself and my loved ones!”"
+        "name": "Регина",
+        "age": "45 лет",
+        "review": "«Я была на грани развода, мои дети страдали, но я чувствовала себя совершенно бессильной – у меня не было мотивации работать над отношениями. В этот момент я нашла интенсив «Ресурс», и он пришелся очень вовремя. Я восстановила свои внутренние силы, и, что удивительно, мои отношения улучшились сами собой. Оказалось, что и муж, и дети страдали, потому что у меня не было энергии, чтобы им что-то дать – я была просто опустошена. Теперь я следую плану, который помогла составить Мария, и у меня есть силы и для себя, и для своих близких!»"
       },
       "4": {
-        "name": "Natalia",
-        "age": "34 years old",
-        "review": "“I came to the intensive course in a state of complete emotional burnout. I had no energy for anything. After just the first lesson, I recognized my mistakes and started taking action. Now, I feel inspired and full of energy—my husband and children hardly recognize me. I’m happy, and I’ve already received a promotion at work.”"
+        "name": "Наталья",
+        "age": "34 года",
+        "review": "«Я пришла на интенсив в состоянии полного эмоционального выгорания. У меня не было сил ни на что. Уже после первого занятия я осознала свои ошибки и начала действовать. Сейчас я чувствую вдохновение и полна энергии – мой муж и дети меня просто не узнают. Я счастлива, и уже получила повышение на работе.»"
       },
       "5": {
-        "name": "Varia",
-        "age": "37 years old",
-        "review": "“I felt lonely and unwanted. After the intensive course, I realized why—no one was interested in talking to me because all I did was complain about life. During the course, I understood that this was a dead-end road and decided to change my life according to a plan. Now, I have many new friends and have found a new job!”"
+        "name": "Варя",
+        "age": "37 лет",
+        "review": "«Я чувствовала себя одинокой и никому не нужной. После интенсива я поняла, почему – никому не было интересно со мной общаться, потому что я только и делала, что жаловалась на жизнь. На курсе я осознала, что это тупиковый путь, и решила изменить свою жизнь по плану. Теперь у меня много новых друзей, и я нашла новую работу!»"
       },
       "6": {
-        "name": "Yuliia",
-        "age": "33 years old",
-        "review": "“After the intensive course, my life will never be the same! I used to see happy women on social media and couldn’t understand how they managed it. Now, I’m one of them—I’ve created my own energy management plan and follow it (though sometimes with small detours, but I stay on track). Now, I replenish my energy in time, and I absolutely love it!”"
+        "name": "Юлия",
+        "age": "33 года",
+        "review": "«После интенсива моя жизнь никогда не будет прежней! Раньше я смотрела на счастливых женщин в соцсетях и не понимала, как им это удается. Теперь я – одна из них! Я создала свой личный план управления энергией и следую ему (иногда с небольшими отклонениями, но не сбиваюсь с пути). Теперь я вовремя пополняю свой ресурс, и мне это очень нравится!»"
       },
       "7": {
-        "name": "Mila",
-        "age": "37 years old",
-        "review": "“I felt that something needed to change in my life, but I had no idea what or how. I bought the intensive course, and I have no regrets—my perspective expanded, I changed my habits, and everything fell into place. I met the man of my dreams, and now we’re planning our wedding!”"
+        "name": "Мила",
+        "age": "37 лет",
+        "review": "«Я чувствовала, что в моей жизни нужно что-то менять, но не понимала, что именно и как. Я купила интенсив, и ни разу не пожалела – мое мировоззрение расширилось, я изменила привычки, и все встало на свои места. Я встретила мужчину своей мечты, и теперь мы планируем свадьбу!»"
       }
     }
   },
   "difference": {
-    "title": "What makes the Resource intensive different from others?",
+    "title": "Чем интенсив «PRO Ресурс» отличается от других:",
     "left": {
-      "title": "Resource",
+      "title": "",
       "list": [
-        "Systematic and structured information.",
-        "Relevant and effective methods proven by experience.",
-        "Lots of practice that will help you get real results from the first days of the intensive.",
-        "Strong methodology built on 10 years of working with women.",
-        "Your results are important to me."
+        "четкая и понятная информация",
+        "действенные техники проверенные опытом",
+        "много практики, которая поможет получить реальные результаты с первых дней интенсива",
+        "сильная методология построенная на 10 годах работы с женщинами",
+        "для меня важен ваш результат"
       ]
     },
     "right": {
-      "title": "Other Courses",
+      "title": "Другие курсы:",
       "list": [
-        "Lots of theory, little practice and structure",
-        "Do not provide a full understanding of what a resource is and where to get it.",
-        "No practical and useful bonuses.",
-        "No specific step-by-step action plan.",
-        "No successful experience in consulting and knowledge transfer."
+        "много теории, мало практики и структуры",
+        "не дают полного понимания что же такое ресурс и где его брать",
+        "без практических и полезных бонусов",
+        "нет конкретного пошагового плана действий",
+        "нет успешного опыта работы в консультировании и передаче знаний"
       ]
     }
   },
   "works": {
-    "title": "What makes this intensive course work?",
+    "title": "Благодаря чему этот интенсив работает:",
     "list": [
       {
-        "title": "There is a complete understanding of what the resource gives and what it takes away",
-        "p": "You will determine your personal ways of filling the resource. After all, what is good for one is not suitable for another.",
+        "title": "Ты получаешь полное понимание что ресурс дает, а что забирает",
+        "p": "Определишь свои личные способы наполнения ресурсом. Ведь то, что хорошо для одного – не подходит другому",
         "image": "/assets/img/works/icons/heart-hand.svg"
       },
       {
-        "title": "We remove resource holes",
-        "p": "You can fill the resource from morning to night, but if there are holes, the resource will not accumulate, no matter how hard we try.",
+        "title": "Уберешь ресурсные дыры",
+        "p": "Можно с утра и до ночи наполнять ресурс, но если есть дыры, то ресурс не накопится, как бы мы не старались",
         "image": "/assets/img/works/icons/criss-cross.svg"
       },
       {
-        "title": "We write out a clear strategy",
-        "p": "This is not just a theory where we talked and forgot - we will create a clear plan of simple actions that will not let you merge.",
+        "title": "Пропишешь свою личную стратегию жизни в ресурсе",
+        "p": "Это не просто теория, где мы поговорили и забыли – мы создадим четкий план простых действий, который не даст слиться",
         "image": "/assets/img/works/icons/notes.svg"
       },
       {
-        "title": "Fast feedback",
-        "p": "I immediately sort out any questions that arise in a closed chat.",
+        "title": "Любые возникающие вопросы я сразу разбираю в закрытом чате",
+        "p": "",
         "image": "/assets/img/works/icons/rocket.svg"
       }
     ]
   },
   "cheap": {
-    "title": "Why is this intensive course so cheap?",
-    "p1": "I myself live by this strategy and enjoy the results of life in a calm, balanced state. This knowledge can be sold at a much higher price, but I sell it for only ",
-    "p2": " to make this knowledge available to the maximum number of women.",
-    "p3": " is for as many women as possible to come to inner balance and be able to LIVE and enjoy every moment without stress and anxiety. And if you like everything and want to delve deeper into the topic of practice, then I will invite you to an energy workshop, where I will take you by the hand and lead you to the maximum possible result.",
-    "price": "UAH",
-    "mission": "My mission"
+    "title": "Почему этот интенсив такой доступный?",
+    "p1": "Я сама живу по этой стратегии и наслаждаюсь результатами жизни в спокойном уравновешенном состоянии последние 10 лет. Ценность этих знаний в разы дороже, но я продаю их всего за ",
+    "p2": " чтобы сделать эти знания доступными для максимального количества женщин.",
+    "p3": " чтобы как можно больше женщин пришли к внутреннему балансу и могли ЖИТЬ и радоваться каждому дню без стресса и тревог. И если тебе все понравится и ты захочешь углубиться в тему практики, то я приглашу тебя на энергетический практикум, где я возьму тебя за руку и доведу до максимально возможного результата",
+    "price": "ГРН",
+    "mission": "Моя миссия"
   },
   "guarantee": {
-    "title": "Efficiency Guarantee",
-    "p1": "I am sure that after completing the intensive course, you will have a clear understanding of how to create your life in a resource.",
-    "p2": "But if you take the intensive course and you still have doubts about its effectiveness for you, I will refund you the full cost of training. Just write to the care service and they will refund your money"
+    "title": "Гарантия эффективности",
+    "p1": "Я уверена, что после прохождения интенсива у вас сложится четкое понимание как создавать свою жизнь в ресурсе.",
+    "p2": "Но если вы пройдете интенсив и у вас останутся сомнения в его эффективности для вас - я верну вам полную стоимость обучения. Просто напишите в службу заботы и они вернут вам деньги."
   },
   "faq": {
-    "title": "FAQ",
+    "title": "Ответы на вопросы FAQ",
     "list": [
       {
-        "question": "How does the intensive work?",
-        "answer": "The intensive course consists of five video lessons that you can watch at your convenience. You will have access to all materials for 2 months and a private chat for communication and support.",
-        "answer2": "Access to all materials –<strong>2 months</strong>",
-        "answer3": "You will have a <strong>private chat for communication and support</strong>."
+        "question": "Как проходит интенсив?",
+        "answer": "Интенсив состоит из <strong>4 видео-уроков</strong>, которые ты сможешь смотреть в удобное время + <strong>1 онлайн-мастермайнд</strong> с разборами ваших вопросов и реальных ситуаций. Важно присутствовать онлайн, но запись мастермайнда будет",
+        "answer2": "Доступ ко всем материалам –<strong>2 месяца</strong>",
+        "answer3": "У тебя будет <strong>закрытый чат для общения и поддержки</strong>."
       },
       {
-        "question": "How much time should be allocated for training?",
-        "answer": "Each lesson takes 25-30 minutes. The main thing is to apply knowledge in practice."
+        "question": "Сколько времени нужно выделять на обучение?",
+        "answer": "Каждый урок занимает <strong>25- 30 минут</strong>. Главное – применять знания на практике."
       },
       {
-        "question": "Will there be feedback?",
-        "answer": "Yes! You can ask questions in a private chat, share your results and get support."
+        "question": "Будет ли обратная связь?",
+        "answer": "Да! Ты можешь задавать вопросы в <strong>закрытом чате</strong>, делиться результатами и получать поддержку."
       },
       {
-        "question": "What should I do if I don't have time to complete the intensive course in 5 days?",
-        "answer": "You will have access to the materials for 2 months, so you can go at a comfortable pace."
+        "question": "Что делать, если я не успею пройти интенсив за 5 дней?",
+        "answer": "У тебя будет <strong>доступ к материалам на 2 месяца</strong>, так что ты можешь проходить в комфортном темпе."
       },
       {
-        "question": "Is the intensive for me if I have no experience in working with resource states?",
-        "answer": "Yes! The intensive is created for everyone who wants to restore energy and balance in life – regardless of experience."
+        "question": "Подходит ли мне интенсив, если у меня нет опыта в работе с ресурсными состояниями?",
+        "answer": "Да! Интенсив создан <strong>для всех, кто хочет вернуть энергию и баланс в жизни</strong> – независимо от опыта."
       },
       {
-        "question": "I have small children and no time at all. Will I be able to get results?",
-        "answer": "For mothers with babies, this intensive is as necessary as air. You are going through the most resource- intensive period in your life and your main task is to be resourceful for yourself and your family. This intensive is your concern for your loved ones. And yes, you will be able to implement the knowledge gained into your routine and routine"
+        "question": "У меня маленькие дети и совсем нет времени. Смогу ли я получить результат?",
+        "answer": "Для мамочек с малышами этот интенсив необходим как воздух. Вы проживаете самый ресурсозатратный период в своей жизни и ваша основная задача – быть в ресурсе ради себя и своей семьи. Этот интенсив – ваша забота о близких. И да, вы сможете внедрить полученные знания в ваш режим и распорядок дня"
       },
       {
-        "question": "How to pay for participation?",
-        "answer": "You can pay with Visa/MasterCard/PayPal"
+        "question": "Как оплатить участие?",
+        "answer": "Ты можешь оплатить картой <strong>Visa/MasterCard/PayPal</strong>."
       }
     ]
   },
   "contact": {
-    "title": "Still have questions?",
-    "p": "You can contact me via Facebook Messenger."
+    "title": "Остались вопросы?",
+    "p": "Напиши мне прямо в мессенджер"
   },
   "footer": {
-    "list": [
-      {
-        "title": "Powered by",
-        "link": "https://theclicks.ca/en",
-        "logo": "/assets/img/icons/clicks-logo.svg"
-      },
-      {
-        "title": "Offer Agreement",
-        "link": "/docs/offer-agreement.pdf"
-      },
-      {
-        "title": "Terms of Use",
-        "link": "/docs/TOU.pdf"
-      }
-    ]
+  "list": [
+    {
+      "title": "Разработано",
+      "link": "https://theclicks.ca/en",
+      "logo": "/assets/img/icons/clicks-logo.svg"
+    },
+    {
+      "title": "Договор оферты",
+      "link": "/docs/offer-agreement.pdf"
+    },
+    {
+      "title": "Политика конфиденциальности",
+      "link": "/docs/TOU.pdf"
+    }
+  ]
   }
 }
