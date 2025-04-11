@@ -43,7 +43,7 @@ export default function Header() {
     const storedLang = localStorage.getItem("lang");
     const detectedBrowserLang = navigator.language || navigator.languages[0];
   
-    const isDefaultRu = !storedLang && detectedBrowserLang.startsWith("ru");
+    const isDefaultRu = !storedLang && detectedBrowserLang.toLowerCase().includes("ru");
     setHideLangSwitcher(isDefaultRu);
   
     const finalLang = storedLang || (isDefaultRu ? "ru" : "en");
