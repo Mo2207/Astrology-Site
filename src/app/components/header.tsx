@@ -22,6 +22,7 @@ export default function Header() {
   const mobileBtnRef = useRef<HTMLButtonElement>(null);
   const i18nRef = useRef(i18n);
   const [hideLangSwitcher, setHideLangSwitcher] = useState(false);
+  const [langInitialized, setLangInitialized] = useState(false);
 
   // language switcher
   const changeLanguage = (lang: string) => {
@@ -48,7 +49,10 @@ export default function Header() {
     const finalLang = storedLang || (isDefaultRu ? "ru" : "en");
     i18nRef.current.changeLanguage(finalLang);
     localStorage.setItem("lang", finalLang);
+  
+    setLangInitialized(true); // now ready to render switcher
   }, []);
+  
     
   // mobile menu toggle
   const handleToggleMenu = () => {
@@ -105,7 +109,7 @@ export default function Header() {
         </nav>
 
         {/* Langauge Selection */}
-        {!hideLangSwitcher && (
+        {langInitialized && !hideLangSwitcher && (
         <div className="relative pr-4">
 
         {/* Language Button */}
@@ -170,7 +174,7 @@ export default function Header() {
             </div>
 
             {/* language button toggle */}
-            {!hideLangSwitcher && (
+            {langInitialized && !hideLangSwitcher && (
               <Button
                 className="items-center mt-4"
                 onClick={() => {
