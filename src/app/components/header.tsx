@@ -21,6 +21,7 @@ export default function Header() {
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const mobileBtnRef = useRef<HTMLButtonElement>(null);
   const i18nRef = useRef(i18n);
+  const [hideLangSwitcher, setHideLangSwitcher] = useState(false);
 
   // language switcher
   const changeLanguage = (lang: string) => {
@@ -35,6 +36,18 @@ export default function Header() {
       i18nRef.current.changeLanguage(savedLang);
     }
   }, []);
+
+  // detect browser language
+  useEffect(() => {
+    const storedLang = localStorage.getItem("lang");
+    const detectedBrowserLang = navigator.language || navigator.languages[0];
+  
+    const isDefaultRu = !storedLang && detectedBrowserLang.startsWith("ru");
+    setHideLangSwitcher(isDefaultRu);
+  
+    const savedLang = storedLang || (isDefaultRu ? "ru" : "en");
+    i18nRef.current.changeLanguage(savedLang);
+  }, []);  
 
   // mobile menu toggle
   const handleToggleMenu = () => {
@@ -91,6 +104,7 @@ export default function Header() {
         </nav>
 
         {/* Langauge Selection */}
+        {!hideLangSwitcher && (
         <div className="relative pr-4">
 
         {/* Language Button */}
@@ -120,6 +134,7 @@ export default function Header() {
           </div>
         )}
         </div>
+        )}
 
         {/* mobile menu hamburger  */}
         <div className="md:hidden pr-4">
