@@ -36,7 +36,7 @@ export async function POST(req: Request) {
       }
 
       // course link
-      const courseLink = "https://t.me/Intensiv_pro_resourse_bot";
+      const courseLink = "https://t.me/Secrets_of_numerology_bot";
 
       // send the email via resend
       await resend.emails.send({
