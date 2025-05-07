@@ -10,7 +10,7 @@ It provides structured content, an intuitive user experience, and seamless navig
 
 ## 🚀 Features
 
-- 🌍 **Multi-Language Support** — English & Russian (`react-i18next`)
+- 🌍 **Multi-Language Support** — English & Russian (currently disabled as requested by client, but functionality is still present in code)
 - 📱 **Fully Responsive Design** — Optimized for all screen sizes
 - 🎨 **Tailwind Styling** — Efficient and maintainable design
 - 📂 **Mobile-Friendly Dropdown Menu** — Collapsible nav with language toggle
